@@ -1,5 +1,5 @@
 ## Stack and Que
----
+
 
 
 #### Stack Structure
