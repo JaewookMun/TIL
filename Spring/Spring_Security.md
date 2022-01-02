@@ -48,6 +48,8 @@
 <br>
 
 * session management
+  - HttpSessionEventPublisher vs HttpSessionListener
+
   
 <br>
 
@@ -65,3 +67,8 @@
   *-* **스프링 시큐리티 프로젝트 설정** - https://sjh836.tistory.com/165
   *-* 스프링 시큐리티 프로젝트 설정 - https://bin-repository.tistory.com/128   (springboot에 가까운 느낌)
   *-* PasswordEncoder - https://velog.io/@corgi/Spring-Security-PasswordEncoder%EB%9E%80-4kkyw8gi
+  *-* logout success handler - https://tyson.tistory.com/126
+  *-* **session 종료관련 리스너** - https://stackoverflow.com/questions/11843010/logout-session-timeout-catching-with-spring-security
+  *-* 중복 로그인 방지(with security vs without security) - http://dveamer.github.io/backend/PreventDuplicatedLogin.html
+  *-* session timeout 설정방법 및 우선순위 - https://dololak.tistory.com/706
+
