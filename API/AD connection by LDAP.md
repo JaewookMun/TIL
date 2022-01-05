@@ -19,6 +19,11 @@
 
 <br>
 
+* AD viewer and editor : **AdExplorer.exe** (접근 정보가 있을 때 활용 - Microsoft 프로그램)
+
+
+<br>
+
 * [참고] <br>
   *-* LDAP in 위키 - https://ko.wikipedia.org/wiki/LDAP <br>
   *-* AD와 LDAP의 차이점 - https://m.blog.naver.com/sung_mk1919/221824347182 <br>
@@ -35,7 +40,6 @@
   *-* AD 사용자 이름 특성 (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/ad/naming-properties <br>
   *-* initialLdapContext 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/ldap/initialldapcontext <br>
   *-* SearchControl 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/directory/searchcontrols <br>
-
 
 
 
