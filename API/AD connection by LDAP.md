@@ -57,8 +57,9 @@
   *-* AD 및 DNS 기본 개념(Name Space) **check** - https://mapoo.net/os/oswindows/%EC%97%91%ED%8B%B0%EB%B8%8C-%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EC%9D%98-%EC%9D%B4%ED%95%B4/ <br>
   *-* AD와 LDAP의 차이점 - https://m.blog.naver.com/sung_mk1919/221824347182 <br>
   *-* LDAP 스키마(구조) - https://help.hcltechsw.com/domino/11.0.1/ko/admin/conf_ldapschema_c.html <br>
+  *-* LDAP 스키마 구조 속성 설명 - https://support.google.com/cloudidentity/answer/9188164?hl=ko <br>
   *-* AD와 DNS의 개념 https://sbck.tistory.com/25 <br>
-  *-* AD DN 개념 (Microsoft ~ eng) - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc978021(v=technet.10) <br>
+  *-* AD 검색 개념 (Microsoft ~ eng) - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc978021(v=technet.10) <br>
   *-* Java JNDI api - https://deviscreen.tistory.com/123
   *-* LDAP 연결 방법 소스 예시1 - https://black-whisker.tistory.com/32 <br>
   *-* LDAP 연결 방법 소스 예시2 - https://stackoverflow.com/questions/8551809/how-to-connect-with-java-into-active-directory <br>
@@ -69,9 +70,10 @@
   *-* AD 사용자 이름 특성 [AD속성] (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/ad/naming-properties <br>
   *-* AD 식별자 (Distinguished Names) - https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names <br>
   *-* initialLdapContext 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/ldap/initialldapcontext <br>
-  *-* SearchControl 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/directory/searchcontrols <br>
+  *-* SearchResult 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/directory/searchresult <br>
   *-* is GUID unique ? - https://serverfault.com/questions/105486/is-the-objectguid-unique-and-will-it-ever-change <br>
   *-* MS > SID vs GUID - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc961625(v=technet.10)?redirectedfrom=MSDN <br>
-
+  
+  *-* DN 조작 (LdapName) - https://docs.oracle.com/javase/tutorial/jndi/newstuff/ldapname.html <br>
 
 
