@@ -1,7 +1,7 @@
 ## Active Directory
 
 * AD (Active Directory)
-
+  - 도메인 형태의 트리 구조로 정보 객체를 저장한다고 생각할 수 있다.
 
 
 
