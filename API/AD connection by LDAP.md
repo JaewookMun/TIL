@@ -33,11 +33,13 @@
   - distinguishedName : 콤마로 연관 식별자들을 연결한 식별 정보 속성 <br>
     *>* 'attribute=value' 형태로 관련 값들을 갖는다. (UTF-8) (RDN - relative distinguished names) 
     <br>
-    ex) DC - domainComponent, CN - commonName, OU - organizationUnitName, etc.
+    ex) DC - domainComponent, OU - organizationUnitName, CN - commonName, etc.
 <br>
 
   - sAMAccountName : 도메인 내부에서는 고유값이지만 전역(포레스트)에서는 중복될 수 있다.
 <br>
+
+  - displayName : 화면에 보이는 이름 (중복이 가능하며 식별자가 될 수 없다.)
 
   _*_ GUID stands for **Globally Unique Identifier**
 
@@ -58,7 +60,7 @@
   *-* AD와 LDAP의 차이점 - https://m.blog.naver.com/sung_mk1919/221824347182 <br>
   *-* LDAP 스키마(구조) - https://help.hcltechsw.com/domino/11.0.1/ko/admin/conf_ldapschema_c.html <br>
   *-* AD와 DNS의 개념 https://sbck.tistory.com/25 <br>
-  *-* AD DN 개념 (Microsoft ~ eng) - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc978021(v=technet.10) <br>
+  *-* AD DN 개념 [구조] (**Microsoft** ~ eng) - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc978021(v=technet.10) <br>
   *-* Java JNDI api - https://deviscreen.tistory.com/123
   *-* LDAP 연결 방법 소스 예시1 - https://black-whisker.tistory.com/32 <br>
   *-* LDAP 연결 방법 소스 예시2 - https://stackoverflow.com/questions/8551809/how-to-connect-with-java-into-active-directory <br>
@@ -68,6 +70,7 @@
   *-* LDAP 검색필터 (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/adsi/search-filter-syntax?redirectedfrom=MSDN <br>
   *-* AD 사용자 이름 특성 [AD속성] (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/ad/naming-properties <br>
   *-* AD 식별자 (Distinguished Names) - https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names <br>
+  *-* 두 속성(name, displayName) 간 차이점 - https://www.reddit.com/r/activedirectory/comments/7zqys7/difference_between_name_and_displayname_fields/ <br>
   *-* initialLdapContext 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/ldap/initialldapcontext <br>
   *-* SearchControl 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/directory/searchcontrols <br>
   *-* is GUID unique ? - https://serverfault.com/questions/105486/is-the-objectguid-unique-and-will-it-ever-change <br>
