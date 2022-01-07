@@ -12,6 +12,7 @@
 * LDAP
   *-* 경량 디렉터리 액세스 프로토콜(영어: Lightweight Directory Access Protocol; LDAP)은 TCP/IP 위에서 디렉터리 서비스를 조회하고 수정하는 응용 프로토콜이다.
   *-* default character-set: **UTF-8**
+  *-* LDAP로 가져올 수 있는 결과의 기본 최대값은 1000개 - 증가시키기 위해서는 서버에서 MaxPageSize의 값을 증가시켜야함
 
 <br>
 
@@ -69,6 +70,8 @@
   *-* LDAP 통신 search base 설명 - https://www.watchguard.com/help/docs/help-center/en-US/Content/en-US/Fireware/authentication/find_ad_search_base_c.html <br>
   *-* LDAP 검색필터(search filter) 작성법 - https://confluence.atlassian.com/kb/how-to-write-ldap-search-filters-792496933.html <br>
   *-* LDAP 검색필터 (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/adsi/search-filter-syntax?redirectedfrom=MSDN <br>
+  *-* 검색결과 최대값 - https://social.msdn.microsoft.com/Forums/sqlserver/en-US/58a5326b-e344-4eb6-97a1-bb68f7b1292f/ldap-data-load-failed-after-loading-1000-records?forum=sqlintegrationservices <br>
+  *-* 검색결과 최대값(MaxPageSize) 증가시키는 법 - https://bono915.tistory.com/entry/Ldap-How-to-get-more-than-1000-records-in-querying-AD <br>
   *-* AD 사용자 이름 특성 [AD속성] (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/ad/naming-properties <br>
   *-* AD 식별자 (Distinguished Names) - https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names <br>
   *-* 두 속성(name, displayName) 간 차이점 - https://www.reddit.com/r/activedirectory/comments/7zqys7/difference_between_name_and_displayname_fields/ <br>
