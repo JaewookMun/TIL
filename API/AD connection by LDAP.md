@@ -1,11 +1,18 @@
 ## Active Directory
 
-* AD (Active Directory)
-  - 도메인 형태의 트리 구조로 정보 객체를 저장한다고 생각할 수 있다.
+###### AD (Active Directory)
+- 도메인 형태의 트리 구조로 정보 객체를 저장
+- 사용자가 원하는 정보를 쉽고 빠르게 찾거나 제어할 수 있도록 자원을 관리하는 서비스의 개념
+    *>* Active Directory는 네임 스페이스에 따라 디렉토리 서비스를 제공
+    이때, 네임 스페이스는 도메인 시스템(DNS - Domain Name System)의 형태를 그대로 따른다.
+- 구조 : 포레스트 > 트리 > 도메인 > 조직단위(OU)
 
 
+<br>
 
-  _*_ 네임스페이스(NameSpace) - 프로그래밍 언어에서 특정한 객체(Object)를 이름(Name)에 따라 구분할 수 있는 범위를 의미
+  _*_ **디렉토리**(Directory) - 체계적인 설계를 통해 정보자원을 질서정연하게 담은 정보 저장소(Information Storage Location)
+
+  _*_ **네임스페이스**(NameSpace) - 프로그래밍 언어에서 특정한 객체(Object)를 이름(Name)에 따라 구분할 수 있는 범위를 의미
 
 <br>
 
