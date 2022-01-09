@@ -33,6 +33,10 @@
 
 <br>
 
+* SearchControl - LDAP 통신으로 검색할 자원의 검색조건 제어를 설정한다고 볼 수 있다.
+
+<br>
+
 * **AD attributes**
   - objectGUID* : AD 객체가 갖는 고유값으로 변경할 수 없다. (고유 식별자)
     > GUIDs are assigned to every object created by Active Directory, not just User and Group objects. <br> Each object's GUID is stored in its Object-GUID (objectGUID) property.
