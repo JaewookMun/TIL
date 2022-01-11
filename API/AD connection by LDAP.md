@@ -53,8 +53,10 @@
 
   - displayName : 화면에 보이는 이름 (중복이 가능하며 식별자가 될 수 없다.)
 
-  _*_ GUID stands for **Globally Unique Identifier**
-
+  _*_ GUID stands for **Globally Unique Identifier** <br>
+  _*_ unicodePwd 속성을 통해 비밀번호를 변경할 수는 있지만 읽어올 수 없음. <br>
+  AD passwords (just like Windows ones) are stored using non-reversible encryption, so the standard answer is a definite "NO".
+  _*_ AD password는 hash로 암호화 되어 저장되기 때문에 읽어올 수 없다.
 
 * SearchResult
   
@@ -92,5 +94,8 @@
   *-* MS > SID vs GUID - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc961625(v=technet.10)?redirectedfrom=MSDN <br>
   
   *-* DN 조작 (LdapName) - https://docs.oracle.com/javase/tutorial/jndi/newstuff/ldapname.html <br>
+  *-* AD 스키마 (모든 속성) - https://docs.microsoft.com/ko-kr/windows/win32/adschema/a-objectclass <br>
+  *-* password cann't be read in plain text - https://serverfault.com/questions/292767/any-way-to-see-an-active-directory-password <br>
+
 
 
