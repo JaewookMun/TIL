@@ -65,10 +65,12 @@
   
   * with legacy Spring<br>
   *-* **스프링 시큐리티 프로젝트 설정** - https://sjh836.tistory.com/165<br>
-  *-* 스프링 시큐리티 프로젝트 설정 - https://bin-repository.tistory.com/128   (springboot에 가까운 느낌)
+  *-* 스프링 시큐리티 프로젝트 설정 - https://bin-repository.tistory.com/128   (springboot에 가까운 느낌) <br>
+  *-* UserDetails 구현 - https://to-dy.tistory.com/86 <br>
+  *-* UserDetails 구현2 - https://vividswan.github.io/2020/09/11/Spring-Security-UserDetails-%EA%B5%AC%ED%98%84.html <br>
   *-* PasswordEncoder - https://velog.io/@corgi/Spring-Security-PasswordEncoder%EB%9E%80-4kkyw8gi<br>
   *-* logout success handler - https://tyson.tistory.com/126<br>
   *-* **session 종료관련 리스너** - https://stackoverflow.com/questions/11843010/logout-session-timeout-catching-with-spring-security<br>
   *-* 중복 로그인 방지(with security vs without security) - http://dveamer.github.io/backend/PreventDuplicatedLogin.html<br>
   *-* session timeout 설정방법 및 우선순위 - https://dololak.tistory.com/706<br>
-
+  *-* JSP에서 spring security 활용 - https://niees.tistory.com/19 <br>
