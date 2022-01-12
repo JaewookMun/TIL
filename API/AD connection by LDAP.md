@@ -54,9 +54,13 @@
   - displayName : 화면에 보이는 이름 (중복이 가능하며 식별자가 될 수 없다.)
 
   _*_ GUID stands for **Globally Unique Identifier** <br>
-  _*_ unicodePwd 속성을 통해 비밀번호를 변경할 수는 있지만 읽어올 수 없음. <br>
+
+  _*_ unicodePwd : 암호화된 NT hash 값에 대한 속성 <br>
+  _*_ dbcsPwd : 암호화된 LM hash 값에 대한 속성 <br>
+  [참고]
+  unicodePwd 속성을 통해 비밀번호를 변경할 수는 있지만 읽어올 수 없음. <br>
   AD passwords (just like Windows ones) are stored using non-reversible encryption, so the standard answer is a definite "NO".
-  _*_ AD password는 hash로 암호화 되어 저장되기 때문에 읽어올 수 없다.
+  _*_ AD password는 hash로 OWF(One-Way Function)으로 암호화 됨
 
 * SearchResult
   
@@ -85,7 +89,7 @@
   *-* LDAP 검색필터 (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/adsi/search-filter-syntax?redirectedfrom=MSDN <br>
   *-* 검색결과 최대값 - https://social.msdn.microsoft.com/Forums/sqlserver/en-US/58a5326b-e344-4eb6-97a1-bb68f7b1292f/ldap-data-load-failed-after-loading-1000-records?forum=sqlintegrationservices <br>
   *-* 검색결과 최대값(MaxPageSize) 증가시키는 법 - https://bono915.tistory.com/entry/Ldap-How-to-get-more-than-1000-records-in-querying-AD <br>
-  *-* AD 사용자 이름 특성 [AD속성] (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/ad/naming-properties <br>
+  *-* AD 사용자 이름 특성 (로그인 ID) [AD속성] (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/ad/naming-properties <br>
   *-* AD 식별자 (Distinguished Names) - https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names <br>
   *-* 두 속성(name, displayName) 간 차이점 - https://www.reddit.com/r/activedirectory/comments/7zqys7/difference_between_name_and_displayname_fields/ <br>
   *-* initialLdapContext 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/ldap/initialldapcontext <br>
@@ -96,6 +100,8 @@
   *-* DN 조작 (LdapName) - https://docs.oracle.com/javase/tutorial/jndi/newstuff/ldapname.html <br>
   *-* AD 스키마 (모든 속성) - https://docs.microsoft.com/ko-kr/windows/win32/adschema/a-objectclass <br>
   *-* password cann't be read in plain text - https://serverfault.com/questions/292767/any-way-to-see-an-active-directory-password <br>
+  *-* AD 및 Windows 비밀번호 저장방법 (암호화 [OWF, one-way function]) - https://docs.microsoft.com/ko-kr/windows-server/security/kerberos/passwords-technical-overview <br>
+  
 
 
 
