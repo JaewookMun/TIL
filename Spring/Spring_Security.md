@@ -1,12 +1,12 @@
-## Spring Security
+# Spring Security
 
-* **Architecture**
+## **Architecture**
 
   ![Alt text](./images/spring_security_authentication_architecture.png)
 
 <br>
 
-* Spring Security Configuration
+## Spring Security Configuration
   
   <br>
 
@@ -37,7 +37,7 @@
 <br>
 
 
-* authentication provider
+## authentication provider
   
   - PasswordEncoder : 비밀번호 단방향 암호화 지원
     *-* BcryptPasswordEncoder 
@@ -47,11 +47,17 @@
 
 <br>
 
-* session management
+## session management
   - HttpSessionEventPublisher vs HttpSessionListener
 
   
 <br>
+
+
+## JSTL
+> JSP 정규표현식 (JavaServer Pages Standard Tag Library)
+> 
+
 
 
 
@@ -59,7 +65,7 @@
 
 <br>
 
-* [참고]
+#### [참고]
   * with SpringBoot<br>
   *-* 스프링 시큐리티 프로젝트 시리즈 - https://blog.naver.com/jieuni4u/221804008187<br>
   
@@ -74,3 +80,6 @@
   *-* 중복 로그인 방지(with security vs without security) - http://dveamer.github.io/backend/PreventDuplicatedLogin.html<br>
   *-* session timeout 설정방법 및 우선순위 - https://dololak.tistory.com/706<br>
   *-* JSP에서 spring security 활용 - https://niees.tistory.com/19 <br>
+
+  * JSTL
+  *-* 인증된 사용자 정보 읽기 - https://taetae0079.tistory.com/6 <br>
