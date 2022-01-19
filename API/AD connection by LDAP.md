@@ -79,19 +79,22 @@
   *-* LDAP 스키마(구조) - https://help.hcltechsw.com/domino/11.0.1/ko/admin/conf_ldapschema_c.html <br>
   *-* LDAP 스키마 구조 속성 설명 - https://support.google.com/cloudidentity/answer/9188164?hl=ko <br>
   *-* AD와 DNS의 개념 https://sbck.tistory.com/25 <br>
+
   *-* AD 검색 개념 (Microsoft ~ eng) - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc978021(v=technet.10) <br>
-  *-* Java JNDI api - https://deviscreen.tistory.com/123
+  *-* Java JNDI api - https://deviscreen.tistory.com/123 <br>
   *-* LDAP 연결 방법 소스 예시1 - https://black-whisker.tistory.com/32 <br>
   *-* LDAP 연결 방법 소스 예시2 - https://stackoverflow.com/questions/8551809/how-to-connect-with-java-into-active-directory <br>
   *-* LDAP 연결 방법 소스 예시3 - https://qmffjem09.tistory.com/entry/java-ldap-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D <br>
+
   *-* LDAP 통신 search base 설명 - https://www.watchguard.com/help/docs/help-center/en-US/Content/en-US/Fireware/authentication/find_ad_search_base_c.html <br>
   *-* LDAP 검색필터(search filter) 작성법 - https://confluence.atlassian.com/kb/how-to-write-ldap-search-filters-792496933.html <br>
   *-* LDAP 검색필터 (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/adsi/search-filter-syntax?redirectedfrom=MSDN <br>
   *-* 검색결과 최대값 - https://social.msdn.microsoft.com/Forums/sqlserver/en-US/58a5326b-e344-4eb6-97a1-bb68f7b1292f/ldap-data-load-failed-after-loading-1000-records?forum=sqlintegrationservices <br>
   *-* 검색결과 최대값(MaxPageSize) 증가시키는 법 - https://bono915.tistory.com/entry/Ldap-How-to-get-more-than-1000-records-in-querying-AD <br>
   *-* AD 사용자 이름 특성 (로그인 ID) [AD속성] (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/ad/naming-properties <br>
-  *-* AD 식별자 (Distinguished Names) - https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names <br>
+  *-* **AD 식별자** (Distinguished Names) [Microsoft] - https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names <br>
   *-* 두 속성(name, displayName) 간 차이점 - https://www.reddit.com/r/activedirectory/comments/7zqys7/difference_between_name_and_displayname_fields/ <br>
+
   *-* initialLdapContext 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/ldap/initialldapcontext <br>
   *-* SearchResult 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/directory/searchresult <br>
   *-* is GUID unique ? - https://serverfault.com/questions/105486/is-the-objectguid-unique-and-will-it-ever-change <br>
