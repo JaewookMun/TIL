@@ -1,4 +1,4 @@
-## Active Directory
+# Active Directory
 
 ###### AD (Active Directory)
 - 도메인 형태의 트리 구조로 정보 객체를 저장
@@ -16,7 +16,7 @@
 
 <br>
 
-* LDAP
+## **LDAP**
   *-* 경량 디렉터리 액세스 프로토콜(영어: Lightweight Directory Access Protocol; LDAP)은 TCP/IP 위에서 디렉터리 서비스를 조회하고 수정하는 응용 프로토콜이다.
   *-* default character-set: **UTF-8**
   *-* LDAP로 가져올 수 있는 결과의 기본 최대값은 1000개 - 증가시키기 위해서는 서버에서 MaxPageSize의 값을 증가시켜야함
@@ -100,7 +100,7 @@
   *-* is GUID unique ? - https://serverfault.com/questions/105486/is-the-objectguid-unique-and-will-it-ever-change <br>
   *-* MS > SID vs GUID - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc961625(v=technet.10)?redirectedfrom=MSDN <br>
   
-  *-* DN 조작 (LdapName) - https://docs.oracle.com/javase/tutorial/jndi/newstuff/ldapname.html <br>
+  *-* **DN 조작** (LdapName) - https://docs.oracle.com/javase/tutorial/jndi/newstuff/ldapname.html <br>
   *-* AD 스키마 (모든 속성) - https://docs.microsoft.com/ko-kr/windows/win32/adschema/a-objectclass <br>
   *-* password cann't be read in plain text - https://serverfault.com/questions/292767/any-way-to-see-an-active-directory-password <br>
   *-* AD 및 Windows 비밀번호 저장방법 (암호화 [OWF, one-way function]) - https://docs.microsoft.com/ko-kr/windows-server/security/kerberos/passwords-technical-overview <br>
