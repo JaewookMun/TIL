@@ -1,5 +1,10 @@
 # jQuery
 
+
+<br>
+
+## Input tag
+
 * CheckBox 전체 선택
   
   ``` javascript
@@ -22,6 +27,22 @@
   ```
 
 
+## Modal
 
-* [참고]
+  * $('#modalID').modal('show') : 열기
+  * $('#modalID').modal('hide') : 닫기
+  * $('#modalID').on('hidden.bs.modal', function (e) {}) : modal 종료 시, 이벤트 처리
+  * $('#modalID').off() : modal 종료 시, 이벤트 처리 해제
+  * $('#modalID').on('shown.bs.modal', function (e) {}) : modal 오픈 시, 이벤트 처리
+  * 
+
+
+
+
+
+<br>
+
+### [참고] <br>
   *-* jQuery 전체 선택 - https://drcode-devblog.tistory.com/217 <br>
+
+  *-* jQuery modal 창 제어 - https://iruplace.tistory.com/235 <br>

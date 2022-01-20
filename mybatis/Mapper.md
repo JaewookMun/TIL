@@ -16,3 +16,7 @@
 * [참고] <br>
   *-* MyBatis 공식 페이지 - https://mybatis.org/mybatis-3/ko/sqlmap-xml.html#insert_update_and_delete <br>
   *-* 다른 mapper 파일의 **resultMap 재사용**(참조) - https://finkle.tistory.com/82 <br>
+  *-* reuse resultMap (stackoverflow) - https://stackoverflow.com/questions/13501069/reusing-mybatis-resultmap-in-multiple-mapper-xml <br>
+
+
+  

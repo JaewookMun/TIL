@@ -56,10 +56,31 @@
 
 ## JSTL
 > JSP 정규표현식 (JavaServer Pages Standard Tag Library)
-> 
+
+<br>
+
+> JavaScript에서 인가된 사용자 정보 사용하기
+* authentication, authorize 에서 'var'속성을 이용
+``` jsp
+<sec:authentication property="principal.userId" var="userId"/>
+<sec:authorize access="hasRole('MASTER')" var="isMaster"></sec:authorize>
+
+<script type="text/javascript">
+  var userId = ${userId};
+
+  if(${isMaster}) {
+    console.log('this is an user having master authority');
+  }
+
+
+</script>
+
+```
 
 
 
+
+<br>
 
 * Spring boot 버전2 부터는 JDK 11 이상 사용을 권장
 
@@ -81,5 +102,6 @@
   *-* session timeout 설정방법 및 우선순위 - https://dololak.tistory.com/706<br>
   *-* JSP에서 spring security 활용 - https://niees.tistory.com/19 <br>
 
-  * JSTL
+  * JSTL <br>
   *-* 인증된 사용자 정보 읽기 - https://taetae0079.tistory.com/6 <br>
+  *-* 시큐리티 JS에서 활용하기 - https://stackoverflow.com/questions/30775001/springsecurity-role-check-inside-javascript <br>
