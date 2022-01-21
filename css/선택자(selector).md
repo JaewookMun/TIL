@@ -1,4 +1,4 @@
-## Selector
+# Selector (선택자)
 
 * **tag**
 ``` css
