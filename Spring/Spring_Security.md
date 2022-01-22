@@ -1,5 +1,11 @@
 # Spring Security
 
+<br>
+
+## 개념 - 용어 정리
+
+<br>
+
 ## **Architecture**
 
   ![Alt text](./images/spring_security_authentication_architecture.png)
@@ -87,6 +93,9 @@
 <br>
 
 #### [참고]
+
+  *-* 로그인 실패시 응답코드 - https://blog.naver.com/genycho/222446074415 <br>
+
   * with SpringBoot<br>
   *-* 스프링 시큐리티 프로젝트 시리즈 - https://blog.naver.com/jieuni4u/221804008187<br>
   
@@ -105,3 +114,7 @@
   * JSTL <br>
   *-* 인증된 사용자 정보 읽기 - https://taetae0079.tistory.com/6 <br>
   *-* 시큐리티 JS에서 활용하기 - https://stackoverflow.com/questions/30775001/springsecurity-role-check-inside-javascript <br>
+
+  * JWT
+  *-* Spring session & JWT [Web 기본] - https://brunch.co.kr/@springboot/491 <br>
+  *-* spring security & jwt login - https://velog.io/@shinmj1207/Spring-Spring-Security-JWT-%EB%A1%9C%EA%B7%B8%EC%9D%B8 <br>
