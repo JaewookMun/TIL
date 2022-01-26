@@ -1,5 +1,10 @@
 # MVC pattern
 
+## Servlet 활용
+> HttpServletRequest, HttpServletResponse
+
+* Redirect - 2가지 방법
+
 
 ## Controller
 
@@ -17,6 +22,9 @@
 
 
 ### [참고] <br>
+  * **Servlet**
+  *-* 리다이렉트 방법 차이점 from request, response -  https://stackoverflow.com/questions/7220241/whats-the-difference-between-requestdispatcher-forward-and-httpservletrespons <br>
+
   *-* Controller와 Service에 작성하는 로직의 구분 근거 - https://okky.kr/article/367591?note=1161511 <br>
   *-* 서비스에 비즈니스 로직을 작성하는 이유 - https://okky.kr/article/367591?note=1161511 <br>
   *-* ajax 통신으로 js 배열 받는 방법 - https://go-coding.tistory.com/60 <br>
