@@ -13,6 +13,8 @@
 
 ## Element 조작
 
+* .prop() vs .attr()
+
 <br><br>
 
 ## Input tag
@@ -62,6 +64,7 @@
   <br>
 
   * Element Update <br>
+  *-* difference? .prop() vs .attr() - https://stackoverflow.com/questions/13247058/jquery-attr-vs-prop <br>
   *-* checkbox 전체 선택 - https://drcode-devblog.tistory.com/217 <br>
   *-* jQuery modal 창 제어 - https://iruplace.tistory.com/235 <br>
 
