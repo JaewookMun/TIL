@@ -46,12 +46,22 @@
   * 구현체 <br>
   *-* ProviderManager
 
+<br><br>
 
 ## AuthenticationProvider
+---
+<br>
+회원 로그인 작업 관리 - 아이디 조회 및 비밀번호 매칭 
+> UserDetailsService, PasswordEncoder
+
+
+<br>
   
+### UserDetailsService : DB에서 회원정보를 가져와 저장
 
+<br>
 
-## PasswordEncoder : 비밀번호 단방향 암호화 지원
+### PasswordEncoder : 비밀번호 단방향 암호화 지원
   
   * PasswordEncoder의 구현체 및 암호화 알고리즘 <br>
     *-* BcryptPasswordEncoder : bcrypt <br>

@@ -63,6 +63,7 @@
 * Array.forEach(callback(currentElement[, index[, array]])) : 주어진 함수를 배열 요소 각각에 대해 실행 [cf. for-loop]
 * Array.toString() : 배열을 표현하는 문자열 반환 (배열을 합쳐 콤마로 구분)
 
+<br><br>
 
 ## JSON
 > JSON(JavaScript Object Notation) : 자바스크립트 객체 표기법에서 유래되었으나 JSON format은 text를 의미. (객체가 아니다.)
@@ -70,10 +71,33 @@
 * JSON.parse(text) : to convert the string into a JavaScript object.
 * JSON.stringify(object) : to convert an object into a JSON string.
 
+<br><br>
 
+## 정규표현식
+---
 <br>
 
-* [참고] <br>
+만드는 방법
+
+* 정규식 리터럴
+
+``` javascript
+  var regex = /^[0-9]{5}$/;  // 숫자 5자리
+
+```
+
+* RegExp 객체의 생성자 함수
+
+``` javascript
+  var regex = new RegExp("^[0-9]{5}$");  // mozila 예시: var re = new RegExp("ab+c");
+
+```
+
+
+
+<br><br><br><br>
+
+### [참고] <br>
   *-* **Mozilla** (모질라) - https://developer.mozilla.org/ko/ <br>
 
   *-* Mozilla > Array - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array <br>
@@ -83,3 +107,6 @@
   \<**W3 school**> <br>
   *-* JS JSON - https://www.w3schools.com/js/js_json.asp <br>
   *-* JSON tutorial - https://www.w3schools.com/js/js_json_intro.asp <br>
+
+  *-* 정규표현식 (official) - https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions#special-negated-character-set <br>
+  *-* 정규표현식 (블로그설명) - https://fabric004.tistory.com/20 <br>
