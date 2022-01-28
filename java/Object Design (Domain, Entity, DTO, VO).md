@@ -14,6 +14,8 @@
 
 ### Entity
 
+Q. Object와 Entity의 차이점?
+
 <br>
 
 
