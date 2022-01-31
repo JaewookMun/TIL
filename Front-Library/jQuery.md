@@ -5,6 +5,7 @@
 
 ### **요소 탐색**
 * 상위 요소 : parent(), closest(selector)
+  > 위 두 메소드 외에 parents() 도 있지만, 위 두 메소드가 사용하기 편리
 * 하위 요소 : find(selector)
 * 형제 요소 : siblings(selector)
 * 기타..
