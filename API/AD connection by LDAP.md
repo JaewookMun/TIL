@@ -72,7 +72,7 @@
 
 <br>
 
-* [참고] <br>
+### [참고] <br>
   *-* LDAP in 위키 - https://ko.wikipedia.org/wiki/LDAP <br>
   *-* AD 및 DNS 기본 개념(Name Space) **check** - https://mapoo.net/os/oswindows/%EC%97%91%ED%8B%B0%EB%B8%8C-%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EC%9D%98-%EC%9D%B4%ED%95%B4/ <br>
   *-* AD와 LDAP의 차이점 - https://m.blog.naver.com/sung_mk1919/221824347182 <br>
