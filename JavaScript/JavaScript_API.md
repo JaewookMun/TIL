@@ -65,6 +65,15 @@
 
 <br><br>
 
+## Web API
+Window.localStorage
+* setItem(key, value)
+* getItem(key)
+* removeItem(key)
+* clear();
+
+
+
 ## JSON
 > JSON(JavaScript Object Notation) : 자바스크립트 객체 표기법에서 유래되었으나 JSON format은 text를 의미. (객체가 아니다.)
 
@@ -111,6 +120,8 @@ Promise - Promise 객체는 비동기 작업이 맞이할 미래의 완료 또�
   *-* Mozilla > Array - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array <br>
   *-* Array at(idx) vs [idx] in JS - https://stackoverflow.com/questions/70456996/using-array-atindex-instead-of-arrayindex-in-javascript <br>
   *-* 프로퍼티 접근 방식 비교 dot vs bracket - https://stackoverflow.com/questions/17189642/difference-between-using-bracket-and-dot-notation <br>
+
+  *-* Mozilla > localStorage - https://developer.mozilla.org/ko/docs/Web/API/Window/localStorage <br>
 
   \<**W3 school**> <br>
   *-* JS JSON - https://www.w3schools.com/js/js_json.asp <br>
