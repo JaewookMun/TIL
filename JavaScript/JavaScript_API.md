@@ -93,6 +93,14 @@
 
 ```
 
+<br><br>
+
+## ?
+
+await - await연산자는 Promise를 기다리기 위해 사용되며 연산자는 async function 내부에서만 사용가능
+async function - 비동기 함수
+Promise - Promise 객체는 비동기 작업이 맞이할 미래의 완료 또는 실패와 그 결과 값을 나타냄
+
 
 
 <br><br><br><br>
@@ -110,3 +118,5 @@
 
   *-* 정규표현식 (official) - https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions#special-negated-character-set <br>
   *-* 정규표현식 (블로그설명) - https://fabric004.tistory.com/20 <br>
+
+  
