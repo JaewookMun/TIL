@@ -1,6 +1,6 @@
 # Mapping (맵핑)
 
-### Parameter
+## Parameter
 
 * 2개 이상의 파라미터를 맵핑하는 방법
   - VO, Map, @Param 사용
@@ -8,9 +8,41 @@
 
 * 다른 .xml 파일에 있는 resultMap 을 재사용할 수 있다.
   -> namespace.id 형태로 다른 mapper 파일의 resultMap을 참조
-  
 
-### Results
+<br><br>  
+
+## Results
+
+
+<br><br>
+
+## 동적 SQL
+
+### **foreach**
+collection에 대해 반복처리 <br>
+foreach엘리먼트의 item 속성, index 속성 참고.
+<br>
+
+``` sql
+  -- list<일반객체>  e.g.) List<Supplier>
+  ~
+    <foreach collection="list" item="supplier" separator=",">
+      (#{supplier.name})
+    </foreach>
+  ~
+
+  -- list<Wrapper클래스>  e.g.) List<Integer>
+  ~
+    IN (
+    <foreach collection="list" item="item" index="index" separator=",">
+      #{item}
+    </foreach>
+    )
+  ~
+
+  -- Map<>  -> index 속성이 key가 되고 #{item.value} 의 value가 key에 대응하는 값이 됨.
+
+```
 
 
 * [참고] <br>

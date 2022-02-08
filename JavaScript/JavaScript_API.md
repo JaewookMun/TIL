@@ -36,6 +36,21 @@
 > 하지만, 관습적으로 필드명은 영문자로 표현하기 때문에 도트 표기법을 주로 사용
 
 
+## String
+> String.prototype.method()
+
+<br>
+
+* String.slice(beginIndex[, endIndex]) : 문자열의 일부를 추출하면서 새로운 문자열을 반환
+  * beginIndex가 음수라면 'beginIndex = strLength(문자열 길이) + beginIndex'로 처리
+  e.g.) beginIndex가 -3이면 시작점은 strLength-3이 된다.
+  * 한자리로 나오는 Date객체의 getDate() or getMonth()를 두 자리로 바꾸어 표현 가능
+  ``` javascript
+  var today = new Date(); 
+  var formattedDate = ('00' + today.getDate()).slice(-2);
+  ```
+
+
 
 <br>
 
@@ -116,6 +131,8 @@ Promise - Promise 객체는 비동기 작업이 맞이할 미래의 완료 또�
 
 ### [참고] <br>
   *-* **Mozilla** (모질라) - https://developer.mozilla.org/ko/ <br>
+
+  *-* String > slice() 참고 (Date) - https://mitny.github.io/articles/2019-07/JS-Date-0d <br>
 
   *-* Mozilla > Array - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array <br>
   *-* Array at(idx) vs [idx] in JS - https://stackoverflow.com/questions/70456996/using-array-atindex-instead-of-arrayindex-in-javascript <br>
