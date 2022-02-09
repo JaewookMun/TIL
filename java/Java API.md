@@ -10,14 +10,45 @@
 
 <br>
 
+## 함수형 인터페이스 (Functional Interface)
+
+
+
 ## 스트림(Stream)
 
 <br>
 
 ## Optional
 
-* Optional 활용을 위한 기본 기능
+Optional 활용을 위한 기본 기능 
 
+[static method] - 생성, return Optional<T>
+
+* Optional.of(T value)
+* Optional.ofNullable(T value)
+* Optional.empty()
+
+<br>
+
+[instance method] - method chaining, return value
+* filter()
+* map()
+---
+* isPresent()
+* ifPresent(Consumer<? super T> consumer)
+* get()
+* orElse(T other)
+* orElseGet(Supplier<? extends T> other)
+* orElseThrow(Supplier<? extends X> exceptionSupplier)
+
+> filter(), map() 메소드 익숙해지기...
+
+<br>
+
+
+
+
+> cf.) Optional<T>에서 제네릭 T는 Type의 약자이다.
 <br>
 
 <br>
@@ -31,4 +62,8 @@
   
 
   * **Optional**
+  *-* Java official api doc - https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html <br>
   *-* optional to string - https://codechacha.com/ko/java8-stream-optional/ <br>
+  *-* Optional 사용법 1(블로그) - https://hbase.tistory.com/212 <br>
+  *-* Optional 사용법 2(블로그) - https://tecoble.techcourse.co.kr/post/2021-06-20-optional-vs-null/ <br>
+  
