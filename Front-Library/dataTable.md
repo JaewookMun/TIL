@@ -32,7 +32,8 @@ Server에서 'draw', 'recordsTotal', 'recordsFiltered', 'data'를 전달하면 d
 
 <br>
 
-## API
+## Events
+
 
 
 ### [참고] <br>
@@ -41,6 +42,7 @@ Server에서 'draw', 'recordsTotal', 'recordsFiltered', 'data'를 전달하면 d
   *-* dataTable 설정 옵션 정보 [Official] - https://datatables.net/reference/option/ <br>
   *-* Server-side processing **parameters** (send / return ~ 전달 파라미터) - https://datatables.net/manual/server-side#Returned-data <br>
   *-* Server-side process example - https://datatables.net/examples/server_side/simple.html <br>
+  *-* dataTable events (페이지 로드 때마다 event를 넣기 위해 참고) - https://mail.datatables.net/reference/event/#buttons <br>
 
   *-* youtube video - https://youtu.be/0FQkioPkl7I <br>
   *-* dataTable 기본 옵션 정보 블로그 - https://nomoneynohappy.tistory.com/31 <br>
@@ -48,3 +50,4 @@ Server에서 'draw', 'recordsTotal', 'recordsFiltered', 'data'를 전달하면 d
   *-* dataTable server-side 블로그 - https://www.leafcats.com/63 <br>
   *-* dataTable server-side 블로그 2 - https://velog.io/@alstjd8826/TIL-jQuery-Bootstrap-Ajax-dataTable-pagination-search-sort <br>
   *-* dataTable server-side 블로그 3 - https://zamezzz.tistory.com/310 <br>
+

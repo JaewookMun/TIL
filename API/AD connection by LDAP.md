@@ -104,7 +104,9 @@
   *-* AD 스키마 (모든 속성) - https://docs.microsoft.com/ko-kr/windows/win32/adschema/a-objectclass <br>
   *-* password cann't be read in plain text - https://serverfault.com/questions/292767/any-way-to-see-an-active-directory-password <br>
   *-* AD 및 Windows 비밀번호 저장방법 (암호화 [OWF, one-way function]) - https://docs.microsoft.com/ko-kr/windows-server/security/kerberos/passwords-technical-overview <br>
-  
+
+
+  *-* Active Directory Download link - https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer <br>
 
 
 
