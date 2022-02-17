@@ -10,6 +10,22 @@
 * 형제 요소 : siblings(selector)
 * 기타..
 
+Q. '선택자' vs find() : 어떤게 더 빠른가?
+    조건에 따라 달라지겠지만 performance 상 큰 차이는 없음 <br>
+
+
+  ``` javascript
+    $('#tempId h3, #tempId .tempClass')   vs   $('#tempId').find('h3')
+
+  ```
+
+<br>
+
+Q. children() vs find() : 어떤게 더 빠른가? 
+    performance 상 큰 차이는 없음. - find가 좀 더 빠른 것으로 생각되어짐.
+
+
+
 <br><br>
 
 ## Element 조작
@@ -91,11 +107,13 @@ attribute는 HTML 문서에서 element에 대한 추가적인 정보를 제공�
 
 ### [참고] <br>
   * Element Create, Read, Delete <br>
-  *-* **요소의 탐색** [입문] - http://www.devkuma.com/books/pages/220 <br>
+  *-* [jQuery] **요소 탐색** [입문] - http://www.devkuma.com/books/pages/220 <br>
   *-* ele.is(':checked') vs ele.prop('checked') [stackoverflow] - https://stackoverflow.com/questions/43464344/elem-ischecked-vs-elem-propchecked <br>
   *-* .attr() > DOM property(checked, selected, or disabled)는 .prop() 사용을 권장 - https://api.jquery.com/attr/#attr-attributeName <br>
   *-* .prop() > **Attributes vs Properties** [jQuery Doc] - https://api.jquery.com/prop/#prop-propertyName <br>
   *-* difference between HTML attribute and DOM property - https://dotnettutorials.net/lesson/html-attribute-vs-dom-property/ <br>
+  *-* jQuery single selector vs .find() difference - https://stackoverflow.com/questions/6230266/jquery-single-selector-vs-find <br>
+  *-* difference between children() vs find() - https://stackoverflow.com/questions/648004/what-is-fastest-children-or-find-in-jquery <br>
 
   <br>
 
