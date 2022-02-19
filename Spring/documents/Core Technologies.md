@@ -16,4 +16,14 @@ BeanFactory, ApplicationContext (ApplicationContext가 Web Application에 더 �
 <br>
 
 **1.2. Container Overview**
+org.springframework.context.ApplicationContext 인터페이스는 Spring IoC container를 의미하며 스프링빈 객체를 관리하는 역할을 한다. container는 configuration metadata를 읽어서 빈 관리 정보(생성할 객체와 객체들간의 의존관계)를 얻으며 메타데이터는 XML, Java annotation, 또는 Java code로 제공된다.
+
+![container-magic.png](../images/container-magic.png)
+Spring IoC container
+
+ApplicationContext가 생성되고 초기화 되면 실행가능한 어플리케이션의 설정이 완료된다.
+
+<br>
+
+**1.2.1. Configuration Meta**
 ..
