@@ -25,8 +25,19 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
 
 * 날짜 출력 : DATE() 사용.
 
+<br>
+
+### ?
+
+Database 및 사용자 설정
+* Database 생성
+* 사용자 조회
+* 사용자 추가 / 생성
+* 사용자 삭제
+* 
 
 
+<br><br>
 
 ### [참고]
   * DQL
@@ -37,3 +48,8 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
   *-* 계정변경 - https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=athena1028&logNo=20060725715 <br>
   *-* 유저 권한 설정 - https://fun25.co.kr/blog/mysql-grant-user-privileges/?page=9 <br>
   *-* https://linuxism.ustd.ip.or.kr/510 <br>
+
+  * database, user CRUD
+  *-* DB 생성 - https://devdhjo.github.io/mysql/2020/01/29/database-mysql-002.html <br>
+  *-* DB 사용자 추가방식 (create / grant) - https://technote.kr/32 <br>
+  *-* DB 사용자 권한 설정 - https://damduc.tistory.com/4 <br>

@@ -78,6 +78,8 @@
   * compareFunction : 정렬 순서를 정의하는 함수. 생략하면 각 요소의 유니코드 값에 따라 정렬 
 * Array.forEach(callback(currentElement[, index[, array]])) : 주어진 함수를 배열 요소 각각에 대해 실행 [cf. for-loop]
 * Array.toString() : 배열을 표현하는 문자열 반환 (배열을 합쳐 콤마로 구분)
+* Array.join([seperator]) : 배열의 모든 요소를 연결해 하나의 문자열로 반환
+  (매개변수가 없으면 toString()과 같지만 인수로 seperator를 지정할 수 있음)
 
 <br><br>
 
@@ -88,6 +90,11 @@ Window.localStorage
 * removeItem(key)
 * clear();
 
+
+global method
+* setTimeout() : 호출 뒤 지정한 콜백함수를 실행하는 타이머 설정
+* clearTimeout() : 
+* setInterval() 
 
 
 ## JSON

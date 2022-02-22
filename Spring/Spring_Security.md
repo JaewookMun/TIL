@@ -123,6 +123,7 @@
 
 #### [참고]
 
+  *-* Spring Security 구조 (로그인 과정) - https://jeong-pro.tistory.com/205 <br>
   *-* 로그인 실패시 응답코드 - https://blog.naver.com/genycho/222446074415 <br>
 
   * with SpringBoot<br>
@@ -162,4 +163,4 @@
 
 
 
-  *-* test again - https://aorica.tistory.com/145
+  

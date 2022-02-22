@@ -41,6 +41,17 @@ Q. children() vs find() : 어떤게 더 빠른가?
 
 * .prop(propertyName) vs .is(selector) 
   * prop() 메소드는 property에 해당하는 value를 반환하고 is()는 selector에 해당하는 엘리먼트의 존재 유무를 반환한다.
+    (jQuery 1.6 이후 부터는 .prop() 메소드를 사용하는 것이 좀 더 편리한 느낌)
+
+  ``` javascript
+
+  $.prop('checked', false); // checked propery 값을 false 로 변경 (동적 화면 구성)
+  $.prop('checked'); // checked property 값을 반환 true or fasle 
+
+
+
+  ```
+
 
 <br>
 
