@@ -1,5 +1,15 @@
 # Vanilla JavaScript
 
+## 변수 선언
+
+* var
+* let
+* const
+
+
+
+<br>
+
 ## undefined
 > 값을 할당하지 않은 변수는 undefined 자료형이며 함수가 명시적으로 값을 반환하지 않으면 undefined를 반환한다. 
 > 따라서, undefined와 일치/불일치 연산자를 사용해 변수에 값이 할당되었는지를 구분할 수 있다.
@@ -23,8 +33,51 @@
     }
 
 ```
+<br>
+
+## **자바스크립트 객체 (Object)**
+
+구성 요소
+* 생성자(constructor)
+* 프로퍼티 (static / instance)
+* 메서드 (static / instance)
+
+<br>
+
+프로퍼티 접근방법 (Accessing Object Properties)
+* **dot notation** : objectName.propertyName
+* **bracket notation** : objectName["propertyName"]
+
+<br>
+
+> bracket은 프로퍼티가 숫자, 기호등으로 표현되어있을 때 사용 가능
+> 하지만, 관습적으로 필드명은 영문자로 표현하기 때문에 도트 표기법을 주로 사용
+
+
+
+
+
+<br>
+
+## 함수 표기법
+
+* 일반함수 vs 화살표 함수
+  > 'function' vs '() => '
+
+
+<br><br>
+
+## **표준 내장 객체 (Standard built-in objects)**
+---
+
+표준 내장 객체와 전역 객체를 헷갈리지 않도록 주의하는 것이 필요.
+-> 전역객체란?
+
+
+<br>
 
 ## Object
+
 
 * 프로퍼티 접근방법 (Accessing Object Properties)
   * **dot notation** : objectName.propertyName
@@ -51,19 +104,13 @@
   ```
 
 
-
-<br>
-
-## 함수 표기법
-
-* 일반함수 vs 화살표 함수
-  > 'function' vs '() => '
-
-
 <br>
 
 ## Array
-> Array.prototype.method() - 편의를 위해 prototype 생략 후 표기
+
+<br>
+
+**Instance methods**  (편의를 위해 prototype 생략) eg. Array.prototype.method()
 
 <br>
 
@@ -81,7 +128,35 @@
 * Array.join([seperator]) : 배열의 모든 요소를 연결해 하나의 문자열로 반환
   (매개변수가 없으면 toString()과 같지만 인수로 seperator를 지정할 수 있음)
 
+<br>
+
+
+## Date
+
+Static methods
+* Date.now()
+
+Instance methods
+
+
 <br><br>
+
+**Global 객체(?)**
+
+## Window Location
+window.location 객체는 현재 웹페이지 주소 (URL)을 얻거나 새로운 페이지로 리다이렉트(Redirect) 이동을 위해 사용 가능
+> The window.location object can be written without the window prefix.
+> eg) window.location = location
+
+some example
+* window.location.href : 현재페이지의 href (URL) 반환
+* window.location.hostname : 웹 호스트의 도메인 이름 반환
+* window.location.pathname : 현재 페이지의 경로 및 파일 이름 반환 (쿼리스트링은 포함되지 않음)
+* window.location.protocol : 웹 프로토콜 반환 (http: or https:)
+* window.location.assign() : 새로운 문서 로드
+
+
+<br>
 
 ## Web API
 Window.localStorage
@@ -90,11 +165,15 @@ Window.localStorage
 * removeItem(key)
 * clear();
 
+<br>
 
-global method
+## global method
 * setTimeout() : 호출 뒤 지정한 콜백함수를 실행하는 타이머 설정
 * clearTimeout() : 
 * setInterval() 
+
+<br>
+
 
 
 ## JSON
@@ -140,12 +219,15 @@ Promise - Promise 객체는 비동기 작업이 맞이할 미래의 완료 또�
 ### [참고] <br>
   *-* **Mozilla** (모질라) - https://developer.mozilla.org/ko/ <br>
 
+  *-* JS 변수 선언 [const] - https://hyunseob.github.io/2016/11/21/misunderstanding-about-const/ <br>
+
   *-* String > slice() 참고 (Date) - https://mitny.github.io/articles/2019-07/JS-Date-0d <br>
 
   *-* Mozilla > Array - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array <br>
   *-* Array at(idx) vs [idx] in JS - https://stackoverflow.com/questions/70456996/using-array-atindex-instead-of-arrayindex-in-javascript <br>
   *-* 프로퍼티 접근 방식 비교 dot vs bracket - https://stackoverflow.com/questions/17189642/difference-between-using-bracket-and-dot-notation <br>
 
+  *-* w3 shcool > **window.location** - https://www.w3schools.com/js/js_window_location.asp <br>
   *-* Mozilla > localStorage - https://developer.mozilla.org/ko/docs/Web/API/Window/localStorage <br>
 
   \<**W3 school**> <br>

@@ -1,12 +1,32 @@
 # MVC pattern
 
+## web.xml 이해하기 (understand configuration metadata)
+
+
+
+<br><br>
+
+## Listener, Filter
+서블릿 컨테이너가 web.xml을 읽어들일 때 위에서부터 읽기 때문에 listener와 filter가 여러개 표기되어 있을 때 위에서 아래의 순서로 등록되고 실행된다.
+
+
+
+<br><br>
+
 ## Servlet 활용
-> HttpServletRequest, HttpServletResponse
+> HttpServletRequest, HttpServletResponse, ... etc.
 
-### > Redirect - 2가지 방법
-  > httpServletRequest.**getRequestDispatcher**(path).**forword**(request, response) :  <br>
-  > httpServletResponse.**sendRedirect**(path) : 
+<br>
 
+**페이지 이동 - 2가지 방법**
+* httpServletRequest.**getRequestDispatcher**(path).**forword**(request, response) :
+* httpServletResponse.**sendRedirect**(path) : 
+
+
+
+<br>
+
+Redirect 활용
 1. request.setAttribute 활용
 2. FlashMap 활용 
 
@@ -21,14 +41,18 @@
 
 <br>
 
-##### ResponseEntity  
-> 단순히 ResponseBody 정보를 전달하는 것을 넘어서 헤더정보와 HTTP 상태코드를 함께 전달 가능
+## ResponseEntity  
+*-* 단순히 ResponseBody 정보를 전달하는 것을 넘어서 헤더정보와 HTTP 상태코드를 함께 전달 가능
 
 
-<br>
+<br><br>
 
 
 ### [참고] <br>
+  * configuration metadata
+  *-* listener [web.xml] - https://dev-room.tistory.com/84 <br>
+  *-* 여러개의 filter 등록 및 순서 지정 - https://dololak.tistory.com/599 <br>
+
   * **Servlet**
   *-* 리다이렉트 방법 차이점 from request, response -  https://stackoverflow.com/questions/7220241/whats-the-difference-between-requestdispatcher-forward-and-httpservletrespons <br>
   *-* 리다이렉트 FlashMapManager 참고 - https://stackoverflow.com/questions/23844546/flash-attribute-in-custom-authenticationfailurehandler/50429613 <br>
