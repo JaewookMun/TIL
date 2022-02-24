@@ -33,7 +33,32 @@
     }
 
 ```
+
+
+
+<br><br>
+
+## 함수 표기법
 <br>
+
+가변인자 함수 - arguments 객체
+--
+
+Q: 다중 파라미터 vs 가변인자 함수
+
+
+
+<br><br>
+
+일반함수 vs 화살표 함수
+--
+
+> 'function' vs '() => '
+
+
+
+
+<br><br>
 
 ## **자바스크립트 객체 (Object)**
 
@@ -59,10 +84,6 @@
 
 <br>
 
-## 함수 표기법
-
-* 일반함수 vs 화살표 함수
-  > 'function' vs '() => '
 
 
 <br><br>
@@ -78,16 +99,21 @@
 
 ## Object
 
+Static methods
 
-* 프로퍼티 접근방법 (Accessing Object Properties)
-  * **dot notation** : objectName.propertyName
-  * **bracket notation** : objectName["propertyName"]
+* Object.keys(obj) : 주어진 객체의 속성 이름에 해당하는 문자열들을 배열로 반환
+* Object.entries(obj) : 
+
+
 
 <br>
 
-> bracket은 프로퍼티가 숫자, 기호등으로 표현되어있을 때 사용 가능
-> 하지만, 관습적으로 필드명은 영문자로 표현하기 때문에 도트 표기법을 주로 사용
+Instance methods
 
+
+
+
+<br><br>
 
 ## String
 > String.prototype.method()
@@ -136,7 +162,14 @@
 Static methods
 * Date.now()
 
+<br>
+
 Instance methods
+
+* date.getTime() : 표준시에 따라 지정된 날짜의 시간에 해당하는 숫자 값을 반환 (밀리초, ms) <br>
+  -> 1970년 1월 1일 00:00:00 UTC에서 경과한 시간을 밀리초로 표현
+  -> valueOf()와 기능적으로 동일
+
 
 
 <br><br>
@@ -156,16 +189,59 @@ some example
 * window.location.assign() : 새로운 문서 로드
 
 
+<br><br><br>
+
+## **Web API**
+---
 <br>
 
-## Web API
+브라우저에 데이터를 저장하는 방법 - Cookie, Storage
+--
+Cookie와 Storage(localStorage, sessionStorage) 모두 데이터베이스를 사용하지 않고 데이터를 임시적인 용도로 저장할 때 사용한다.
+
+
+
+
+
+<br><br>
+
+
+## Cookie
+
+Document.cookie
+웹페이지에 저장된 쿠키를 문자열 형태로 읽음 (세미콜론으로 구분되는 모든 쿠키 리스트의 문자열)
+> Document.cookie = *newCookie*
+
+<br>
+
+newCookie는 key=value 형태의 문자열로 생성하고자 하는 쿠키의 정보를 표기한다.
+
+``` javascript
+  
+  Document.cookie = 'name=value;...name=value; expires=date-in-GMTString-format'
+  // 쿠키의 자동 소멸시간 설정을 위해 Date 객체의 toUTCString() 사용
+
+```
+
+쿠키는 제거하기 위해서 만료시간을 마이너스(이전의 날짜)로 바꾸어 자동 소멸시킨다.
+
+<br><br>
+
+## LocalStorage
+
 Window.localStorage
 * setItem(key, value)
 * getItem(key)
 * removeItem(key)
 * clear();
 
-<br>
+<br><br>
+
+## SessionStorage
+
+
+
+<br><br>
 
 ## global method
 * setTimeout() : 호출 뒤 지정한 콜백함수를 실행하는 타이머 설정
@@ -217,20 +293,43 @@ Promise - Promise 객체는 비동기 작업이 맞이할 미래의 완료 또�
 <br><br><br><br>
 
 ### [참고] <br>
+
   *-* **Mozilla** (모질라) - https://developer.mozilla.org/ko/ <br>
 
   *-* JS 변수 선언 [const] - https://hyunseob.github.io/2016/11/21/misunderstanding-about-const/ <br>
+  *-* JS 변수 선언관련 특징 비교 블로그 - https://velog.io/@bathingape/JavaScript-var-let-const-%EC%B0%A8%EC%9D%B4%EC%A0%90 <br>
 
+  <br>
+
+  **함수** <br>
+  *-* 가변인자 함수 (블로그) - https://jungpaeng.tistory.com/80 <br>
+  *-* 여러 파라미터값 전달 (블로그) - https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=mrkanghyun&logNo=220722559377 <br>
+  *-* JS 나눗셈 몫 구하기 [parseInt()] - http://blog.cloudsys.co.kr/javascript-division-result-remainder/ <br>
+  *-* js 문자열 뒤집기 함수 참고 - https://dev-note-97.tistory.com/280 <br>
+
+  <br>
+
+  **표준 내장 객체** <br>
   *-* String > slice() 참고 (Date) - https://mitny.github.io/articles/2019-07/JS-Date-0d <br>
-
   *-* Mozilla > Array - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array <br>
   *-* Array at(idx) vs [idx] in JS - https://stackoverflow.com/questions/70456996/using-array-atindex-instead-of-arrayindex-in-javascript <br>
   *-* 프로퍼티 접근 방식 비교 dot vs bracket - https://stackoverflow.com/questions/17189642/difference-between-using-bracket-and-dot-notation <br>
-
   *-* w3 shcool > **window.location** - https://www.w3schools.com/js/js_window_location.asp <br>
-  *-* Mozilla > localStorage - https://developer.mozilla.org/ko/docs/Web/API/Window/localStorage <br>
+  
+  <br>
 
-  \<**W3 school**> <br>
+  **Web API** <br>
+  *-* Mozilla > localStorage - https://developer.mozilla.org/ko/docs/Web/API/Window/localStorage <br>
+  *-* cookie, session의 차이 (블로그) - https://hahahoho5915.tistory.com/32 <br>
+  *-* cookie, localStorage, SessionStorage 개념 블로그(비교분석) - https://fathory.tistory.com/33 <br>
+  *-* how to make cookie which expires in 5 minutes - https://stackoverflow.com/questions/45889099/javascript-make-a-cookie-expire-in-5-minutes <br>
+  *-* 쿠키 이름으로 쿠키 가져오기 1 (stackoverflow) - https://stackoverflow.com/questions/10730362/get-cookie-by-name <br>
+  *-* 쿠키 CRUD 기능 구현 (쿠키가져오기 2) - https://bluemint.tistory.com/6 <br>
+  *-* localStorage 사용방법 (객체 저장 및 읽기) - https://goddino.tistory.com/207 <br>
+
+  <br>
+
+  **W3 school** <br>
   *-* JS JSON - https://www.w3schools.com/js/js_json.asp <br>
   *-* JSON tutorial - https://www.w3schools.com/js/js_json_intro.asp <br>
 

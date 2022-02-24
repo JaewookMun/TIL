@@ -45,3 +45,8 @@ input[name="user"] {
 ```
 
 
+
+
+
+### [참고] <br>
+  *-* :not() 선택자 사용방법 - https://webisfree.com/2015-11-13/[css]-not-%EC%84%A0%ED%83%9D%EC%9E%90-%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95 <br>
