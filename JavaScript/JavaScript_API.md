@@ -176,7 +176,15 @@ Instance methods
 
 **Global 객체(?)**
 
-## Window Location
+## Window
+
+onkeydown 에 함수를 연결하여 새로고침을 누를 시 GET 파라미터(쿼리스트링)을 제거할 수 있음
+
+
+<br>
+
+**Location**
+
 window.location 객체는 현재 웹페이지 주소 (URL)을 얻거나 새로운 페이지로 리다이렉트(Redirect) 이동을 위해 사용 가능
 > The window.location object can be written without the window prefix.
 > eg) window.location = location
@@ -314,6 +322,8 @@ Promise - Promise 객체는 비동기 작업이 맞이할 미래의 완료 또�
   *-* Mozilla > Array - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array <br>
   *-* Array at(idx) vs [idx] in JS - https://stackoverflow.com/questions/70456996/using-array-atindex-instead-of-arrayindex-in-javascript <br>
   *-* 프로퍼티 접근 방식 비교 dot vs bracket - https://stackoverflow.com/questions/17189642/difference-between-using-bracket-and-dot-notation <br>
+  *-* GET 파라미터 제거 후 새로고침 - https://java119.tistory.com/35 <br>
+  
   *-* w3 shcool > **window.location** - https://www.w3schools.com/js/js_window_location.asp <br>
   
   <br>
