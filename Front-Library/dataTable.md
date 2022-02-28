@@ -35,9 +35,25 @@ Server에서 'draw', 'recordsTotal', 'recordsFiltered', 'data'를 전달하면 d
 ## Events
 
 
+## css
+
+x축 스크롤바
+
+대상이 되는 테이블에 'width: 100%'를 주면 테이블이 생성되며 밑에 스크롤바가 생기는 현상을 막을 수 있음. (*Using DataTables* - Examples > Basic initialisation)
+
+
+column 길이 변동
+
+table-layout 속성값을 fixed로 설정하면 데이터가 길어서 지정한 너비 이상으로 셀을 미는 것을 방지할 수 있다.
+
+
+<br><br>
 
 ### [참고] <br>
+  
+
   * *Official site*
+  
   *-* *DataTable Official Document* - https://datatables.net/manual/ <br>
   *-* dataTable 설정 옵션 정보 [Official] - https://datatables.net/reference/option/ <br>
   *-* Server-side processing **parameters** (send / return ~ 전달 파라미터) - https://datatables.net/manual/server-side#Returned-data <br>
@@ -51,3 +67,7 @@ Server에서 'draw', 'recordsTotal', 'recordsFiltered', 'data'를 전달하면 d
   *-* dataTable server-side 블로그 2 - https://velog.io/@alstjd8826/TIL-jQuery-Bootstrap-Ajax-dataTable-pagination-search-sort <br>
   *-* dataTable server-side 블로그 3 - https://zamezzz.tistory.com/310 <br>
 
+
+  * CSS
+  
+  *-* table-layout: fixed (너비 고정) - https://jowook.tistory.com/entry/table%ED%85%8C%EC%9D%B4%EB%B8%94%EC%97%90-tablelayout-%EC%86%8D%EC%84%B1%EC%9C%BC%EB%A1%9C-%EB%84%88%EB%B9%84-%EA%B3%A0%EC%A0%95%ED%95%98%EA%B8%B0 <br>
