@@ -35,7 +35,7 @@ c.f.) systemctl
 2. 패키지 파일 설치
    > $ dpkg
 3. 자동 설치 도구 이용 - 수동으로 하던 패키지의 다운로드 ~ 설치 과정을 자동으로 처리
-   > $ apt(-get) install [패키지 이름]
+   > $ apt-get install [패키지 이름]    ||   apt-get install [패키지 이름]
 
 APT - Advanced Packagaging Tool
 
@@ -54,6 +54,8 @@ _*_ rename 명령어 존재
 > $ cp [-옵션] '원본 디렉토리' '옮길 디렉토리'
 
 
+<br><br>
+
 ## 파일 다운로드
 
 wget : 비대화식 네트워크 다운로더 (Web GET)
@@ -70,8 +72,9 @@ tar : 파일의 압축 / 해제 명령어
 <br><br>
 <br><br>
 
-### [참고]
-
+### [참고] <br>
+  *-* vi / vim 단축키 - https://iamfreeman.tistory.com/entry/vi-vim-%ED%8E%B8%EC%A7%91%EA%B8%B0-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%A8%EC%9D%8C-%EB%AA%A9%EB%A1%9D <br>
+  
   *-* 시스템 (c.f. 서비스 등록) - https://etloveguitar.tistory.com/57 <br>
 
   *-* ll, ls-l - https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_ll,_ls_-l <br>
