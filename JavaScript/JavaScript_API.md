@@ -266,9 +266,14 @@ Window.localStorage
 * JSON.parse(text) : to convert the string into a JavaScript object.
 * JSON.stringify(object) : to convert an object into a JSON string.
 
+
+
+
+
+
 <br><br>
 
-## 정규표현식
+## 정규표현식 (RegExp)
 ---
 <br>
 
@@ -287,6 +292,13 @@ Window.localStorage
   var regex = new RegExp("^[0-9]{5}$");  // mozila 예시: var re = new RegExp("ab+c");
 
 ```
+
+
+Instance Methods
+
+* regExp.test(string) : string이 주어진 패턴에 부합하는지 확인
+  > reg.test() 가 String.match() 보다 더 빠른 참거짓 값을 반환
+
 
 <br><br>
 
@@ -345,5 +357,6 @@ Promise - Promise 객체는 비동기 작업이 맞이할 미래의 완료 또�
 
   *-* 정규표현식 (official) - https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions#special-negated-character-set <br>
   *-* 정규표현식 (블로그설명) - https://fabric004.tistory.com/20 <br>
+  *-* regExp.test() vs string.match() - https://stackoverflow.com/questions/10940137/regex-test-v-s-string-match-to-know-if-a-string-matches-a-regular-expression <br>
 
   
