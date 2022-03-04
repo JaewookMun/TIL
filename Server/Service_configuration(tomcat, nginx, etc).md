@@ -1,7 +1,7 @@
-# Tomcat Command & Configuration
+# Service Program Command & Configuration
 
 
-### 톰캣 설치 및 배포작업
+## 톰캣 설치 및 배포작업
 1. tomcat 설치
 2. tomcat 환경 설정
 3. Service에 톰캣 등록 - application 관리 가능
@@ -96,6 +96,56 @@ _*_ 심볼릭 링크로 연결된 파일일 경우 rsync로 받으면 문제가 
 <br><br>
 
 
+## MySQL/MariaDB Slow Query Log 설정
+
+Slow Query Log : SQL 질의 요청을 했는데 응답이 오래 걸린 경우 이 부분에 대하여 log를 기록
+
+1. mysql 접속
+
+2. slow query log 설정 상태 확인
+   
+  > *>* show variables like 'slow_query_%'
+
+<br>
+
+  ![slow_query_log_status.jpg](./img/slow_query_log_status.jpg)
+
+
+<br>
+
+3. slow query log 설정(set-up)
+
+  ![slow%20query%20log%20setting.jpg](./img/slow%20query%20log%20setting.jpg)
+
+slow_query_log 설정은 my.cnf 파일을 수정해야 함. <br>
+my.cnf가 읽어들이는 50-server.cnf 파일에 관련 설정들이 주석처리 되어있기 때문에 주석을 해제하면 편리하다. <br>
+( /etc/mysql/mariadb.conf.d/50-server.cnf )
+
+
+<br>
+
+4. 로그 파일 및 생성 로그 확인
+
+의도적으로 sleep()을 통해 지연된 쿼리 실행
+
+> *>* select sleep(5);
+
+<br>
+
+log가 생성되는 위치로 디렉토리 이동
+> $ cd /var/log/mysql
+
+<br>
+
+slow query log 확인
+
+![slow_query_log.jpg](./img/slow_query_log.jpg)
+
+ 접속 계정, 발생 시간, 쿼리 진행 속도, 실행된 쿼리 등을 확인할 수 있다.
+
+<br><br>
+
+
 
 
 <br><br>
@@ -116,5 +166,10 @@ _*_ 심볼릭 링크로 연결된 파일일 경우 rsync로 받으면 문제가 
   <br>
 
   *-* tomcat 로그설정 (rotatelog) - https://gangnam-americano.tistory.com/42
-  
+
+  <br>
+
+  * mysql in linux <br>
+  *-* mysql slow query log 설정 및 확인 방법 [@@@@@] - https://2dubbing.tistory.com/19 <br>
+  *-* 실행중인 쿼리를 확인하는 방법 [show processlist] - https://iamfreeman.tistory.com/entry/MySQL-%EC%8B%A4%ED%96%89%EC%A4%91%EC%9D%B8-%EC%BF%BC%EB%A6%AC-%ED%99%95%EC%9D%B8show-processlist-%EB%B0%8F-%EA%B0%95%EC%A0%9C%EC%A2%85%EB%A3%8Ckill-stop-%EB%B0%A9%EB%B2%95 <br>
 

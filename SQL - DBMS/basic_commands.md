@@ -39,6 +39,12 @@ Database 및 사용자 설정
 
 <br><br>
 
+제약조건 관리
+
+<br><br>
+<br><br>
+<br><br>
+
 ### [참고]
   * DQL
   *-* mariaDB > Returning [Document] - https://mariadb.com/kb/en/insertreturning/ <br>
@@ -53,3 +59,8 @@ Database 및 사용자 설정
   *-* DB 생성 - https://devdhjo.github.io/mysql/2020/01/29/database-mysql-002.html <br>
   *-* DB 사용자 추가방식 (create / grant) - https://technote.kr/32 <br>
   *-* DB 사용자 권한 설정 - https://damduc.tistory.com/4 <br>
+
+  *-* 테이블 제약조건 확인 쿼리 - https://dataedo.com/kb/query/mysql/check-column-nullable <br>
+
+  *-* 테이블 CRUD - https://mcpaint.tistory.com/194 <br>
+  *-* 테이블 컬럼 null 가능하게 변경 - https://sql-factory.tistory.com/1003 <br>
