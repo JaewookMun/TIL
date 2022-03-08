@@ -35,6 +35,17 @@
 
 ### 글자 
 
+css 속성값 user-select를 none으로 설정하여 사용자의 글자 드래그를 방지할 수 있다.
+
+``` css
+.example {
+  user-select: none;  /* 글씨 드래그 방지 */
+}
+
+
+```
+
+
 <br>
 
 
