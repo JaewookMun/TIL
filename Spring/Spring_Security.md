@@ -114,6 +114,8 @@
 
 
 
+Q: check > https://velog.io/@devsh/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%84%B8%EC%85%98-Session-Management-%EC%BB%A4%EC%8A%A4%ED%84%B0%EB%A7%88%EC%9D%B4%EC%A7%95-%EA%B0%9C%EB%85%90-%EC%9D%B5%ED%9E%88%EA%B8%B0 <br>
+https://docs.spring.io/spring-session/docs/2.2.x/reference/html/spring-security.html <br>
 
 <br>
 
@@ -156,11 +158,6 @@
   * JWT
   *-* Spring session & JWT [Web 기본] - https://brunch.co.kr/@springboot/491 <br>
   *-* spring security & jwt login - https://velog.io/@shinmj1207/Spring-Spring-Security-JWT-%EB%A1%9C%EA%B7%B8%EC%9D%B8 <br>
-
-
-
-
-
-
-
   
+
+

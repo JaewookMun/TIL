@@ -17,6 +17,62 @@ c.f.) systemctl
 
 <br><br>
 
+## 권한 관리
+
+리눅스는 멀티유저 시스템이기 때문에 파일/디렉토리에 접근할 수 있는 권한(**Permission**)이 존재
+
+<br><br>
+
+파일정보 보기 <br>
+> $ ls -al  //현재 위치의 파일들을 자세히 보여주는 명령어
+
+``` linux
+drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ./
+drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ../
+drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ROOT/
+      ...
+```
+
+* 파일 Type : d - 디렉토리, l - 링크파일, - 일반 파일, etc..
+* **퍼미션 정보** : 해당파일에 어떤 퍼미션이 부여되어있는지 표시
+* 링크수 : 해당 파일이 링크된 수 (윈도우의 바로가기와 동일)
+* 소유자 : 해당 파일의 소유자 이름
+* 소유그룹 : 해당 파일을 소유한 그룹 이름 (특별한 변경이 없으면 일반적으로 소유자가 속한 그룹이 소유그룹으로 지정되며 대부분 소유자 이름과 동일)
+* 용량 : 파일 용량
+* 생성날짜 : 파일 생성날짜
+* 파일 이름
+
+<br><br>
+
+권한(Permission, 퍼미션) 
+
+<br>
+
+권한(Permission) 종류  <br>
+* 읽기(r) : 파일의 읽기 권한
+* 쓰기(w)) : 파일의 쓰기 권한(생성, 수정, 삭제)
+* 실행하기(x) : 파일의 실행 권한
+<br> (디렉토리는 실행권한이 있어야 내부로 이동 가능)
+
+<br>
+
+사용자 지정
+* 소유자 : 소유자에 대한 권한 지정
+* 그룹 : 소유 그룹에 대한 권한 지정
+* 공개 : 다른 사용자에 대한 권한 지정
+
+```
+   eg.) d rwx r-x ---      소유자에게는 모든 권한이 존재, 
+                           소유그룹에는 읽고 실행할 수 있는 기능
+                           다른 사용자는 아무 권한도 존재하지 않음.
+
+```
+
+
+   
+
+
+<br><br>
 
 ## 사용자 관리
 
@@ -24,7 +80,16 @@ c.f.) systemctl
 
 ## 그룹 관리
 
-## 파일 관리
+
+
+<br><br>
+
+## 폴더 / 파일 관리
+
+
+
+
+<br><br>
 
 <br><br>
 
@@ -79,11 +144,23 @@ tar : 파일의 압축 / 해제 명령어
 
   *-* ll, ls-l - https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_ll,_ls_-l <br>
   *-* 파일 정보 확인 (ls -al) - https://www.leafcats.com/137 <br>
-  *-* 파일 허가권 소유자 그룹 - https://darrengwon.tistory.com/853 <br>
+  
+  
+  <br><br>
+
+  * 권한 관리
+
+  *-* 파일 허가권 소유자 및 그룹 - https://darrengwon.tistory.com/853 <br>
   *-* 사용자 관리 - https://withcoding.com/101 <br>
   *-* 그룹 생성 및 권한 부여 - https://twowinsh87.github.io/etc/2018/08/12/etc-iknowledge-linux-group_permission/ <br>
   
   *-* 파일 이동, 이름변경 - https://shinboard.net/archives/4109 <br>
+  
+  *-* 권한 개념 및 변경 방법 - https://conory.com/blog/19194 <br>
+  *-* 권한 및 소유권 변경방법 - https://withcoding.com/103 <br>
+  *-* 소유자 및 그룹 관리방법 - https://www.manualfactory.net/13414 <br>
+
+  <br>
 
   *-* 리눅스 프로그램(패키지) 설치 - https://conory.com/blog/42585 <br>
   *-* apt와 apt-get 차이점 - https://ksbgenius.github.io/linux/2021/01/13/apt-apt-get-difference.html <br>
