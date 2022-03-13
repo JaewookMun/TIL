@@ -125,11 +125,15 @@ https://docs.spring.io/spring-session/docs/2.2.x/reference/html/spring-security.
 
 #### [참고]
 
+  * **Spring.io** 
+  *-* security guid step-1 in-memory [document] - https://spring.io/guides/gs/securing-web/ <br>
+  *-* security guid step-2 architecture [document] - https://spring.io/guides/topicals/spring-security-architecture/ <br>
+
   *-* Spring Security 구조 (로그인 과정) - https://jeong-pro.tistory.com/205 <br>
   *-* 로그인 실패시 응답코드 - https://blog.naver.com/genycho/222446074415 <br>
 
   * with SpringBoot<br>
-  *-* 스프링 시큐리티 프로젝트 시리즈 - https://blog.naver.com/jieuni4u/221804008187<br>
+  *-* 
   
   * with legacy Spring<br>
   *-* **스프링 시큐리티 프로젝트 설정** - https://sjh836.tistory.com/165<br>
