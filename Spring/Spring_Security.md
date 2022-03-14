@@ -13,11 +13,17 @@
 <br>
 
 ## Spring Security Configuration
-  
+
+0. 라이브러리 추가 (dependencies)
+
+1. web.xml 설정
+
+레거시 프로젝트는 web.xml에 스프링 빈 등록을 위한 설정정보를 작성해야한다. (Spring Security 관련 bean 설정정보 파일)
+
   <br>
 
   ``` xml
-  <- web.xml ->
+  <- web.xml - (1) ->
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>
@@ -25,9 +31,34 @@
       /WEB-INF/spring/security-context.xml
     </param-value>
   </context-param>
+  
+  <- web.xml - (2) ->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
+      com.security.session.config.AppConfig
+			com.security.session.config.WebSecurityConfig
+    </param-value>
+  </context-param>
+
+  ...
+
+  <filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 
   ```
-  *-* 위처럼 param-value 태그 안에 security 설정정보(security-context)를 넣지 않으면 security-context.xml에서 root-context.xml에 있는 bean 정보를 읽지 못한다.
+  *-* 위처럼 param-value 태그 안에 security 설정정보(security-context)를 넣지 않으면 security-context.xml에서 root-context.xml에 있는 bean 정보를 읽지 못한다. <br>
+  *-* AnnotationConfigApplicationContext를 활용해서 Java Configuration을 할 때도 security 설정 클래스를 param-value에 함께 넣어준다. <br>
+  *-* DelegatingFilterProxy 등록 <br>
+      (스프링 부트와 달리 기존 스프링 프레임워크에서 DelegatingFilterProxy를 등록하지 않으면 spring security 기능을 적용할 수 없다.)
+      
+  <br>
 
   ``` xml
   <- 예) 잘못된 설정 ->
@@ -119,7 +150,16 @@ https://docs.spring.io/spring-session/docs/2.2.x/reference/html/spring-security.
 
 <br>
 
+Q 중복 로그인 방지 ? - https://medium.com/@leejungmin03/spring-%EC%A4%91%EB%B3%B5%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EB%B0%A9%EC%A7%80-9ef32f7e7110 <br>
+<br>
+
+중복 로그인 방지 ? 2 - https://kangwoojin.github.io/programing/spring-security-basic-session-management-filter/ <br>
+중복 로그인 방지 ? 3 - https://lts0606.tistory.com/320 <br>
+
+스프링 시큐리티 로그인 시리즈 - https://codevang.tistory.com/266 <br>
+
 * Spring boot 버전2 부터는 JDK 11 이상 사용을 권장
+
 
 <br>
 
@@ -128,6 +168,11 @@ https://docs.spring.io/spring-session/docs/2.2.x/reference/html/spring-security.
   * **Spring.io** 
   *-* security guid step-1 in-memory [document] - https://spring.io/guides/gs/securing-web/ <br>
   *-* security guid step-2 architecture [document] - https://spring.io/guides/topicals/spring-security-architecture/ <br>
+
+  *-* DelegatingFilterProxy  - https://velog.io/@yaho1024/spring-security-delegatingFilterProxy <br>
+  *-* NoSuchBeanDefinitionException: No bean named 'springSecurityFilterChain' is defined 오류 해결 - https://haenny.tistory.com/224 <br>
+
+
 
   *-* Spring Security 구조 (로그인 과정) - https://jeong-pro.tistory.com/205 <br>
   *-* 로그인 실패시 응답코드 - https://blog.naver.com/genycho/222446074415 <br>
@@ -154,6 +199,8 @@ https://docs.spring.io/spring-session/docs/2.2.x/reference/html/spring-security.
   *-* 세션 저장소를 이용하는 3가지 방법 - https://parkadd.tistory.com/16 <br>
 
   *-* JSP에서 spring security 활용 - https://niees.tistory.com/19 <br>
+
+  *-* CSRF token not found error solutions - https://stackoverflow.com/questions/28138864/expected-csrf-token-not-found-has-your-session-expired-403 <br>
 
   * JSTL <br>
   *-* 인증된 사용자 정보 읽기 - https://taetae0079.tistory.com/6 <br>

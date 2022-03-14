@@ -91,11 +91,13 @@ _*_ nginx 디폴트 설정파일 - /etc/nginx/nginx.conf
 _*_ rsync는 방화벽 문제 때문에 못받는 경우가 생길 수 있다.
 _*_ 심볼릭 링크로 연결된 파일일 경우 rsync로 받으면 문제가 없으나 외부로 옮긴 후 해당파일을 받게되면 해당 링크가 깨진상태가 된다.
 
+
+
 <br><br>
 
 **5. 로그 로테이션 - logrotate (Tomcat log 설정)**
 
-logrotate 를 활용해서 catalina.out이 제약없이 커지는 것을 막을 수 있다.
+logrotate 를 활용해서 catalina.out이 제약없이 커지는 것을 막을 수 있다.ㅜ
 
 
 

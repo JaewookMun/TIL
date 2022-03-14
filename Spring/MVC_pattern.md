@@ -11,6 +11,16 @@
 
 
 
+
+
+<br><br>
+
+@EnableWebMvc
+
+Spring 프레임워크에서 필요한 초기값을 세팅해줌.
+
+
+<br><br>
 <br><br>
 
 ## Servlet 활용
@@ -52,6 +62,8 @@ Redirect 활용
   * configuration metadata
   *-* listener [web.xml] - https://dev-room.tistory.com/84 <br>
   *-* 여러개의 filter 등록 및 순서 지정 - https://dololak.tistory.com/599 <br>
+
+  *-* @EnableWebMvc는 어떤 역할을 하는가?  - https://goodgid.github.io/Spring-Enable-MVC-Annotation/ <br>
 
   * **Servlet**
   *-* 리다이렉트 방법 차이점 from request, response -  https://stackoverflow.com/questions/7220241/whats-the-difference-between-requestdispatcher-forward-and-httpservletrespons <br>
