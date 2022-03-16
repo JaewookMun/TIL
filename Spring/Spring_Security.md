@@ -57,7 +57,7 @@
   *-* AnnotationConfigApplicationContext를 활용해서 Java Configuration을 할 때도 security 설정 클래스를 param-value에 함께 넣어준다. <br>
   *-* DelegatingFilterProxy 등록 <br>
       (스프링 부트와 달리 기존 스프링 프레임워크에서 DelegatingFilterProxy를 등록하지 않으면 spring security 기능을 적용할 수 없다.)
-      
+
   <br>
 
   ``` xml

@@ -1,21 +1,22 @@
 # Java API
 
-
 <br>
 
 ## List, Map
+---
 
-#### Map
+### **Map**
 
 * keySet(), entrySet() 등 안 사용해본 메소드 공부 필요..
 
-<br>
+
+<br><br><br>
 
 ## 함수형 인터페이스 (Functional Interface)
+---
 
 
-
-## 스트림(Stream)
+### **스트림(Stream)**
 
 스트림의 특징
 * 자료의 대상과 관계없이 동일한 연산을 수행
@@ -27,9 +28,10 @@
     -> 최종 연산이 호출되지 않으면 정렬 및 검색결과를 가져올 수 없고 이는 지연 연산(lazy evaluation)이라 불림
 
 
-<br>
 
-## Optional
+<br><br>
+
+### **Optional**
 
 Optional 활용을 위한 기본 기능 
 
@@ -62,21 +64,42 @@ Optional 활용을 위한 기본 기능
 > cf.) Optional<T>에서 제네릭 T는 Type의 약자이다.
 <br>
 
-<br>
 
+<br><br><br>
+
+## File I/O
+---
+
+### File
+
+위치정보를 가지고 인스턴스를 만들어서 필요한 디렉토리 및 파일을 생성할 수 있다.
+File 등 자바에서 기본으로 제공하는 API를 통해 파일의 기본적인 속성 및 여러가지 정보를 조회할 수 있다. 하지만 파일의 버전 정보 등 일부 자세한 정보를 조회하기 위해서는 JNA(Java Native Access) 라이브러리를 사용해야한다.
+
+
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 
 ### [참고] <br>
   *-* static 사용을 피해야하는 이유 - https://kellis.tistory.com/127 <br>
 
-  * **Stream**
+  * **Stream** <br>
   *-* 기본적인 스트림 사용법 - https://coding-factory.tistory.com/574 <br>
   *-* 레거시 vs modern 고찰 - http://homoefficio.github.io/2016/06/26/for-loop-%EB%A5%BC-Stream-forEach-%EB%A1%9C-%EB%B0%94%EA%BE%B8%EC%A7%80-%EB%A7%90%EC%95%84%EC%95%BC-%ED%95%A0-3%EA%B0%80%EC%A7%80-%EC%9D%B4%EC%9C%A0/ <br>
   
 
-  * **Optional**
+  * **Optional** <br>
   *-* Java official api doc - https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html <br>
   *-* optional to string - https://codechacha.com/ko/java8-stream-optional/ <br>
   *-* Optional 사용법 1(블로그) - https://hbase.tistory.com/212 <br>
   *-* Optional 사용법 2(블로그) - https://tecoble.techcourse.co.kr/post/2021-06-20-optional-vs-null/ <br>
   
+
+  * File IO <br>
+  *-* 파일 속성 읽는 방법 [Doc] - https://docs.oracle.com/javase/tutorial/essential/io/fileAttr.html <br>
+  *-* 자바로 파일 속성 읽는 방법 [기본속성] - https://okky.kr/article/297810 <br>
+  *-* how to read file attribute in java - https://stackoverflow.com/questions/18129120/how-to-read-file-properties-details-content-pages-e-g-for-a-word-documen <br>
+  *-* get version of .exe file [JNA] - https://stackoverflow.com/questions/6918022/get-version-info-for-exe <br>
