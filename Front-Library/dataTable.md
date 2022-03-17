@@ -18,10 +18,25 @@ ajax를 통해 Server의 DB에 접근하여 데이터를 가져와 테이블을 
 * processing : 데이터 렌더링이 완료될 때까지 진행중임을 표시하는 UI 제공
   *>* dom 옵션에서 'r'을 추가하지 않으면 보이지 않음. <br>
   check: If the processing indicator does not show, check if you are using a custom 'dom' option. The letter 'r' represents the processing indicator so if it's not showing, that could be missing. See https://datatables.net/reference/option/dom
-* columns
-* columnDefs
+* columns : 컬럼 값 지정 및 관련 옵션 설정
+* columnDefs : 컬럼 값 지정 및 관련 옵션 설정 - column을 확장한 옵션이라고 생각할 수 있다. (column에서 사용하는 하위 옵션들 사용 가능)
   (choose one of them above [columns, columnDefs])
 * columnDefs.targets
+
+  - 테이블 각 행의 번호를 오름차순 or 내림차순으로 설정할 때 render 옵션을 활용
+    > meta 인자 값을 살펴보면 해당 기능을 쉽게 구현가능
+
+  ``` javascript
+  {
+    "data": "id",
+    render: function (data, type, row, meta) {
+        var totalCount = meta.settings.json.recordsTotal
+				return totalCount - meta.row;
+    }
+  }
+
+  ```
+
 
 [기본옵션]
 * lengthMenu : 화면에 표시될 테이블 행(row)의 개수
@@ -62,6 +77,7 @@ table-layout 속성값을 fixed로 설정하면 데이터가 길어서 지정한
 
   *-* youtube video - https://youtu.be/0FQkioPkl7I <br>
   *-* dataTable 기본 옵션 정보 블로그 - https://nomoneynohappy.tistory.com/31 <br>
+  *-* 테이블 행 번호 매기기 - https://stackoverflow.com/questions/6871198/add-row-number-column-to-jquery-datatables <br>
 
   *-* dataTable server-side 블로그 - https://www.leafcats.com/63 <br>
   *-* dataTable server-side 블로그 2 - https://velog.io/@alstjd8826/TIL-jQuery-Bootstrap-Ajax-dataTable-pagination-search-sort <br>

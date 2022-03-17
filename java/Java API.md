@@ -75,7 +75,18 @@ Optional 활용을 위한 기본 기능
 위치정보를 가지고 인스턴스를 만들어서 필요한 디렉토리 및 파일을 생성할 수 있다.
 File 등 자바에서 기본으로 제공하는 API를 통해 파일의 기본적인 속성 및 여러가지 정보를 조회할 수 있다. 하지만 파일의 버전 정보 등 일부 자세한 정보를 조회하기 위해서는 JNA(Java Native Access) 라이브러리를 사용해야한다.
 
+<br>
 
+파일 옮기기
+
+사용 클래스 및 인터페이스 : File, FileInputStream, MultipartFile, MockMultipartFile (Spring)
+
+``` java
+multipartFile.transferTo(String path); // 디렉토리 경로일 경우 에러(FileNotFoundException) 발생
+
+new FileInputStream(File file); // 디렉토리의 인스턴스일 경우 에러(FileNotFoundException) 발생
+
+```
 
 
 <br><br><br>
@@ -103,3 +114,4 @@ File 등 자바에서 기본으로 제공하는 API를 통해 파일의 기본�
   *-* 자바로 파일 속성 읽는 방법 [기본속성] - https://okky.kr/article/297810 <br>
   *-* how to read file attribute in java - https://stackoverflow.com/questions/18129120/how-to-read-file-properties-details-content-pages-e-g-for-a-word-documen <br>
   *-* get version of .exe file [JNA] - https://stackoverflow.com/questions/6918022/get-version-info-for-exe <br>
+  *-* FileInputStream 예외 [FileNotFoundException] 발생 이유 (디렉토리를 읽으면 발생) - https://stackoverflow.com/questions/13046757/how-to-read-a-folder-count-the-files-and-copy-to-new-folder <br>
