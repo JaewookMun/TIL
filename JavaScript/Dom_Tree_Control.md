@@ -33,6 +33,19 @@ difference ->  $().data() vs Element.dataset
 
 **input**
 
+focus()를 사용시 커서가 제일 끝에 오게 하는 방법 (아래 코드 참고) - setSelectionRange() 함수  <br>
+
+``` javascript
+  function focusAtLast(selector) {
+    var input = document.querySelector(selector);
+    var length = input.value.length;
+    
+    input.focus();
+    input.setSelectionRange(length, length)
+  }
+
+```
+
 
 **Select, Radio, CheckBox**
 

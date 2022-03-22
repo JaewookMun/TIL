@@ -17,6 +17,22 @@ c.f.) systemctl
 
 <br><br>
 
+<br><br><br><br>
+
+## 명령어
+
+### 다중 명령어
+
+한 문장으로 단일 명령을 수행할 수 있지만 몇가지 명령어를 통해 여러 명령을 동시에 실행할 수 있다.
+
+* ; [세미콜론] - 명령들을 구분하는데 사용하며 명령들간 영향을 받지 않는다. 실패 & 성공 조합 가능
+* | [파이프] - 리눅스에서 파이프는 두 프로세스를 이어주는 역할을 함. '$ 명령A | 명령B' 는 '명령A'의 결과를 가지고 '명령B'를 수행한다는 의미 
+* && [더블앤퍼센드] - 앞선 명령이 에러 없이 정상 종료되었을 때 뒷 명령이 실행 (세미콜론과의 차이)
+* || [더블버티컬바] - 첫번째 명령의 결과가 에러가 발생했을 때 뒷 명령이 실행
+
+<br><br>
+
+
 ## 권한 관리
 
 리눅스는 멀티유저 시스템이기 때문에 파일/디렉토리에 접근할 수 있는 권한(**Permission**)이 존재
@@ -170,6 +186,8 @@ tar : 파일의 압축 / 해제 명령어
 ### [참고] <br>
   *-* vi / vim 단축키 - https://iamfreeman.tistory.com/entry/vi-vim-%ED%8E%B8%EC%A7%91%EA%B8%B0-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%A8%EC%9D%8C-%EB%AA%A9%EB%A1%9D <br>
   
+  *-* 다중 명령어[@@@] - https://jhnyang.tistory.com/66 <br>
+
   *-* 시스템 (c.f. 서비스 등록) - https://etloveguitar.tistory.com/57 <br>
 
   *-* ll, ls-l - https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_ll,_ls_-l <br>
