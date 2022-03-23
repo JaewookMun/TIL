@@ -70,8 +70,31 @@
 
   ```
 
-
 <br>
+
+## SecurityContext
+
+SecurityContext 가져오기 - 2가지 방법 존재 <br>
+
+* SecurityContextHolder
+* HttpSession
+
+
+``` java
+  SecurityContext securityContext = SecurityContextHolder.getContext();
+
+  Object securityContextObject = session.getAttribute(HttpSessionSecurityContextRepository.SPRING_SECURITY_CONTEXT_KEY);
+  if(securityContextObject != null){ 
+    SecurityContext securityContext = (SecurityContext)securityContextObject;
+  }
+
+
+
+```
+
+
+<br><br>
+
 
 ## AuthenticationManager
   * 구현체 <br>
@@ -158,6 +181,10 @@ Q 중복 로그인 방지 ? - https://medium.com/@leejungmin03/spring-%EC%A4%91%
 
 스프링 시큐리티 로그인 시리즈 - https://codevang.tistory.com/266 <br>
 
+세션과 인증정보 수정 - https://misoin.tistory.com/60 <br>
+
+
+
 * Spring boot 버전2 부터는 JDK 11 이상 사용을 권장
 
 
@@ -172,6 +199,7 @@ Q 중복 로그인 방지 ? - https://medium.com/@leejungmin03/spring-%EC%A4%91%
   *-* DelegatingFilterProxy  - https://velog.io/@yaho1024/spring-security-delegatingFilterProxy <br>
   *-* NoSuchBeanDefinitionException: No bean named 'springSecurityFilterChain' is defined 오류 해결 - https://haenny.tistory.com/224 <br>
 
+  *-* SecurityContext 얻는법 - https://jekalmin.tistory.com/entry/spring-security-SecurityContext-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0 <br>
 
 
   *-* Spring Security 구조 (로그인 과정) - https://jeong-pro.tistory.com/205 <br>

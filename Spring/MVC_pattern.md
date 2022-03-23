@@ -28,6 +28,21 @@ Spring 프레임워크에서 필요한 초기값을 세팅해줌.
 
 <br>
 
+RequestContextHolder 사용법
+``` java
+  public void report() throws ServletException, IOException {
+    final ServletRequestAttributes currentRequestAttributes = (ServletRequestAttributes) RequestContextHolder
+        .currentRequestAttributes();
+    final HttpServletRequest httpServletRequest = currentRequestAttributes.getRequest();
+    final HttpServletResponse httpResponse = currentRequestAttributes.getResponse();
+
+    reportServlet.service(httpServletRequest, httpResponse);
+
+```
+
+
+<br>
+
 **페이지 이동 - 2가지 방법**
 * httpServletRequest.**getRequestDispatcher**(path).**forword**(request, response) :
 * httpServletResponse.**sendRedirect**(path) : 
@@ -66,6 +81,8 @@ Redirect 활용
   *-* @EnableWebMvc는 어떤 역할을 하는가?  - https://goodgid.github.io/Spring-Enable-MVC-Annotation/ <br>
 
   * **Servlet**
+  *-* RequestContextHolder > getResponse() - https://www.tabnine.com/code/java/methods/org.springframework.web.context.request.ServletRequestAttributes/getResponse <br>
+
   *-* 리다이렉트 방법 차이점 from request, response -  https://stackoverflow.com/questions/7220241/whats-the-difference-between-requestdispatcher-forward-and-httpservletrespons <br>
   *-* 리다이렉트 FlashMapManager 참고 - https://stackoverflow.com/questions/23844546/flash-attribute-in-custom-authenticationfailurehandler/50429613 <br>
   *-* RedirectAttributes 예시 - https://velog.io/@godkimchichi/Spring-37.2-Spring-Security <br>
