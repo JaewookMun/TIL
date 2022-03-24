@@ -40,8 +40,32 @@ RequestContextHolder 사용법
 
 ```
 
+## 영속성 유지 방법 (Connection 관리)
 
 <br>
+
+### **Cookie**
+
+서버 클라이언트간 영속성을 유지하기 위해 저장 매체로 세션과 쿠키가 사용되며
+주로 클라이언트 단에 데이터를 전달하기 위해 사용된다.
+
+<br>
+
+**Cookie의 path 속성과 전송 규칙**
+path 속성을 통해 웹서버의 특정 URL에 대해서 쿠키를 전달할 수 있다. path 속성은 웹서버의 디렉토리 형태로 지정 가능하며
+경로를 지정하면 해당 URL과 하위 경로에만 쿠키가 전송된다. (디렉토리 단위는 /로 구분되어지는 단위를 의미)
+
+c.f.) domain 속성 & '/' <br>
+c.f.) path를 '/path/'로 지정하면 '/path/~'의 url에서만 쿠키를 확인할 수 있다. '/otherpath/'에서는 불가능
+
+
+
+
+
+<br><br>
+
+
+<br><br>
 
 **페이지 이동 - 2가지 방법**
 * httpServletRequest.**getRequestDispatcher**(path).**forword**(request, response) :
@@ -82,6 +106,9 @@ Redirect 활용
 
   * **Servlet**
   *-* RequestContextHolder > getResponse() - https://www.tabnine.com/code/java/methods/org.springframework.web.context.request.ServletRequestAttributes/getResponse <br>
+
+  * **영속성 유지**
+  *-* 쿠키 path 속성 - https://dololak.tistory.com/546 <br>
 
   *-* 리다이렉트 방법 차이점 from request, response -  https://stackoverflow.com/questions/7220241/whats-the-difference-between-requestdispatcher-forward-and-httpservletrespons <br>
   *-* 리다이렉트 FlashMapManager 참고 - https://stackoverflow.com/questions/23844546/flash-attribute-in-custom-authenticationfailurehandler/50429613 <br>
