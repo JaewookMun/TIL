@@ -1,5 +1,12 @@
 # Java API
 
+## Enum
+
+열거형 - 상수를 모아서 처리할 수 있음.
+
+<br><br>
+
+
 <br>
 
 ## List, Map
@@ -95,6 +102,7 @@ new FileInputStream(File file); // 디렉토리의 인스턴스일 경우 에러
 
 
 ### [참고] <br>
+  *-* Enum 우아한 형제 기술 블로그 - https://techblog.woowahan.com/2527/ <br>
   *-* static 사용을 피해야하는 이유 - https://kellis.tistory.com/127 <br>
 
   * **Stream** <br>

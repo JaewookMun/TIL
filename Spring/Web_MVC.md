@@ -59,8 +59,14 @@ c.f.) domain 속성 & '/' <br>
 c.f.) path를 '/path/'로 지정하면 '/path/~'의 url에서만 쿠키를 확인할 수 있다. '/otherpath/'에서는 불가능
 
 
+[check]
+실제 배포시 cookie.setPath("/")를 적용하면 원하는 루트경로로 설정되지 않는 경우가 존재
+아래 웹페이지 참고
+https://tomcat.apache.org/migration-7.html#Session_cookie_configuration <br>
+https://bz.apache.org/bugzilla/show_bug.cgi?id=57872 <br>
+https://tomcat.apache.org/tomcat-8.0-doc/config/cookie-processor.html <br>
 
-
+https://danawalab.github.io/common/2020/02/11/Common-Tomcat-cookieProcessor.html <br>
 
 <br><br>
 

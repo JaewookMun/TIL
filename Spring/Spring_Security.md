@@ -213,7 +213,6 @@ Q 중복 로그인 방지 ? - https://medium.com/@leejungmin03/spring-%EC%A4%91%
   *-* 스프링 시큐리티 프로젝트 설정 - https://bin-repository.tistory.com/128   (springboot에 가까운 느낌) <br>
   *-* **AuthenticationProvider** 개념 - https://gregor77.github.io/2021/05/18/spring-security-03/ <br>
   *-* UserDetails 구현 - https://to-dy.tistory.com/86 <br>
-  *-* UserDetails 구현2 - https://vividswan.github.io/2020/09/11/Spring-Security-UserDetails-%EA%B5%AC%ED%98%84.html <br>
   *-* PasswordEncoder - https://velog.io/@corgi/Spring-Security-PasswordEncoder%EB%9E%80-4kkyw8gi<br>
   *-* PasswordEncoder official [**Spring.io**] - https://docs.spring.io/spring-security/reference/features/authentication/password-storage.html#authentication-password-storage <br>
   *-* BCrypt 설명 (Password hashing 시 Bcrypt가 추천되는 이유 ) - https://velog.io/@kylexid/%EC%99%9C-bcrypt-%EC%95%94%ED%98%B8%ED%99%94-%EB%B0%A9%EC%8B%9D%EC%9D%B4-%EC%B6%94%EC%B2%9C%EB%90%98%EC%96%B4%EC%A7%88%EA%B9%8C <br>
