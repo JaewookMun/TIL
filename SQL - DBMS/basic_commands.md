@@ -28,6 +28,8 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
 
 * 날짜 출력 : DATE() 사용.
 
+* 기존 데이터 일괄 변경 : REPLACE()
+
 <br>
 
 ### DDL (Data Definition Language)
@@ -151,6 +153,7 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
   *-* mariaDB > Returning [Document] - https://mariadb.com/kb/en/insertreturning/ <br>
   *-* insert후 값 가져오기(블로그) - https://hochoon-dev.tistory.com/entry/SpringBoot-Mybatis-Insert-%ED%95%9C-%EA%B0%92%EC%9D%98-AUTOINCREMENT%EB%90%9C-ID-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0 <br>
 
+  *-* 데이터 일괄변경 [REPLACE] - https://yeop-blog.github.io/2017/10/02/2017-10-02-old-blog-post88/ <br>
   
   *-* https://linuxism.ustd.ip.or.kr/510 <br>
 
