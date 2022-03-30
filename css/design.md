@@ -6,13 +6,40 @@
 ## 구조 (레이아웃)
 ---
 
+### 미디어 쿼리
+
+단말기의 유형과 특성이나 수치(화면 해상도, 뷰포트 너비 등)에 따라 웹사이트나 앱을 수정할 때 사용하기 용이함
+
+_*_ 뷰포트(viewport)는 현재 화면에 보여지고 있는 다각형(보통 직사각형)의 영역입니다. <br>
+ 웹 브라우저에서는 현재 창에서 문서를 볼 수 있는 부분(전체화면이라면 화면 전체)을 말합니다
+-> 반응형 웹사이트를 만들기 위해서 html 문서의 head에 viewport와 관련된 meta 태그를 넣어줘야함.
+
 <br>
+
+min-width or max-width 를 활용하여 페이지 사이즈에 반응하는 웹페이지를 구성가능
+
+
+사용 예시
+``` css
+@media (min-width: 1000px) {
+	body {
+		background: gold;
+	}
+}
+
+```
+
+
+<br><br><br>
+
+
+
 
 ### 블럭 배치
 
 <br>
 
-- z-index : position 속성과 연관이 있기 때문에 position: static 이면 우선순위를 설정할 수 없다. 
+* z-index : position 속성과 연관이 있기 때문에 position: static 이면 우선순위를 설정할 수 없다. 
 
 <br>
 
@@ -22,7 +49,7 @@ _*_ 참고: 블럭 타입 엘리먼트를 inline으로 바꿔서 나열할 경�
 
 <br>
 
-* float <br>
+* float : 엘리먼트를 나열하여 배치하는데 사용 가능 (flex 사용 권장)<br>
   
   ``` css
   #대상__블록 {
@@ -36,7 +63,24 @@ _*_ 참고: 블럭 타입 엘리먼트를 inline으로 바꿔서 나열할 경�
   ```
 left, right, none 세가지 속성값이 있으며 left 또는 right으로 방향을 지정하여 너비를 지정한 후 블럭을 나열한다.
 width 값을 주지 않으면 적용된 css를 확인하기 어려움
-float이 적용된 영역이 끝나면 'clear: both'를 사용하여 float의 영향이 없도록 처리한다.
+float이 적용된 영역이 끝나면 'clear: both'를 사용하여 float의 영향이 없도록 처리하며 아래의 처리 방법 사용을 권장한다.
+
+``` css
+/* 가상요소를 사용 */
+float된 요소의 부모태그::after {
+
+   content:'';
+
+   display:block;
+
+   clear:both;
+
+}
+
+```
+
+_*_ : - 가상선택자 / :: - 가상요소
+> div:hover  | div::after
 
 <br>
 
@@ -102,21 +146,72 @@ float이 적용된 영역이 끝나면 'clear: both'를 사용하여 float의 �
 * 반응형 테이블 스크롤 자동생성
 
 ``` css
-@media (max-width: 575.98px) {}  /* 미디어 쿼리 max width 설정 */
 
+/* 방식 1 css */
 .table-container {
   width: 100%;
   overflow-x: auto;
-  white-space: nowrap; /* 해당 속성을 nowrap으로 설정안하면 글자가 세로로 표시. nowrap은 <br>만 줄바뀜처리로 인식 */
+  white-space: nowrap; /* 해당 속성을 nowrap으로 설정안하면 글자가 세로로 표시(웹 width가 변경됨에 따라 word-breaking이 발생하여 세로로 표시된다.). nowrap은 <br>만 줄바뀜처리로 인식 */
 }
 
 .table {
   width: auto;
 }
 
+
+/* 방식 2 css  좀더 깔끔 - 해당방식 적용 */
+
+#container {
+	width: 100%;
+	overflow: auto;
+}
+
+#container table {
+	width: 100%;
+	table-layout: fixed;
+	margin-bottom: 5px;
+}
+
+#container table .no {width: 50px;}
+#container table .name {width: 120px;}
+#container table .id {width: 150px;}
+#container table .add1 {width: 200px;}
+#container table .add2 {width: 200px;}
+#container table .zip {width: 70px;}
+
 ```
 
+``` html
+<!-- HTML -->
+~
+<div id="container">
+  <table>
+    <thead>
+      <tr>
+        <th class="no">no</th>
+        <th class="name">name</th>
+        <th class="id">loginId</th>
+        <th class="add1">address1</th>
+        <th class="add2">address2</th>
+        <th class="zip">zip code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>john</td>
+        <td>john12</td>
+        <td>James Street 23-1, Arizona</td>
+        <td>the USA</td>
+        <td>403-12</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
+~
+
+```
 
 
 <br><br><br>
@@ -179,14 +274,20 @@ css 속성값 user-select를 none으로 설정하여 사용자의 글자 드래�
 
 ### [참고] <br>
   
+  *-* 미디어쿼리 min-width & max-width - https://studiomeal.com/archives/1004 <br>
+  *-* 반응형 웹 레이아웃 설계방법 - https://www.samsungsds.com/kr/insights/Responsive-Web-2.html <br>
+
+  <br>
 
   * 컴포넌트 레이아웃 [Layout] <br>
   *-* z-index - https://abcdqbbq.tistory.com/39 <br>
   *-* CSS float 사용방법 - https://ojji.wayful.com/2014/01/HTML-DIV-to-Float-Three-Divs-side-by-side.html <br>
+  *-* float 사용 후 처리방법 [가상요소활용] - https://neul-carpediem.tistory.com/278 <br>
+  *-* 가상 선택자 vs 가상요소 (:after, ::after)의 차이점 - https://coding-designer.tistory.com/30 <br>
+
   *-* CSS flex 사용방법 [자세함] @@@@ - https://studiomeal.com/archives/197 <br>
 
   * 영역내 컨텐츠 <br>
-  
 
   <br>
 
