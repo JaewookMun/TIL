@@ -12,7 +12,7 @@ ajax를 통해 Server의 DB에 접근하여 데이터를 가져와 테이블을 
 
 <br>
 
-[필요옵션]
+[주요옵션]
 * **serverSide** : server-side 작업을 위해 필요한 옵션 (대소문자를 틀리면 인식못함)
 * **ajax** : server-side 작업을 위해 필요한 옵션
 * processing : 데이터 렌더링이 완료될 때까지 진행중임을 표시하는 UI 제공
@@ -39,7 +39,14 @@ ajax를 통해 Server의 DB에 접근하여 데이터를 가져와 테이블을 
 
 
 [기본옵션]
-* lengthMenu : 화면에 표시될 테이블 행(row)의 개수
+* pageLength : 화면에 표시될 테이블 행(row)의 개수 (관련 옵션: **lengthMenu**, lengthChange)
+  > 기본값이 10이기 때문에 lengthMenu 없이 커스텀 lengthMenu를 만들고 다른 기본값을 사용할 경우 따로 설정해주어야 한다.
+
+
+  eg) 5, 10, 15로 선택할 수 있게 하려고 했을 때 의도치 않은 pagination이 발생
+
+* lengthMenu : 화면에 표시될 테이블 행(row)의 개수 리스트
+  > lengthMenu 숫자 배열의 첫번째 값이 자동으로 pageLength값으로 설정되기 때문에 lengthMenu 사용시 pageLength를 지정할 필요가 없음.
 
 Server에서 'draw', 'recordsTotal', 'recordsFiltered', 'data'를 전달하면 dataSrc를 수정할 필요가 없다.
 
@@ -83,6 +90,7 @@ table-layout 속성값을 fixed로 설정하면 데이터가 길어서 지정한
   *-* dataTable server-side 블로그 2 - https://velog.io/@alstjd8826/TIL-jQuery-Bootstrap-Ajax-dataTable-pagination-search-sort <br>
   *-* dataTable server-side 블로그 3 - https://zamezzz.tistory.com/310 <br>
 
+  *-* lengthMenu 참고 - https://stackoverflow.com/questions/8051302/jquery-datatables-pagination-size <br>
 
   * CSS
   

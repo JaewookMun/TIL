@@ -58,7 +58,27 @@ fi
 ```
 
 
+
+<br><br><br>
+
+
+declare
+
+
+### Array
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+
+
 ### [참고] <br>
-  *-* 
+  *-* declare command in bash - https://unix.stackexchange.com/questions/510220/what-is-declare-in-bash <br>
+  *-* 배열 사용방법 (tutorial) - https://linuxconfig.org/how-to-use-arrays-in-bash-script <br>
+  *-* [declare -a vs -A] indexed Array vs associative Array - https://stackoverflow.com/questions/28179409/bash-array-assignment-fails-if-you-declare-the-array-in-advance <br>
+  *-* 연관배열(associativee array)란? - https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B4%80_%EB%B0%B0%EC%97%B4 <br>
 
 
