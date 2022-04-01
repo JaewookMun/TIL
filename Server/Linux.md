@@ -47,6 +47,28 @@ ls는 해당 디렉토리에 위치한 파일/디렉토리 정보를 제공하�
 
 _*_ ll은 sudo 키워드와 함께 사용할 수 없지만 ls -l은 sudo와 함께 사용할 수 있음
 
+<br><br>
+
+파일 / 디렉토리 갯수 확인하는 방법
+
+```
+ls -l | grep ^d | wc -l // 디렉토리 갯수
+
+ls -l | grep ^- | wc -l // 파일 갯수
+
+```
+
+grep 메타문자
+^ : 라인의 시작
+
+
+<br>
+
+wc 명령어 (word count) : 사용자가 지정한 파일의 행, 단어, 문자수를 세는 프로그램
+
+옵션 : -l (행), -w (단어), -c (문자)
+
+
 
 <br>
 
@@ -222,6 +244,9 @@ tar : 파일의 압축 / 해제 명령어
   *-* ll, ls-l - https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_ll,_ls_-l <br>
   *-* 파일 정보 확인 (ls -al) - https://www.leafcats.com/137 <br>
   
+  *-* 디렉토리에 있는 디렉토리 / 파일 갯수 확인 - https://blog.leocat.kr/notes/2017/07/27/shell-count-folders-and-files <br>
+  *-* grep 명령어 메타문자 - https://zzsza.github.io/development/2017/12/16/linux-4/ <br>
+  *-* wc(word count) command - http://www.incodom.kr/Linux/%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4/wc <br>
   
   <br><br>
 
