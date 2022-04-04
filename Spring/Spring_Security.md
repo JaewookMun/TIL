@@ -4,13 +4,75 @@
 
 ## 개념 - 용어 정리
 
-<br>
+
+
+
+
+
+<br><br>
 
 ## **Architecture**
 
   ![Alt text](./images/spring_security_authentication_architecture.png)
 
 <br>
+
+<br><br>
+
+## **Authentication and Access Control (Authorization)**
+---
+
+
+Application Security를 위해 중요한 개념은 크게 인증(Authentication)과 인가(Authorization)이다. 
+Spring Security는 두 개념을 분리한 뒤 기능을 확장한 구조를 가진다.
+
+* authentication : who are you?
+* authorization (or access control) : what are you allowed to do? 
+
+<br><br>
+
+### **Authentication**
+
+Authentication의 중요 인터페이스는 **AuthenticationManager**이며 하나의 메서드(authenticate())를 갖는다.
+
+``` java 
+public interface AuthenticationManager {
+  Authentication authenticate(Authentication authentication) throws AuthenticationException
+}
+
+```
+
+
+<br>
+
+AuthenticationManager의 기능
+1. Authentication 반환 (유효한 사용자 정보가 입력되었다면 authenticated = true 상태)
+2. 입력값이 적합하지 않으면 AuthenticationException 발생
+3. 확정할 수 없다면 null 반환
+
+
+<br><br>
+
+AuthenticationManager의 구현
+
+* 구현체 : **ProviderManager**
+* 특징 : AuthenticationProvider 인스턴스들을 사용*  <br>
+  (Authentication 인스턴스의 타입을 특정하여 알맞는 AuthenticationProvider 인스턴스를 사용) <br>
+  (*: AuthenticationProvider 인스턴스 체인에 위임)
+
+
+<br><br>
+
+AuthenticationManager 설정 
+
+
+
+
+<br><br><br>
+
+
+
+
 
 ## Spring Security Configuration
 
@@ -134,14 +196,36 @@ SecurityContext 가져오기 - 2가지 방법 존재 <br>
 <br>
 
 
-
+<br><br><br>
 
 ## session management
+---
+
+<br>
+
+### SessionManagementFilter, SessionAuthenticationStrategy
+
+
+// AuthenticationStrategy 타입으로 빈을 읽었을 때 스프링 컨테이너에서 조회되는 빈
+name: org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0, 
+bean: org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy 
+[delegateStrategies = 
+  [
+    org.springframework.security.web.authentication.session.ConcurrentSessionControlAuthenticationStrategy@43f61afb,
+    org.springframework.security.web.authentication.session.SessionFixationProtectionStrategy@713064e8,
+    org.springframework.security.web.authentication.session.RegisterSessionAuthenticationStrategy@4fad6218
+  ]
+]
+
+
+<br>
+
   - HttpSessionEventPublisher vs HttpSessionListener
 
   
 <br>
 
+<br><br><br>
 
 ## JSTL
 > JSP 정규표현식 (JavaServer Pages Standard Tag Library)
@@ -192,9 +276,17 @@ Q 중복 로그인 방지 ? - https://medium.com/@leejungmin03/spring-%EC%A4%91%
 
 #### [참고]
 
-  * **Spring.io** 
+  * **Spring.io - Security references** <br>
   *-* security guid step-1 in-memory [document] - https://spring.io/guides/gs/securing-web/ <br>
   *-* security guid step-2 architecture [document] - https://spring.io/guides/topicals/spring-security-architecture/ <br>
+  *-* Security Reference > Session Management [official] - https://docs.spring.io/spring-security/reference/servlet/authentication/session-management.html <br>
+
+  *-* 스프링 시큐리티 세션이란? (blog) - https://velog.io/@devsh/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%84%B8%EC%85%98-Session-Management-%EC%BB%A4%EC%8A%A4%ED%84%B0%EB%A7%88%EC%9D%B4%EC%A7%95-%EA%B0%9C%EB%85%90-%EC%9D%B5%ED%9E%88%EA%B8%B0 <br>
+
+
+
+  *-* delegation 이란? [delegation_pattern] - https://hashcode.co.kr/questions/6881/delegation%EC%9D%B4-%EC%9A%B0%EB%A6%AC%EB%A7%90%EB%A1%9C-%ED%95%B4%EC%84%9D%ED%95%98%EB%A9%B4-%EC%96%B4%EB%96%A4-%EB%8B%A8%EC%96%B4%EC%9D%B8%EA%B0%80%EC%9A%94 <br>
+
 
   *-* DelegatingFilterProxy  - https://velog.io/@yaho1024/spring-security-delegatingFilterProxy <br>
   *-* NoSuchBeanDefinitionException: No bean named 'springSecurityFilterChain' is defined 오류 해결 - https://haenny.tistory.com/224 <br>
