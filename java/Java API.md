@@ -1,5 +1,30 @@
 # Java API
 
+## static keyword (static vs instance)
+
+정적 메서드는 언제 사용해야하는가?
+
+> One rule-of-thumb: ask yourself "Does it make sense to call this method, even if no object has been constructed yet?"
+>  If so, it should definitely be static.
+
+객체 생성 없이 메서드를 호출하는 상황이 논리적으로 타당하면 static 메서드를 사용해도 좋다.
+
+<br>
+
+정적메서드의 2가지 특징
+1. 클래스의 인스턴스 생성 없이 호출할 수 있는 메서드 (인스턴스에서는 호출할 수 없다.)
+2. 유틸리티 함수를 만드는데 유용하게 사용된다. eg) Math 클래스
+
+
+<br><br>
+
+Static 사용을 피해야하는 이유는? - refer to below links
+
+
+
+<br><br><br>
+<br><br><br>
+
 ## Enum
 
 열거형 - 상수를 모아서 처리할 수 있음.
@@ -102,8 +127,14 @@ new FileInputStream(File file); // 디렉토리의 인스턴스일 경우 에러
 
 
 ### [참고] <br>
-  *-* Enum 우아한 형제 기술 블로그 - https://techblog.woowahan.com/2527/ <br>
+  * static field / method <br>
+  *-* 정적 메서드는 언제 써야하는가? - https://mygumi.tistory.com/253 <br>
+  *-* (위 블로그 참고링크) when to use static method - https://stackoverflow.com/questions/2671496/when-to-use-static-methods <br>
   *-* static 사용을 피해야하는 이유 - https://kellis.tistory.com/127 <br>
+
+  *-* method chaining drawback? - https://softwareengineering.stackexchange.com/questions/80244/are-there-any-actual-drawbacks-to-self-referential-method-chaining <br>
+
+  *-* Enum 우아한 형제 기술 블로그 - https://techblog.woowahan.com/2527/ <br>
 
   * **Stream** <br>
   *-* 기본적인 스트림 사용법 - https://coding-factory.tistory.com/574 <br>
