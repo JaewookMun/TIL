@@ -142,9 +142,22 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
 : ALTER TABLE [테이블명] DROP FOREIGN KEY [제약조건이름];
 
 
+
+
+
 <br><br>
-<br><br>
-<br><br>
+
+## 도움
+
+현재 실행중인 쿼리 확인 및 특정 프로세스 종료 명령어
+sql> show processlist;
+sql> kill id
+
+
+
+<br><br><br>
+
+<br><br><br>
 
 ### [참고]
   *-* 기본 SQL 문장이란 (mariadb doc) - https://mariadb.com/kb/ko/basic-sql-statements/ <br>
@@ -170,3 +183,5 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
   *-* 테이블 CRUD - https://mcpaint.tistory.com/194 <br>
   *-* 테이블 컬럼 null 가능하게 변경 - https://sql-factory.tistory.com/1003 <br>
   *-* 제약조건 확인 및 관리 - https://blog.naver.com/PostView.nhn?blogId=imf4&logNo=220779978513&categoryNo=26&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView <br>
+
+  *-* 현재 실행중인 쿼리 확인 - https://ssssssu12.tistory.com/10 <br>
