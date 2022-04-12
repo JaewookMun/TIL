@@ -12,8 +12,25 @@ I. 톰캣 서버 설정
 3. [rewrite.config] 설정
 4. Tomcat 재시작
 
+
+
+<br><br><br>
+
+## URL 허용 문자
+
+URL 비허용 문자 : HTTP/1.1 spec 기준으로 url 경로에는 인코딩된 문자가 와야한다. 하지만  " < > [ \ ] ^ ` { | } 문자가 올 경우 인코딩이 안되기 때문에 해당 경로로 접근할 수 없다.
+
+톰캣 server.xml 셋팅 옵션 : relaxedPathChars, relaxedQueryChars
+
+
+
+<br><br><br>
+<br><br><br>
+
 ### [참고] <br>
   *-* Apache offiction document [The rewrite Valve] - https://tomcat.apache.org/tomcat-8.0-doc/rewrite.html#mapfunc <br>
   *-* url rewrite 설정방법 (블로그) - https://datajoy.tistory.com/116 <br>
+
+  *-* URI path/query string 특수문자 허용 옵션 [relaxedPathChars 또는 relaxedQueryChars] 검색 - https://tomcat.apache.org/tomcat-8.5-doc/config/http.html <br>
 
    

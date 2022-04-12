@@ -121,16 +121,27 @@ Instance methods
 <br>
 
 * String.slice(beginIndex[, endIndex]) : 문자열의 일부를 추출하면서 새로운 문자열을 반환
-  * beginIndex가 음수라면 'beginIndex = strLength(문자열 길이) + beginIndex'로 처리
+  - beginIndex가 음수라면 'beginIndex = strLength(문자열 길이) + beginIndex'로 처리
   e.g.) beginIndex가 -3이면 시작점은 strLength-3이 된다.
-  * 한자리로 나오는 Date객체의 getDate() or getMonth()를 두 자리로 바꾸어 표현 가능
+  - 한자리로 나오는 Date객체의 getDate() or getMonth()를 두 자리로 바꾸어 표현 가능
+  
   ``` javascript
   var today = new Date(); 
   var formattedDate = ('00' + today.getDate()).slice(-2);
   ```
+  <br>
+
+* String.indexOf(searchValue) : 호출한 String 객체에서 주어진 값과 일치하는 첫 번째 인덱스를 반환 (일치 값이 없으면 -1 반환)
+* String.includes(searchString) : 하나의 문자열이 다른 문자열에 포함되어 있는지를 판별 (true or false 반환)
+
+  <br>
+  [비고]: 주어진 String에서 다른 문자열을 찾을 때 어떤 메서드가 더 빠른가? -> indexOf() [the fastest way to find substring from a string in JS]
 
 
-<br>
+
+
+<br><br><br>
+<br><br><br>
 
 ## Array
 
@@ -331,6 +342,9 @@ Promise - Promise 객체는 비동기 작업이 맞이할 미래의 완료 또�
 
   **표준 내장 객체** <br>
   *-* String > slice() 참고 (Date) - https://mitny.github.io/articles/2019-07/JS-Date-0d <br>
+  *-* Fastest way to find substring from a string - https://stackoverflow.com/questions/5296268/fastest-way-to-check-a-string-contain-another-substring-in-javascript <br>
+
+
   *-* Mozilla > Array - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array <br>
   *-* Array at(idx) vs [idx] in JS - https://stackoverflow.com/questions/70456996/using-array-atindex-instead-of-arrayindex-in-javascript <br>
   *-* 프로퍼티 접근 방식 비교 dot vs bracket - https://stackoverflow.com/questions/17189642/difference-between-using-bracket-and-dot-notation <br>
