@@ -2,6 +2,69 @@
 
 <br>
 
+## Linux Configuration (파일시스템)
+
+LVM : dynamic partitions, meaning that you can create/resize/delete LVM "partitions" (they're called "Logical Volumes" in LVM-speak) from the command line while your Linux system is running: no need to reboot the system to make the kernel aware of the newly-created or resized partitions.
+
+<br><br>
+
+### VMware에 Linux 설치하기
+
+VMDK 파일 생성방식
+- Store virtual disk as a single file : 
+- Split virtual disk into multiple files : 다른 컴퓨터로 옮길 때 더 편리함.
+
+
+<br><br>
+
+SSH vs OpenSSH
+
+SSH(Secure SHell)는 컴퓨터간에 안전하게 데이터를 전달할 수 있도록 규정한 프로토콜이다.
+OpenSSH는 SSH 프로토콜을 구현한 오픈소스이며 리눅스에서 SSH server & client로 주로 사용된다.
+(참고: 인터페이스와 구현체 관계)
+
+
+apt-get install ssh  |  **apt-get install openssh(-server)**  > 둘은 같은 명령어나 마찬가지이다. (서로 의존관계로 연관되어 있음.)
+
+
+
+
+Ubuntu의 패키지 정보가 제공되는 웹사이트에서 ssh 팩키지와 Openssh 패키지의 다운로드 소스 팩키지는 'openssh'로 서로 같다.
+[check]: 'Other Packages Related to ssh', Download Source Package openssh
+(웹프로그래밍 관점에서 인터페이스 팩키지를 다운받음으로서 구현체인 OpenSSH를 받는다고 생각할 수 있음)
+
+<br>
+
+![](./img/install_ssh.png)
+
+> 1. Install ssh
+> 2. Read package lists
+> 3. Build dependency tree
+> 4. (after yes) install other packages like openssh-server, etc
+
+
+
+
+<br><br><br>
+
+systemctl status ssh로 프로세스 상태를 확인해보면 OpenBSD Secure Shell server가 실행중인 것을 확인할 수 있다.
+> sudo systemctl status ssh
+
+
+
+
+
+<br><br><br>
+
+
+### 디스크 용량 관리
+
+
+
+
+<br><br><br>
+<br><br><br>
+
 ## 프로세스
 --
 
@@ -237,6 +300,22 @@ tar : 파일의 압축 / 해제 명령어
 <br><br>
 
 ### [참고] <br>
+  * 리눅스 설치
+  *-* VMware 리눅스 설치 - https://lindarex.github.io/ubuntu/ubuntu-1804-installation/ <br>
+  *-* 'virtual disk as a single file' vs 'Split virtual disk into multiple files' - https://junyharang.tistory.com/8 <br>
+  *-* What is LVM > dynamic partitions - https://github.com/johngrib/simple_vim_guide/blob/master/md/vimrc.md <br>
+
+<br>
+
+  * SSH
+  *-* SSH and OpenSSH - https://www.quora.com/What-are-the-differences-between-SSH-and-OpenSSH-What-are-their-similarities <br>
+  *-* Package: SSH [Official] - https://packages.ubuntu.com/bionic/ssh <br>
+  *-* Package: OpenSSH [Official] - https://packages.ubuntu.com/bionic/openssh-server <br>
+  <br>
+
+
+<br>
+
   *-* vi / vim 단축키 - https://iamfreeman.tistory.com/entry/vi-vim-%ED%8E%B8%EC%A7%91%EA%B8%B0-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%A8%EC%9D%8C-%EB%AA%A9%EB%A1%9D <br>
   
   *-* 다중 명령어[@@@] - https://jhnyang.tistory.com/66 <br>

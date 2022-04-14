@@ -1,7 +1,5 @@
 # Shell Script (셸 스크립트)
 
-
-
 <br>
 
 ## **작성방법**
@@ -28,28 +26,50 @@ cf. 자주 사용하는 vi, vim 단축키
   - :noh = 문서에서 하이라이트 제거
 
 
+## vim 명령어
+
+### .vimrc
+
+* 줄 번호 표시 방법
+  :set number / :set nonumber
 
 
 
 <br><br>
+
+## if statement
 
 * **기본 if 문**
   * if [조건] then 수행 명령 fi 구조이며, 'fi'는 if문의 종료를 의미한다.
     c.f. - finished
 
 ``` bash
-if [조건]
-then
+if [조건]; then
   수행할 명령
 fi
 ```
+
+
+
+
+* **if elif else 문**
+  * else를 제외하고 기본 if문과 동일
+
+``` bash
+if [조건]; then
+  수행할 명령
+elif [조건]; then
+  수행할 명령
+fi
+
+```
+
 
 * **if else 문**
   * else를 제외하고 기본 if문과 동일
 
 ``` bash
-if [조건]
-then
+if [조건]; then
   수행할 명령
 else
   수행할 명령
@@ -80,5 +100,13 @@ declare
   *-* 배열 사용방법 (tutorial) - https://linuxconfig.org/how-to-use-arrays-in-bash-script <br>
   *-* [declare -a vs -A] indexed Array vs associative Array - https://stackoverflow.com/questions/28179409/bash-array-assignment-fails-if-you-declare-the-array-in-advance <br>
   *-* 연관배열(associativee array)란? - https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B4%80_%EB%B0%B0%EC%97%B4 <br>
+
+<br>
+  *-* .vimrc 설정방법 - https://github.com/johngrib/simple_vim_guide/blob/master/md/vimrc.md <br>
+  *-* 줄번호 표시 방법 - https://jjeongil.tistory.com/1728?category=686032 <br>
+
+  *-* if문 조건 정리 블로그 - https://jink1982.tistory.com/48 <br>
+
+  
 
 
