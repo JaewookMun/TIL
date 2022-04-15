@@ -26,12 +26,19 @@ cf. 자주 사용하는 vi, vim 단축키
   - :noh = 문서에서 하이라이트 제거
 
 
-## vim 명령어
+## vi/vim 명령어
+
+블록 주석처리 / 해제
+norm !#
+norm 1x
+
+
 
 ### .vimrc
 
 * 줄 번호 표시 방법
   :set number / :set nonumber
+
 
 
 
@@ -105,6 +112,9 @@ declare
   *-* .vimrc 설정방법 - https://github.com/johngrib/simple_vim_guide/blob/master/md/vimrc.md <br>
   *-* 줄번호 표시 방법 - https://jjeongil.tistory.com/1728?category=686032 <br>
 
+  <br>
+  
+  *-* for loop 사용법 정리 블로그 - https://jhnyang.tistory.com/191 <br>
   *-* if문 조건 정리 블로그 - https://jink1982.tistory.com/48 <br>
 
   

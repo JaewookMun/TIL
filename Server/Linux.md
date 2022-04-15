@@ -6,6 +6,22 @@
 
 LVM : dynamic partitions, meaning that you can create/resize/delete LVM "partitions" (they're called "Logical Volumes" in LVM-speak) from the command line while your Linux system is running: no need to reboot the system to make the kernel aware of the newly-created or resized partitions.
 
+### 파일시스템과 파티션
+
+* 파일시스템 : 파일을 저장하기위한 논리적인 구조
+* 디스크 파티션 : 물리적인 디스크를 논리적인 저장영역으로 분할하는 것
+
+
+
+<br><br>
+
+### VMware의 네트워크 모드
+
+VMware의 네트워크 모드는 세가지(NAT, Bridge, Host Only)가 있으며 주로 NAT 모드를 사용한다.
+
+
+
+
 <br><br>
 
 ### VMware에 Linux 설치하기
@@ -123,11 +139,19 @@ ls -l | grep ^- | wc -l // 파일 갯수
 
 ```
 
-grep 메타문자
+
+<br><br><br>
+
+grep
+> grep -- -search_keyword
+> : 더블 대시를 사용하여 대시문자를 검색할 수 있다.
+
+
+> grep 메타문자
 ^ : 라인의 시작
 
 
-<br>
+<br><br><br>
 
 wc 명령어 (word count) : 사용자가 지정한 파일의 행, 단어, 문자수를 세는 프로그램
 
@@ -301,9 +325,15 @@ tar : 파일의 압축 / 해제 명령어
 
 ### [참고] <br>
   * 리눅스 설치
+  *-* vmware 네트워크 모드 (NAT, Bridge, Host Only) - https://tristan91.tistory.com/238 <br>
+  *-* VMwared Network setting (port forwarding - NAT) - https://hwan1001.tistory.com/63 <br>
+
   *-* VMware 리눅스 설치 - https://lindarex.github.io/ubuntu/ubuntu-1804-installation/ <br>
   *-* 'virtual disk as a single file' vs 'Split virtual disk into multiple files' - https://junyharang.tistory.com/8 <br>
   *-* What is LVM > dynamic partitions - https://github.com/johngrib/simple_vim_guide/blob/master/md/vimrc.md <br>
+
+  *-* 파일시스템 & 디스크 파티셔닝 - https://ttps2line.tistory.com/33 <br>
+  *-* 파일시스템 확인방법 - https://websetnet.net/ko/commands-to-check-filesystem-in-linux-ubuntu/ <br>
 
 <br>
 
@@ -311,8 +341,8 @@ tar : 파일의 압축 / 해제 명령어
   *-* SSH and OpenSSH - https://www.quora.com/What-are-the-differences-between-SSH-and-OpenSSH-What-are-their-similarities <br>
   *-* Package: SSH [Official] - https://packages.ubuntu.com/bionic/ssh <br>
   *-* Package: OpenSSH [Official] - https://packages.ubuntu.com/bionic/openssh-server <br>
-  <br>
-
+  
+  *-* install tomcat in VMware - https://antdev.tistory.com/52 <br>
 
 <br>
 
@@ -326,7 +356,9 @@ tar : 파일의 압축 / 해제 명령어
   *-* 파일 정보 확인 (ls -al) - https://www.leafcats.com/137 <br>
   
   *-* 디렉토리에 있는 디렉토리 / 파일 갯수 확인 - https://blog.leocat.kr/notes/2017/07/27/shell-count-folders-and-files <br>
+
   *-* grep 명령어 메타문자 - https://zzsza.github.io/development/2017/12/16/linux-4/ <br>
+  *-* grep 대시(-) 문자 검색방법 : 더블대시 [stackoverflow] - https://stackoverflow.com/questions/2427913/how-can-i-grep-for-a-string-that-begins-with-a-dash-hyphen <br>
   *-* wc(word count) command - http://www.incodom.kr/Linux/%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4/wc <br>
   
   <br><br>
