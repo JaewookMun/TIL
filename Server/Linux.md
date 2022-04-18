@@ -72,6 +72,25 @@ systemctl status ssh로 프로세스 상태를 확인해보면 OpenBSD Secure Sh
 
 <br><br><br>
 
+### 방화벽 설정 (firewall)
+
+서버 통신의 in/out-bound 통신의 포트번호, IP 주소 등을 허용하기 위해서는 방화벽 정보를 설정해야한다.
+리눅스에서는 iptables, ufw로 방화벽을 설정할 수 있다.
+(iptables와 ufw는 유사한 기능을 가지고 있으며 사용법이 복잡한 iptables와 달리 ufw는 간편하게 사용할 수 있다.)
+
+
+* ufw(Uncomplicated FireWall) : 복잡한 iptables에 비해 사용법이 간편하다. 간단하게 방화벽을 설정 할 수 있다.
+
+* iptables : 사용법이 복잡하고 ufw에 비해 정교한 설정을 하기 위해 사용한다.
+
+
+
+
+
+
+
+<br><br><br>
+
 
 ### 디스크 용량 관리
 
@@ -109,15 +128,23 @@ init, systemd 를 통해서 서비스 등록을 할 수 있다.
 
 c.f.) systemctl (서비스 제어 명령어)
 
+service 명령어는 **systemctl**의 wrapper script다.
+
+
+
 <br><br>
 
 <br><br><br><br>
 
 ## 명령어
 
+
+
+<br><br><br>
+
 ### 서비스 제어 명령어
 
-**systemctl**
+
 
 <br><br>
 
