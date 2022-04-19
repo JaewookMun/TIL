@@ -169,6 +169,8 @@ ls -l | grep ^- | wc -l // 파일 갯수
 
 <br><br><br>
 
+### 출력관련 명령어
+
 grep
 > grep -- -search_keyword
 > : 더블 대시를 사용하여 대시문자를 검색할 수 있다.
@@ -178,15 +180,61 @@ grep
 ^ : 라인의 시작
 
 
-<br><br><br>
 
-wc 명령어 (word count) : 사용자가 지정한 파일의 행, 단어, 문자수를 세는 프로그램
+
+
+<br><br>
+
+wc (word count) : 사용자가 지정한 파일의 행, 단어, 문자수를 세는 프로그램
 
 옵션 : -l (행), -w (단어), -c (문자)
 
 
 
-<br>
+
+
+<br><br>
+
+awk (Aho Weinberger Kernighan) : 텍스트 파일 및 텍스트를 행과 열(row and column) 시스템을 이용해서 출력하는 명령어 (프로그램)
+(awk로 출력하는 대상의 구조가 행렬의 형태로 표현될 때 각 줄(line)은 Record, 그 안의 단어들은 field로 표현된다. 이때, 필드는 공백으로 구분되어진다.)
+
+사용법
+> awk '패턴 {액션}'
+
+
+``` linux
+   ll | awk '{ print $9 }' | grep ^d 
+
+```
+설명: 파일 목록을 조회한 뒤 'd'로 시작하는 파일/디렉토리 명을 출력하는 명령
+
+
+<br><br>
+
+xargs : 여러줄 출력을 한줄로 출력
+
+
+
+
+
+<br><br>
+
+sed (stream editor) : 텍스트(파일)을 편집하고 원하는 데이터를 출력가능 - 문자열 변경 편집기
+
+e.g) 문자열 대체
+
+
+``` linux
+   ll | awk '/[0-9]\// { print $9 }' | xargs echo | sed 's/\//,/g'
+
+```
+설명: 파일목록 조회한 결과에서 '숫자/' 패턴의 파일명을 필터링한 뒤 한줄로 출력한 결과에서 '/'를 ','로 변경하여 출력
+
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 ### 다중 명령어
 
@@ -372,6 +420,10 @@ tar : 파일의 압축 / 해제 명령어
   *-* install tomcat in VMware - https://antdev.tistory.com/52 <br>
 
 <br>
+
+  *-* awk 설명 - https://reakwon.tistory.com/163
+
+
 
   *-* vi / vim 단축키 - https://iamfreeman.tistory.com/entry/vi-vim-%ED%8E%B8%EC%A7%91%EA%B8%B0-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%A8%EC%9D%8C-%EB%AA%A9%EB%A1%9D <br>
   
