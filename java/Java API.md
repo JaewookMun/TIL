@@ -99,6 +99,24 @@ Optional 활용을 위한 기본 기능
 
 <br><br><br>
 
+## Inner Class
+
+static inner class
+
+Q: inner class에 static을 붙이는 이유는?
+inner 클래스에 static의 유무가 주는 가장 큰 차이는 외부에서의 접근성이다.
+
+static이 없으면 inner 클래스는 outer 클래스의 인스턴스를 통해서만 접근가능하지만, static이 있다면 독립적으로 생성되기 때문에 외부에서 쉽게 접근할 수 있다.
+
+
+
+
+
+<br><br><br>
+
+
+<br><br><br>
+
 ## File I/O
 ---
 
@@ -146,7 +164,10 @@ new FileInputStream(File file); // 디렉토리의 인스턴스일 경우 에러
   *-* optional to string - https://codechacha.com/ko/java8-stream-optional/ <br>
   *-* Optional 사용법 1(블로그) - https://hbase.tistory.com/212 <br>
   *-* Optional 사용법 2(블로그) - https://tecoble.techcourse.co.kr/post/2021-06-20-optional-vs-null/ <br>
-  
+
+  * Inner Class <br>  
+  *-* inner 클래스에서 static을 붙이는 이유 - https://www.inflearn.com/questions/257297 <br>
+  *-* Nested Classes in Java - https://www.baeldung.com/java-nested-classes <br>
 
   * File IO <br>
   *-* 파일 속성 읽는 방법 [Doc] - https://docs.oracle.com/javase/tutorial/essential/io/fileAttr.html <br>
