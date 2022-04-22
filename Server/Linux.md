@@ -2,9 +2,30 @@
 
 <br>
 
+## Kernel
+
+하드웨어와 소프트웨어를 연결
+---
+
+운영체제의 가장 하단에 위치한다. 운영체제의 핵심이 되는 프로그램으로 운영체제에서 사용하는 모든 프로그램은 커널 프로그램을 기반으로 동작한다.
+
+![kernel_architecture](./img/kernel_architecture.png)
+(응용 소프트웨어를 컴퓨터 하드웨어(cpu, memory, devices)에 연결)
+
+
+
+<br><br><br>
+<br><br><br>
+
 ## Linux Configuration (파일시스템)
 
 LVM : dynamic partitions, meaning that you can create/resize/delete LVM "partitions" (they're called "Logical Volumes" in LVM-speak) from the command line while your Linux system is running: no need to reboot the system to make the kernel aware of the newly-created or resized partitions.
+
+
+
+
+<br><br><br>
+<br><br><br>
 
 ### 파일시스템과 파티션
 
@@ -90,7 +111,17 @@ systemctl status ssh로 프로세스 상태를 확인해보면 OpenBSD Secure Sh
 
 
 <br><br><br>
+<br><br><br>
 
+### Process management
+
+top (table of processes) : '작업 관리자 (task manager)' 프로그램, 장치(This device)에서 실행중인 프로세스 목록을 통해 CPU와 Memory 사용량을 확인할 수 있다. 
+
+
+
+
+<br><br><br>
+<br><br><br>
 
 ### 디스크 용량 관리
 
