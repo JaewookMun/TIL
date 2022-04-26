@@ -2,6 +2,23 @@
 
 ## Parameter
 
+<br>
+
+**1개**의 String parameter를 사용할 경우
+
+dao 인터페이스의 메서드에 String 파라미터가 하나만 있을 때 mapper에서 스트링 값을 대체할 경우 
+> There is no getter for property named 'search' in 'class java.lang.String' <br>
+
+위 에러가 발생할 수 있다. 해당 에러는 #{} 문법을 사용할 때 중괄호 안에 value(지정된 표기값)를 표기하면 해결된다.
+
+* DTO 객체 or Map 객체를 만들어서 해결할 수 있으나 1개의 파라미터를 위해 만들기에는 번거로운 점이 존재.
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+
 * 2개 이상의 파라미터를 맵핑하는 방법
   - VO, Map, @Param 사용
 

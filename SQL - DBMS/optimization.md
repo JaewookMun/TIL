@@ -18,3 +18,4 @@
 
 ### [참고] <br>
   *-* 쿼리 최적화 - https://velog.io/@blakekim93/%EC%BF%BC%EB%A6%AC-%EC%B5%9C%EC%A0%81%ED%99%94-eu4ti0e0 <br>
+  *-* Inner JOIN vs Outer JOIN [stackoverflow] - https://stackoverflow.com/questions/2726657/inner-join-vs-left-join-performance-in-sql-server <br>

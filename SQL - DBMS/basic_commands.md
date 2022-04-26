@@ -1,8 +1,9 @@
-# Commands
+# MySQL Commands
 
-## MySQL
+## DML (Data Manipulation Language)
+---
+SELECT의 경우 DQL(데이터 질의어)라고도 불린다.
 
-### DML (Data Manipulation Language)
 
 데이터 조작어에는 **SELECT**, **INSERT**, **UPDATE**, **DELETE** 등이 있다.
 
@@ -30,7 +31,27 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
 
 * 기존 데이터 일괄 변경 : REPLACE()
 
-<br>
+
+
+<br><br><br>
+
+### 중복데이터 조회 해결
+
+SELECT 조회 시 데이터의 중복문제는 DISTINCT 키워드 or GROUP BY 절을 통해 해결가능
+
+
+주의
+* distinct의 경우 비교되는 행들 사이의 모든 컬럼값이 같지 않으면 별개의 행으로 처리
+* group by를 사용해 중복을 제거하려는 컬럼값을 기준으로 데이터를 읽을 수 있다.
+* group by시 생략되는 행의 다른 컬럼값을 사용하기 위해서 max() 등의 함수를 활용
+
+
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
 
 ### DDL (Data Definition Language)
 
@@ -169,6 +190,10 @@ sql> kill id
   *-* 데이터 일괄변경 [REPLACE] - https://yeop-blog.github.io/2017/10/02/2017-10-02-old-blog-post88/ <br>
   
   *-* https://linuxism.ustd.ip.or.kr/510 <br>
+
+  *-* 데이터 중복 제거 (Okky 질의) - https://okky.kr/article/511810 <br>
+  *-* 데이터 중복 제거 group by & max() - http://b1ix.net/87 <br>
+
 
   * **DDL**
   *-* DB 생성 - https://devdhjo.github.io/mysql/2020/01/29/database-mysql-002.html <br>
