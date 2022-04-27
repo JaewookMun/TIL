@@ -41,7 +41,11 @@ public class AppConfig {
 
 @Bean 어노테이션 메서드는 빈을 생성하기 위해 필요한 의존성을 갖는 임의의 객체들을 파라미터로 가질 수 있다.
 
-추가로 @Configuration 클래스 내부에 선언된 다른 메서드를 내부에서 호출하여 의존성을 주입할 수도 있다.
+추가로 @Configuration 클래스 내부에 선언된 다른 메서드를 내부에서 호출하여 의존성을 주입할 수도 있다. (inter-bean references : 빈 간의 참조)
+<br>
+> @Configuration 클래스 내에서 @Bean 메서드를 호출하는 bean 의존성 주입방법은 다른 @Configuration 클래스의 @Bean 메서드를 호출해도 동일하게 적용된다.
+
+<br>
 
 ``` java
 // example - spring core - Bean Dependencies
@@ -58,6 +62,22 @@ public class AppConfig {
     public RegisterService registerService() {
       returnd new RegisterServiceImpl(transferService());
     }
+}
+
+...
+
+@Configuration
+public class OtherConfig {
+    
+    @Autowired
+    private AppConfig appConfig;
+
+
+    @Bean
+    public ThirdService thirdService() {
+        return new ThirdServiceImpl(appConfig.transferService());
+    }
+
 }
 
 ```
@@ -107,14 +127,29 @@ ResponseEntity를 통해 이러한 정보들을 한번에 담아서 전달 가�
 <br><br><br>
 
 
+++
+[shedlock] <br>
+how to synchronize ... (stackoverflosw) - https://stackoverflow.com/questions/69988304/spring-synchronize-saving-to-database-with-another-instances <br>
+블로그 (db조회데이터 첨부) - https://hea1peak.tistory.com/257 <br>
+bealdung - https://www.baeldung.com/shedlock-spring <br>
 
-### [참고] <br>
-  * **환경설정**
+in maven
+difference between artifactid and name - https://stackoverflow.com/questions/69988304/spring-synchronize-saving-to-database-with-another-instances <br>
+
+> artifactid : 프로젝트를 구분하는 식별자, name : 프로젝트의 이름 이라고 구분하면 될 것 같음.
+
+### [참고] 
+<br>
+
+  * **환경설정** <br>
   *-* [*-context.xml] 파일 없이 Bean을 등록하여 사용하는 방법 **@@@@@** - https://stackoverflow.com/questions/8075790/how-to-register-spring-configuration-annotated-class-instead-of-applicationcont?rq=1 <br>
 
+
+  * 기초 개념 <br>
+  *-* Bean 메서드를 통한 의존성 주입 (inter-bean references) [important] - https://spring.training/understanding-inter-bean-method-reference-in-spring-configuration/ <br>
   <br>
 
-  * Spring MVC
+  * Spring MVC <br>
   *-* 파일 업로드 방법 설명 - https://caileb.tistory.com/152 <br>
   *-* 파일업로드 방법 예시 1 - https://passionha.tistory.com/214 <br>
   *-* 파일업로드 방법 예시 2 - https://advenoh.tistory.com/26 <br>
