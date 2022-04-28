@@ -1,6 +1,92 @@
 # 설계
 
-**요구사항 정의서** (Software Requirements Specification-SRS)
+## **요구사항 정의서** (Software Requirements Specification-SRS)
+
+
+
+
+### 추상화란?
+
+추상화는 정보의 공개를 조절한다. The part others must know, information hiding
+추상화의 수준에 따라 우리가 파악할 수 있는 정보의 양은 달라진다.
+
+함수는 한문장으로 표현될 수 있기 때문에 함수는 하나의 추상화를 의미한다.
+
+
+
+
+<br><br><br>
+
+
+### 관심사란?
+
+관심사는 프로그램 동작에 영향을 주는 정보나 요소를 의미한다.
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+## 코드 작성 시 유의할 점
+
+
+1. 이름을 잘 정해라! (가장 중요!)
+
+   - 파일명, 클래스명, 함수명, 변수명과 같은 모든 이름은 하는 일을 정확히 명시한다!
+
+ 
+
+2. 클래스, 함수는 한가지만 한다!
+
+   - 하나의 클래스와 함수는 여러가지 일을 하는 것이 아니라 한가지 일만 한다.
+
+   - 한가지 일이란 추상화 단계를 일컫는 말이므로, 하나의 큰 목적의 일을 하기 위해 여러개의 작은 일로 구성되는 것이다.
+
+ 
+
+3. 추상화 단계를 통일시켜라!
+
+   - 한 함수는 하나의 추상화 수준을 유지한다.
+
+   - 한 함수내에 여러 단계의 추상화된 내용이 있으면 안된다.
+
+   - 한 단계로 추상화하고, 추상화 단계가 떨어지는 일들은 하나의 추상화된 함수로 만든다.
+
+ 
+
+4. 파일, 클래스, 함수는 무조건 작게 만들어라!
+
+   - 길어지면 반드시 나누어라.
+   - 한 파일은 400줄(line) 내에서 작성하라. 평균적으로 100줄이 안되는 것이 좋다.
+
+   - 한 함수는 100줄(line)을 넘으면 안된다. 아니 20줄도 길다.
+
+   - 한 함수내의 블록{}은 1단이나 2단까지만 허용된다.
+
+ 
+
+5. 함수의 인수(파라미터)는 작게 유지해라!
+
+   - 많아도 3개를 넘지 않도록 한다.
+
+   - 인수로 BOOL 형태를 받는 다면 함수를 나누어라!
+
+ 
+
+6. 중복을 없애라!
+
+   - 중복은 모든 악의 근원.
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 ### [참고] <br>
-  *-* 
+  *-* 추상화 수준이란? 1 - https://dev-splin.github.io/clean%20code/CleanCode-Chapter3/ <br>
+  *-* 추상화 수준이란? 2 - https://lordofkangs.tistory.com/m/127 <br>
+  *-* What is an Abstraction [stackoverflow] - https://stackoverflow.com/questions/21220155/what-does-abstraction-mean-in-programming <br>
+  *-* Function abastraction - https://www.cs.cornell.edu/courses/cs211/2006sp/Lectures/L08-Abstraction/08_abstraction.html <br>
