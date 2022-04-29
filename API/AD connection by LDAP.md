@@ -40,6 +40,9 @@
 * **AD attributes**
   - objectGUID* : AD 객체가 갖는 고유값으로 변경할 수 없다. (고유 식별자)
     > GUIDs are assigned to every object created by Active Directory, not just User and Group objects. <br> Each object's GUID is stored in its Object-GUID (objectGUID) property.
+
+    objectGUID는 2진 데이터(binary data)이기 때문에 LDAP로 읽은 값을 그대로 출력하면 확인할 수 없다.
+    Base64 방식(64진법 - ASCI II)으로 읽을 수 있는 데이터로 변환하여 값을 활용.
 <br>
 
   - distinguishedName : 콤마로 연관 식별자들을 연결한 식별 정보 속성 <br>
@@ -91,6 +94,12 @@
   *-* LDAP 검색필터 (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/adsi/search-filter-syntax?redirectedfrom=MSDN <br>
   *-* 검색결과 최대값 - https://social.msdn.microsoft.com/Forums/sqlserver/en-US/58a5326b-e344-4eb6-97a1-bb68f7b1292f/ldap-data-load-failed-after-loading-1000-records?forum=sqlintegrationservices <br>
   *-* 검색결과 최대값(MaxPageSize) 증가시키는 법 - https://bono915.tistory.com/entry/Ldap-How-to-get-more-than-1000-records-in-querying-AD <br>
+
+  <br>
+
+  * Returningattributes
+  *-* objectGUID의 특성 [binary data] https://stackoverflow.com/questions/18383843/how-do-i-convert-an-active-directory-objectguid-to-a-readable-string <br>
+  *-* Base64란 ? 설명 - https://devuna.tistory.com/41 <br>
   *-* AD 사용자 이름 특성 (로그인 ID) [AD속성] (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/ad/naming-properties <br>
   *-* **AD 식별자** (Distinguished Names) [Microsoft] - https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names <br>
   *-* 두 속성(name, displayName) 간 차이점 - https://www.reddit.com/r/activedirectory/comments/7zqys7/difference_between_name_and_displayname_fields/ <br>

@@ -1,5 +1,53 @@
 # MySQL Commands
 
+## Transaction
+
+Autocommit 연관 commands
+
+``` sql
+-- autocommit 설정정보 확인
+SELECT @@AUTOCOMMIT;
+
+-- autocommit 설정/해제
+set autocommit = true;
+set autocommit = false;
+
+commit;
+rollback;
+
+```
+
+
+
+<br><br><br>
+
+_*_ 데이터베이스 엔진(스토리지 엔진)에 따라 트랜젝션의 지원 유무가 다르다. - MariaDB에서는 storage engine으로 표기
+
+
+MariaDB의 기본 DB엔진은 InnoDB이다. (MariaDB 10.2 버전 이후로 적용, 이전버전은 XtraDB를 기본 DB엔진으로 사용)
+(InnoDB는 XtraDB와 유사한 기능을 제공하며 version 변경으로 인한 migration 시 시간적으로 효율적이기 때문에 InnoDB를 default로 제공)
+
+<br>
+
+
+
+아래 명령어를 통해 설정가능한 데이터베이스 엔진을 확인할 수 있다.
+> show engines;
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+
 ## DML (Data Manipulation Language)
 ---
 SELECT의 경우 DQL(데이터 질의어)라고도 불린다.
@@ -182,6 +230,14 @@ sql> kill id
 
 ### [참고]
   *-* 기본 SQL 문장이란 (mariadb doc) - https://mariadb.com/kb/ko/basic-sql-statements/ <br>
+
+  * DB엔진, Transaction
+  *-* 데이터베이스 엔진이란? - https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EC%97%94%EC%A7%84 <br>
+  *-* InnoDB, XtraDB, MyISAM 비교 [@@@@@] - https://idchowto.com/myisam-innodb-xtradb-%ED%8A%B9%EC%A7%95-%EB%B0%8F-%EC%84%A4%EC%A0%95/ <br>
+  *-* MySQL의 DB엔진 종류 및 특징 - https://nomadlee.com/mysql-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%97%94%EC%A7%84-%EC%A2%85%EB%A5%98-%EB%B0%8F-%ED%8A%B9%EC%A7%95/ <br>
+
+  <br>
+
 
   * **DML**
   *-* mariaDB > Returning [Document] - https://mariadb.com/kb/en/insertreturning/ <br>
