@@ -76,19 +76,31 @@
 <br>
 
 ### [참고] <br>
-  *-* LDAP in 위키 - https://ko.wikipedia.org/wiki/LDAP <br>
+
+  * Directory Service <br>
   *-* AD 및 DNS 기본 개념(Name Space) **check** - https://mapoo.net/os/oswindows/%EC%97%91%ED%8B%B0%EB%B8%8C-%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EC%9D%98-%EC%9D%B4%ED%95%B4/ <br>
-  *-* AD와 LDAP의 차이점 - https://m.blog.naver.com/sung_mk1919/221824347182 <br>
+  *-* LDAP in 위키 - https://ko.wikipedia.org/wiki/LDAP <br>
+  *-* LDAP 개념 분석 - https://yongho1037.tistory.com/796 <br>
+
+  <br>
+
+  * LDAP 스키마 - LDAP 디렉토리 항목에 대한 속성
   *-* LDAP 스키마(구조) - https://help.hcltechsw.com/domino/11.0.1/ko/admin/conf_ldapschema_c.html <br>
   *-* LDAP 스키마 구조 속성 설명 - https://support.google.com/cloudidentity/answer/9188164?hl=ko <br>
-  *-* AD와 DNS의 개념 https://sbck.tistory.com/25 <br>
-
   *-* AD 검색 개념 (Microsoft ~ eng) - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc978021(v=technet.10) <br>
+
+  <br>
+
+  * Java api 활용
   *-* Java JNDI api - https://deviscreen.tistory.com/123 <br>
   *-* LDAP 연결 방법 소스 예시1 - https://black-whisker.tistory.com/32 <br>
   *-* LDAP 연결 방법 소스 예시2 - https://stackoverflow.com/questions/8551809/how-to-connect-with-java-into-active-directory <br>
   *-* LDAP 연결 방법 소스 예시3 - https://qmffjem09.tistory.com/entry/java-ldap-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D <br>
+  *-* initialLdapContext 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/ldap/initialldapcontext <br>
 
+  <br>
+
+  * 검색조건 설정
   *-* LDAP 통신 search base 설명 - https://www.watchguard.com/help/docs/help-center/en-US/Content/en-US/Fireware/authentication/find_ad_search_base_c.html <br>
   *-* LDAP 검색필터(search filter) 작성법 - https://confluence.atlassian.com/kb/how-to-write-ldap-search-filters-792496933.html <br>
   *-* LDAP 검색필터 (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/adsi/search-filter-syntax?redirectedfrom=MSDN <br>
@@ -97,24 +109,26 @@
 
   <br>
 
-  * Returningattributes
+  * LDAP 스키마 속성 개념 - Returningattributes
   *-* objectGUID의 특성 [binary data] https://stackoverflow.com/questions/18383843/how-do-i-convert-an-active-directory-objectguid-to-a-readable-string <br>
+  *-* is objectGUID unique ? - https://serverfault.com/questions/105486/is-the-objectguid-unique-and-will-it-ever-change <br>
   *-* Base64란 ? 설명 - https://devuna.tistory.com/41 <br>
   *-* AD 사용자 이름 특성 (로그인 ID) [AD속성] (Microsoft ~ kor) - https://docs.microsoft.com/ko-kr/windows/win32/ad/naming-properties <br>
   *-* **AD 식별자** (Distinguished Names) [Microsoft] - https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names <br>
   *-* 두 속성(name, displayName) 간 차이점 - https://www.reddit.com/r/activedirectory/comments/7zqys7/difference_between_name_and_displayname_fields/ <br>
-
-  *-* initialLdapContext 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/ldap/initialldapcontext <br>
-  *-* SearchResult 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/directory/searchresult <br>
-  *-* is GUID unique ? - https://serverfault.com/questions/105486/is-the-objectguid-unique-and-will-it-ever-change <br>
   *-* MS > SID vs GUID - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc961625(v=technet.10)?redirectedfrom=MSDN <br>
-  
-  *-* **DN 조작** (LdapName) - https://docs.oracle.com/javase/tutorial/jndi/newstuff/ldapname.html <br>
-  *-* AD 스키마 (모든 속성) - https://docs.microsoft.com/ko-kr/windows/win32/adschema/a-objectclass <br>
   *-* password cann't be read in plain text - https://serverfault.com/questions/292767/any-way-to-see-an-active-directory-password <br>
   *-* AD 및 Windows 비밀번호 저장방법 (암호화 [OWF, one-way function]) - https://docs.microsoft.com/ko-kr/windows-server/security/kerberos/passwords-technical-overview <br>
 
+  <br>
+  
+  * 검색결과 처리
+  *-* SearchResult 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/directory/searchresult <br>
+  *-* **DN 조작** (LdapName) - https://docs.oracle.com/javase/tutorial/jndi/newstuff/ldapname.html <br>
+  
+   
 
+  * 관련 응용 프로그램
   *-* Active Directory Download link - https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer <br>
 
 
