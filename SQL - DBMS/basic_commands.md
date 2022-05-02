@@ -2,6 +2,13 @@
 
 ## Transaction
 
+데이터베이스에서 발생하는 논리적 작업단위. 데이터베이스에서는 데이터의 무결성을 지키기 위해 ACID라는 4가지 속성을 가진다.
+(Atomic, Consistency, Isolation, Durability)
+
+
+<br><br>
+
+
 Autocommit 연관 commands
 
 ``` sql
@@ -16,6 +23,19 @@ commit;
 rollback;
 
 ```
+
+<br><br><br>
+
+## (Transaction) Isolation Level (격리/고립 수준)
+
+트랜젝션 간 데이터 처리를 얼마나 허용할 것인지 정해놓은 수준
+> 격리수준이 높을 수록 데이터일관성은 높아지지만 성능은 하락한다.
+
+[격리수준]
+* Read Uncommited (level 0)
+* Read Commited (level 1)
+* Repeatable Read (level 2)
+* Serializable (level 3)
 
 
 
@@ -230,8 +250,13 @@ sql> kill id
 
 ### [참고]
   *-* 기본 SQL 문장이란 (mariadb doc) - https://mariadb.com/kb/ko/basic-sql-statements/ <br>
+  <br>
 
-  * DB엔진, Transaction
+  * DB엔진, Transaction <br>
+  *-* Transaction의 Isolation Level 이란? - https://skytitan.tistory.com/265 <br>
+  *-* Transaction의 Isolation Level 이란? [better] - https://it-license.tistory.com/25 <br>
+  *-* isolation level 및 locking 전략 [@@@@@] - https://suhwan.dev/2019/06/09/transaction-isolation-level-and-lock/ <br>
+
   *-* 데이터베이스 엔진이란? - https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EC%97%94%EC%A7%84 <br>
   *-* InnoDB, XtraDB, MyISAM 비교 [@@@@@] - https://idchowto.com/myisam-innodb-xtradb-%ED%8A%B9%EC%A7%95-%EB%B0%8F-%EC%84%A4%EC%A0%95/ <br>
   *-* MySQL의 DB엔진 종류 및 특징 - https://nomadlee.com/mysql-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%97%94%EC%A7%84-%EC%A2%85%EB%A5%98-%EB%B0%8F-%ED%8A%B9%EC%A7%95/ <br>
