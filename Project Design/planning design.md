@@ -2,7 +2,8 @@
 
 ## **요구사항 정의서** (Software Requirements Specification-SRS)
 
-
+flow
+> 요구사항 정의서 - 도메인 설계 및 관계 정의 - 엔티티 및 테이블 설계
 
 
 ### 추상화란?
