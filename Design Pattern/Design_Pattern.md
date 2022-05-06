@@ -4,7 +4,7 @@
 * Delegation Pattern
 * Builder Pattern
 * Factory Pattern
-
+* Proxy Pattern
 
 
 
@@ -19,6 +19,7 @@
 
 ## 팩토리 패턴
 
+## 프록시 패턴
 
 
 
