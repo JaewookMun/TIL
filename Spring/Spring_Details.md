@@ -3,13 +3,30 @@
 <br>
 
 ## 스프링 설정
----
 
-<br>
+<br><br><br>
 
 ### Spring Legacy
+---
+
 
 ### SpringBoot
+---
+
+
+<br><br><br>
+<br><br><br>
+
+Listener interface
+
+**ServletContextListener**
+
+: ServletContextListener를 구현한 클래스에서는 @Autowired 어노테이션을 통해 Bean을 주입받을 수 없다.
+
+
+해결방법
+* WebApplicationContextUtils.getWebApplicationContext(ServletContext sc) 메서드를 활용하여 WebApplicationContext를 가지고 등록된 Bean을 사용
+
 
 
 <br><br><br>
@@ -105,8 +122,13 @@ public class SimpleMovieLister {
 ```
 
 
+<br><br><br>
 
-<br><br>
+
+
+
+<br><br><br>
+<br><br><br>
 
 <br>
 
@@ -138,11 +160,12 @@ difference between artifactid and name - https://stackoverflow.com/questions/699
 
 > artifactid : 프로젝트를 구분하는 식별자, name : 프로젝트의 이름 이라고 구분하면 될 것 같음.
 
-### [참고] 
-<br>
+### [참고] <br>
 
   * **환경설정** <br>
   *-* [*-context.xml] 파일 없이 Bean을 등록하여 사용하는 방법 **@@@@@** - https://stackoverflow.com/questions/8075790/how-to-register-spring-configuration-annotated-class-instead-of-applicationcont?rq=1 <br>
+
+  *-* ServletContextListener 에서 스프링 빈 사용하기 - https://stackoverflow.com/questions/39787519/how-use-autowired-instance-variable-use-in-servletcontextlistener <br>
 
 
   * 기초 개념 <br>

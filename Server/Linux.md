@@ -430,6 +430,8 @@ tar : 파일의 압축 / 해제 명령어
 <br><br>
 
 ### [참고] <br>
+  *-* 리눅스 파일시스템 게층 구조 (디렉토리 구조 이해) [공식표준문서] - https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html#purpose5
+
   * 리눅스 설치
   *-* vmware 네트워크 모드 (NAT, Bridge, Host Only) - https://tristan91.tistory.com/238 <br>
   *-* VMwared Network setting (port forwarding - NAT) - https://hwan1001.tistory.com/63 <br>
