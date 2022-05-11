@@ -1,5 +1,13 @@
 # Linux
 
+서버 spec (장치, cpu, memory) 확인 커맨드
+https://juni5184.tistory.com/19
+
+apt 설치시 발생 가능한 encryt 인증서 문제 (mariadb - apt update)
+https://hamonikr.org/hamoni_board/106932
+https://www.bearpooh.com/100
+
+apt repository 제거방법 - https://blkcoding.blogspot.com/2017/12/repository-apt-update.html <br>
 <br>
 
 ## Kernel

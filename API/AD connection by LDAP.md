@@ -19,7 +19,8 @@
 ## **LDAP**
   *-* 경량 디렉터리 액세스 프로토콜(영어: Lightweight Directory Access Protocol; LDAP)은 TCP/IP 위에서 디렉터리 서비스를 조회하고 수정하는 응용 프로토콜이다.
   *-* default character-set: **UTF-8**
-  *-* LDAP로 가져올 수 있는 결과의 기본 최대값은 1000개 - 증가시키기 위해서는 서버에서 MaxPageSize의 값을 증가시켜야함
+  *-* LDAP로 가져올 수 있는 결과의 기본 최대값은 1000개 - 증가시키기 위해서는 AD 서버에서 MaxPageSize의 값을 증가시켜야함
+      > Java api로 paing 처리 개념으로 모두 가져올 수 있음.
 
 <br>
 
@@ -125,6 +126,7 @@
   * 검색결과 처리
   *-* SearchResult 설명 (doc) - https://runebook.dev/ko/docs/openjdk/java.naming/javax/naming/directory/searchresult <br>
   *-* **DN 조작** (LdapName) - https://docs.oracle.com/javase/tutorial/jndi/newstuff/ldapname.html <br>
+  *-* AD 1000개 이상 조회하기 - https://stackoverflow.com/questions/11311765/ldap-how-to-return-more-than-1000-results-java <br>
   
    
 

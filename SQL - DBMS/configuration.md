@@ -1,5 +1,9 @@
 # 설정 (Configuration)
 
+## 설치
+mariaDB APT 설치 - https://mariadb.com/kb/en/installing-mariadb-deb-files/ <br>
+apt 설치 예시 - https://mkwilson.tistory.com/222 <br>
+
 
 my.conf 설정...
 /etc/mysql~
