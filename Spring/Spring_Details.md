@@ -20,12 +20,32 @@
 Listener interface
 
 **ServletContextListener**
-
 : ServletContextListener를 구현한 클래스에서는 @Autowired 어노테이션을 통해 Bean을 주입받을 수 없다.
-
 
 해결방법
 * WebApplicationContextUtils.getWebApplicationContext(ServletContext sc) 메서드를 활용하여 WebApplicationContext를 가지고 등록된 Bean을 사용
+
+
+**ApplicationListener<E extends ApplicationEvent>** 
+: application event 에 대한 리스너 인터페이스
+
+dispatcherServlet의 load 작업이 완료되었을 때 수행할 메서드를 지정할 수 있다. (dispatcherServlet 작업에 대한 콜백함수 지정)
+*-*> ContextRefreshedEvent 클래스 사용
+
+``` java
+//example
+@Component
+public class ApplicationContextListener implements
+    ApplicationListener<ContextRefreshedEvent> {
+
+  @Override
+  public void onApplicationEvent(ContextRefreshedEvent event) {
+    System.out.println("dispatcherServlet was initialized or refreshed: "
+        + event.getApplicationContext().getDisplayName());
+  }
+}
+
+```
 
 
 
@@ -170,7 +190,11 @@ difference between artifactid and name - https://stackoverflow.com/questions/699
 
   * 기초 개념 <br>
   *-* Bean 메서드를 통한 의존성 주입 (inter-bean references) [important] - https://spring.training/understanding-inter-bean-method-reference-in-spring-configuration/ <br>
+  
   <br>
+
+  * Listener & Filter 클래스
+  *-* How To Call Method after DispatcherServlet Initialization completed - https://stackoverflow.com/questions/45004461/how-to-call-method-after-dispatcherservlet-initialization-completed <br>
 
   * Spring MVC <br>
   *-* 파일 업로드 방법 설명 - https://caileb.tistory.com/152 <br>

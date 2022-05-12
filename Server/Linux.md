@@ -101,7 +101,7 @@ systemctl status ssh로 프로세스 상태를 확인해보면 OpenBSD Secure Sh
 
 <br><br><br>
 
-### 방화벽 설정 (firewall)
+## 방화벽 설정 (firewall)
 
 서버 통신의 in/out-bound 통신의 포트번호, IP 주소 등을 허용하기 위해서는 방화벽 정보를 설정해야한다.
 리눅스에서는 iptables, ufw로 방화벽을 설정할 수 있다.
@@ -116,12 +116,10 @@ systemctl status ssh로 프로세스 상태를 확인해보면 OpenBSD Secure Sh
 
 
 
-
-
 <br><br><br>
 <br><br><br>
 
-### Process management
+## Process management
 
 top (table of processes) : '작업 관리자 (task manager)' 프로그램, 장치(This device)에서 실행중인 프로세스 목록을 통해 CPU와 Memory 사용량을 확인할 수 있다. 
 
@@ -131,7 +129,7 @@ top (table of processes) : '작업 관리자 (task manager)' 프로그램, 장�
 <br><br><br>
 <br><br><br>
 
-### 디스크 용량 관리
+## 디스크 용량 관리
 
 
 
@@ -142,7 +140,7 @@ top (table of processes) : '작업 관리자 (task manager)' 프로그램, 장�
 ## 프로세스
 --
 
-### 시작 프로세스 - 서비스 등록 : init, systemd
+## 시작 프로세스 - 서비스 등록 : init, systemd
 
 init 프로세스
 
@@ -181,7 +179,7 @@ service 명령어는 **systemctl**의 wrapper script다.
 
 <br><br><br>
 
-### 서비스 제어 명령어
+## 서비스 제어 명령어
 
 
 
@@ -208,7 +206,7 @@ ls -l | grep ^- | wc -l // 파일 갯수
 
 <br><br><br>
 
-### 출력관련 명령어
+## 출력관련 명령어
 
 grep
 > grep -- -search_keyword
@@ -275,7 +273,7 @@ e.g) 문자열 대체
 <br><br><br>
 <br><br><br>
 
-### 다중 명령어
+## 다중 명령어
 
 한 문장으로 단일 명령을 수행할 수 있지만 몇가지 명령어를 통해 여러 명령을 동시에 실행할 수 있다.
 
@@ -367,8 +365,6 @@ drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ROOT/
 ```
 
 
-   
-
 
 <br><br>
 
@@ -382,15 +378,8 @@ drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ROOT/
 
 <br><br>
 
-## 폴더 / 파일 관리
 
-
-
-
-<br><br>
-
-<br><br>
-
+<br><br><br>
 
 ## 프로그램 설치
 
@@ -404,7 +393,11 @@ drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ROOT/
 
 APT - Advanced Packagaging Tool
 
-## 파일(디렉토리) 이동 / 이름변경 / 복사
+
+
+<br><br><br>
+
+## 파일(디렉토리) 이동 / 이름변경 / 복사 / 생성
 
 * mv : 파일을 다른 디렉토리로 이동하거나 다른 이름으로 바꾸고자할 때 사용
 > $ mv [-옵션] '원본 디렉토리' '옮길 디렉토리' <br>
@@ -419,7 +412,15 @@ _*_ rename 명령어 존재
 > $ cp [-옵션] '원본 디렉토리' '옮길 디렉토리'
 
 
-<br><br>
+* rsync(Remote sync) : **원격** 또는 **로컬**간에 파일이나 디렉토리를 복사
+
+* touch : 파일의 날짜와 시간을 수정하는 명령어 / 0바이트 파일을 생성하기 위해 자주 사용
+
+
+
+
+<br><br><br>
+
 
 ## 파일 다운로드
 
@@ -502,5 +503,5 @@ tar : 파일의 압축 / 해제 명령어
   *-* 파일 다운로드(wget) - https://hippogrammer.tistory.com/158 <br>
   *-* tar 커맨드 개념 - https://recipes4dev.tistory.com/146 <br>
 
-
-
+  * 폴더/파일 관리 <br>
+  *-* rsync 명령어 사용법 - https://twpower.github.io/153-copy-file-or-directory-using-rsync-command <br>
