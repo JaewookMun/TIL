@@ -1,5 +1,11 @@
 # Tomcat Configuration
 
+## Application Deployment
+
+Tomcat startup시 appBase(일반적으로 webapps)에 위치한 application이 자동으로 배포된다.
+
+
+
 ## Tomcat URL Rewrite
 
 HTTP 통신에서 특정 URL에 대한 request 요청을 redirect 할 수 있는 것처럼 서버자체에서 잘못된 URL 및 원하는 URL을 다른 URL로 rewrite할 수 있다.
@@ -28,6 +34,7 @@ URL 비허용 문자 : HTTP/1.1 spec 기준으로 url 경로에는 인코딩된 
 <br><br><br>
 
 ### [참고] <br>
+  *-* Tomcat Web Application Deployment - https://tomcat.apache.org/tomcat-8.5-doc/deployer-howto.html <br>
   *-* Apache offiction document [The rewrite Valve] - https://tomcat.apache.org/tomcat-8.0-doc/rewrite.html#mapfunc <br>
   *-* url rewrite 설정방법 (블로그) - https://datajoy.tistory.com/116 <br>
 

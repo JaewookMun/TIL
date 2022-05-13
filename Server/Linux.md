@@ -107,11 +107,17 @@ systemctl status ssh로 프로세스 상태를 확인해보면 OpenBSD Secure Sh
 리눅스에서는 iptables, ufw로 방화벽을 설정할 수 있다.
 (iptables와 ufw는 유사한 기능을 가지고 있으며 사용법이 복잡한 iptables와 달리 ufw는 간편하게 사용할 수 있다.)
 
+* iptables : 사용법이 복잡하고 ufw에 비해 정교한 설정을 하기 위해 사용한다.
 
 * ufw(Uncomplicated FireWall) : 복잡한 iptables에 비해 사용법이 간편하다. 간단하게 방화벽을 설정 할 수 있다.
 
-* iptables : 사용법이 복잡하고 ufw에 비해 정교한 설정을 하기 위해 사용한다.
+allow, deny 설정
+- sudo ufw allow <port>/<protocol>
+- sudo ufw deny <port>/<protocol>
+- tcp/udp 한번에 허용 하려면 port 번호만 표기하면 됨.
 
+> sudo ufw allow 20/tcp (tcp 프로토콜을 사용한 20번 포트 허용)
+> sudo ufw allow 20 (20번 포트에 대하여 tcp, udp 프로토콜 모두 허용)
 
 
 
@@ -463,6 +469,12 @@ tar : 파일의 압축 / 해제 명령어
 
 <br>
 
+  * 방화벽 (firewall)
+  *-* ufw 설명 및 사용방법 - https://imcr.tistory.com/11 <br>
+
+
+<br>
+
   *-* awk 설명 - https://reakwon.tistory.com/163
 
 
@@ -498,6 +510,8 @@ tar : 파일의 압축 / 해제 명령어
 
   <br>
 
+  * 다운로드
+  *-* apt, rpm, wget 방식 차이 (yum 또한 centos 게열) - https://m.blog.naver.com/zozokjs/221212381840 <br>
   *-* 리눅스 프로그램(패키지) 설치 - https://conory.com/blog/42585 <br>
   *-* apt와 apt-get 차이점 - https://ksbgenius.github.io/linux/2021/01/13/apt-apt-get-difference.html <br>
   *-* 파일 다운로드(wget) - https://hippogrammer.tistory.com/158 <br>
