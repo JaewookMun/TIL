@@ -143,9 +143,28 @@ new FileInputStream(File file); // 디렉토리의 인스턴스일 경우 에러
 FileNotFoudException ~ (액세스가 거부되었습니다.)
 > File 인스턴스를 사용시 해당 문구의 Exception이 발생하면 1. 관리자 권한으로 실행, 2. File 인스턴스가 실제 파일이 아니라 Directory인지 확인
 
+
 <br><br><br>
+
+## Network Programming API
+
+### URL
+
+URL 클래스를 사용해서 웹자원을 읽어올 수 있음. - InputStream / OutputStream 활용 참고
+
+
+URL 객체에 사용하는 url 경로에는 특수문자를 사용할 수 없다.
+> url 경로에 공백(스페이스)가 들어가면 에러가 발생한다. <br>
+> '[에러]요청 타겟에서 유효하지 않은 문자가 발견되었습니다. 유효한 문자열은 RFC7230과 RFC3986에 정의되어 있습니다.'
+
+
+
+
+
 <br><br><br>
+
 <br><br><br>
+
 
 
 ### [참고] <br>
@@ -183,3 +202,8 @@ FileNotFoudException ~ (액세스가 거부되었습니다.)
 
   * InputStream <br>
   *-* InputStream(Reader) to String (read메서드를 사용하면 int를 반환 char로 바꾸어준다.) - https://www.baeldung.com/convert-input-stream-to-string <br>
+
+  * Network Programming <br>
+  *-* url encoding 개념설명 블로그 - https://dololak.tistory.com/18 <br>
+  *-* Java URL Encoding / Decoding java progamming ex [Baeldung] - https://www.baeldung.com/java-url-encoding-decoding <br>
+  *-* URL 클래스 사용 예시 - https://hackeen.tistory.com/18 <br>

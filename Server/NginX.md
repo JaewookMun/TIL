@@ -17,8 +17,36 @@ server {
 
 ```
 
+## Basic Settings
+
+### client_max_body_size
+'Request Entity Too Large' NginX error를 피하기 위해서 설정
+
+default : 1 MB (0으로 설정하면 client request body size를 검사하지 않는다.)
 
 
+``` vim
+
+~
+
+http {
+    ~
+
+    client_max_body_size 0;
+
+
+}
+
+
+
+
+
+
+```
+
+
+<br><br><br>
+<br><br><br>
 
 ## Reverse Proxy ? 
 
@@ -42,6 +70,12 @@ server {
   *-* beginners_guide - http://nginx.org/en/docs/beginners_guide.html <br>
   *-* configuration directive 용어 설명 [location] - http://nginx.org/en/docs/http/ngx_http_core_module.html#location <br>
 
+  <br>
+
+  * Basic settings <br>
+  *-* client_max_body_size - https://linuxhint.com/what-is-client-max-body-size-nginx/ <br>
+
+  <br>
 
   * config - 포트포워딩 <br>
   *-* nginx 포트포워딩 - https://zionh.tistory.com/20 <br>
