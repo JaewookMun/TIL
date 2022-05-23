@@ -1,10 +1,12 @@
 # Tomcat Configuration
 
-## Application Deployment
-
-Tomcat startup시 appBase(일반적으로 webapps)에 위치한 application이 자동으로 배포된다.
+## **server.xml** structure
 
 
+
+
+<br><br><br>
+<br><br><br>
 
 ## Tomcat URL Rewrite
 
@@ -20,6 +22,11 @@ I. 톰캣 서버 설정
 
 
 
+
+
+
+
+<br><br><br>
 <br><br><br>
 
 ## URL 허용 문자
@@ -33,11 +40,36 @@ URL 비허용 문자 : HTTP/1.1 spec 기준으로 url 경로에는 인코딩된 
 <br><br><br>
 <br><br><br>
 
+## Application Deployment
+
+Tomcat startup시 appBase(일반적으로 webapps)에 위치한 application이 자동으로 배포된다.
+
+
+
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+
+
 ### [참고] <br>
-  *-* Tomcat Web Application Deployment - https://tomcat.apache.org/tomcat-8.5-doc/deployer-howto.html <br>
-  *-* Apache offiction document [The rewrite Valve] - https://tomcat.apache.org/tomcat-8.0-doc/rewrite.html#mapfunc <br>
+  * ~/conf/ - configuration <br>
+  *-* Tomcat directory structure & Configuration files - https://tomcat.apache.org/tomcat-3.2-doc/uguide/tomcat_ug.html <br>
+  *-* **server.xml** structure explain - https://examples.javacodegeeks.com/enterprise-java/tomcat/tomcat-server-xml-configuration-example/ <br>
+  *-* **server.xml** structure with picture - https://howtodoinjava.com/tomcat/tomcats-architecture-and-server-xml-configuration-tutorial/ <br>
+
+  *-* Apache offiction document on [The rewrite Valve] - https://tomcat.apache.org/tomcat-8.0-doc/rewrite.html#mapfunc <br>
   *-* url rewrite 설정방법 (블로그) - https://datajoy.tistory.com/116 <br>
 
   *-* URI path/query string 특수문자 허용 옵션 [relaxedPathChars 또는 relaxedQueryChars] 검색 - https://tomcat.apache.org/tomcat-8.5-doc/config/http.html <br>
+
+  <br>
+
+  * web app deployment <br>
+  *-* Tomcat Web Application Deployment - https://tomcat.apache.org/tomcat-8.5-doc/deployer-howto.html <br>
+  
 
    

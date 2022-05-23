@@ -440,9 +440,23 @@ tar : 파일의 압축 / 해제 명령어
 
 
 
+<br><br><br>
 
-<br><br>
-<br><br>
+## 파일/디렉토리 용량
+
+du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 파일 탐색)
+> $ du [-옵션] [File] ... <br>
+> $ du -hs ~/shell/
+
+
+
+
+
+
+
+
+<br><br><br>
+<br><br><br>
 
 ### [참고] <br>
   *-* 리눅스 파일시스템 게층 구조 (디렉토리 구조 이해) [공식표준문서] - https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html#purpose5

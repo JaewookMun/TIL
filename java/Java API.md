@@ -1,5 +1,15 @@
 # Java API
 
+## Java CLI
+
+
+
+> javac HelloWorld.java
+> java java HelloWorld
+
+
+<br><br><br>
+
 ## static keyword (static vs instance)
 
 정적 메서드는 언제 사용해야하는가?
@@ -168,6 +178,12 @@ URL 객체에 사용하는 url 경로에는 특수문자를 사용할 수 없다
 
 
 ### [참고] <br>
+  * Java CLI <br>
+  *-* Java execution with CLI (Could Not Find or Load) - https://www.baeldung.com/java-could-not-find-load-main-class <br>
+  *-* Java CLI with multiple args - https://lightrun.com/java/java-tutorial-java-command-line-arguments/ <br>
+
+  <br>
+
   * static field / method <br>
   *-* 정적 메서드는 언제 써야하는가? - https://mygumi.tistory.com/253 <br>
   *-* (위 블로그 참고링크) when to use static method - https://stackoverflow.com/questions/2671496/when-to-use-static-methods <br>
