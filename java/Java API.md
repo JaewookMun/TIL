@@ -1,13 +1,39 @@
 # Java API
 
 ## Java CLI
+---
+
+<br><br>
+
+## Basic (.java -> .class)
 
 
-
-> javac HelloWorld.java
+> javac HelloWorld.java <br>
 > java java HelloWorld
 
 
+
+<br><br><br>
+
+## Jar file
+
+실행가능한 jar파일을 만들기 위해서는 main 메서드를 가진 클래스가 존재해야하며 이 클래스를 통해서 어플리케이션에 접근할 수 있다.
+
+소스코드(.java)를 클래스파일(.class)로 컴파일한 후 패키징처리
+
+<br>
+
+
+``` cli
+javac Hello.java 
+
+```
+
+
+
+
+
+<br><br><br>
 <br><br><br>
 
 ## static keyword (static vs instance)
@@ -179,8 +205,10 @@ URL 객체에 사용하는 url 경로에는 특수문자를 사용할 수 없다
 
 ### [참고] <br>
   * Java CLI <br>
-  *-* Java execution with CLI (Could Not Find or Load) - https://www.baeldung.com/java-could-not-find-load-main-class <br>
+  *-* Java(.class file) execution with CLI (Could Not Find or Load) - https://www.baeldung.com/java-could-not-find-load-main-class <br>
   *-* Java CLI with multiple args - https://lightrun.com/java/java-tutorial-java-command-line-arguments/ <br>
+  *-* creating and running a jar file - https://www.baeldung.com/java-create-jar <br>
+  *-* what is fat jar ? (stackoverflow - java packaging) - https://stackoverflow.com/questions/19150811/what-is-a-fat-jar <br>
 
   <br>
 

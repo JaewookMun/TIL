@@ -108,13 +108,25 @@ attribute는 HTML 문서에서 element에 대한 추가적인 정보를 제공�
   * $('#modalID').on('hidden.bs.modal', function (e) {}) : modal 종료 시, 이벤트 처리
   * $('#modalID').off() : modal 종료 시, 이벤트 처리 해제
   * $('#modalID').on('shown.bs.modal', function (e) {}) : modal 오픈 시, 이벤트 처리
-  * 
+  
+
+
+<br><br><br>
+
+## Ajax
+
+  * jquery의 ajax로 서버와 통신할 때 connection의 timeout 옵션을 주기 위해서는 asnyc 옵션을 true로 해서(default) 비동기로 통신해야한다.
+  (동기통신을 사용하면 timeout 옵션을 적용할 수 없다.)
+  * 동기통신처럼 ajax의 결과값을 가져와 처리하기 위해서 **Promise 객체** 사용
+  * Promise 객체 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
 
 
 
 
-<br><br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 ### [참고] <br>
   * Element Create, Read, Delete <br>
@@ -134,3 +146,8 @@ attribute는 HTML 문서에서 element에 대한 추가적인 정보를 제공�
   *-* jQuery modal 창 제어 - https://iruplace.tistory.com/235 <br>
 
   *-* difference? .on('click') vs .click() - https://stackoverflow.com/questions/9122078/difference-between-onclick-vs-click <br>
+
+  <br>
+
+  * Ajax
+  *-* jQuery.ajax > async await 및 Promise 사용 - https://kkh0977.tistory.com/1192 <br>

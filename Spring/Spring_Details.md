@@ -201,4 +201,7 @@ difference between artifactid and name - https://stackoverflow.com/questions/699
   *-* 파일업로드 방법 예시 1 - https://passionha.tistory.com/214 <br>
   *-* 파일업로드 방법 예시 2 - https://advenoh.tistory.com/26 <br>
 
+  <br>
   
+  * Application Deployment <br>
+  *-* Springboot deployment [official] - https://docs.spring.io/spring-boot/docs/current/reference/html/deployment.html#deployment.installing.nix-services <br>
