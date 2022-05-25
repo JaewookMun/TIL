@@ -7,12 +7,12 @@
 
 ## Data
 
-## Ajax
 
-## 'Server - side processing'
+<br><br><br>
+
+## Ajax : 'Server - side processing'
 ajax를 통해 Server의 DB에 접근하여 데이터를 가져와 테이블을 생성가능
 > check: *DataTables > Manual > Server-side processing* 
-
 
 <br>
 
@@ -41,6 +41,7 @@ ajax를 통해 Server의 DB에 접근하여 데이터를 가져와 테이블을 
 
   ```
 
+<br><br><br>
 
 [기본옵션]
 * pageLength : 화면에 표시될 테이블 행(row)의 개수 (관련 옵션: **lengthMenu**, lengthChange)
@@ -56,7 +57,51 @@ Server에서 'draw', 'recordsTotal', 'recordsFiltered', 'data'를 전달하면 d
 
 
 
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+## DataTable api
+
+Datatable은 데이터테이블을 생성하고 난 다음 (초기화 이후) 테이블에 접근하여 데이터를 수정할 수 있는 api 를 제공한다.
+
+
 <br>
+
+### row
+
+* rows() : 데이터테이블에서 원하는 행을 선택하도록 지원하는 api.
+  rows([modifier])
+  rows(rowSelector[, modifier])
+  > 아래 예시 처럼 rows() api에 row 엘리먼트(selector)를 넣으면 DataTable에서 해당 행의 데이터를 얻거나 조작할 수 있다.
+
+
+
+<br>
+
+``` javascript
+
+/*
+ * rowSelector 예시.
+ */
+var tableA = $('#tableA').DataTable({
+  // ...
+});
+
+$('#anonymousDiv').on('click', function() {
+  var row = $(this).closest('tr');
+
+  var tableRow = tableA.rows(row).data();
+});
+
+
+
+```
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 ## Events
 
@@ -77,14 +122,12 @@ table-layout 속성값을 fixed로 설정하면 데이터가 길어서 지정한
 
 ### [참고] <br>
   
-
   * *Official site*
   
   *-* *DataTable Official Document* - https://datatables.net/manual/ <br>
   *-* dataTable 설정 옵션 정보 [Official] - https://datatables.net/reference/option/ <br>
   *-* Server-side processing **parameters** (send / return ~ 전달 파라미터) - https://datatables.net/manual/server-side#Returned-data <br>
   *-* Server-side process example - https://datatables.net/examples/server_side/simple.html <br>
-  *-* dataTable events (페이지 로드 때마다 event를 넣기 위해 참고) - https://mail.datatables.net/reference/event/#buttons <br>
 
   *-* youtube video - https://youtu.be/0FQkioPkl7I <br>
   *-* dataTable 기본 옵션 정보 블로그 - https://nomoneynohappy.tistory.com/31 <br>
@@ -96,6 +139,17 @@ table-layout 속성값을 fixed로 설정하면 데이터가 길어서 지정한
 
   *-* lengthMenu 참고 - https://stackoverflow.com/questions/8051302/jquery-datatables-pagination-size <br>
 
-  * CSS
+  <br>
   
+  * DataTable api <br>
+  *-* rows() 활용 방식 (질문자의 소스코드 참고) - https://datatables.net/forums/discussion/55277/editor-modifier-clicking-an-element-within-a-cell <br>
+  
+  <br>
+
+  * Event processing <br>
+  *-* dataTable events (페이지 로드 때마다 event를 넣기 위해 참고) - https://mail.datatables.net/reference/event/#buttons <br>
+
+  <br>
+
+  * CSS
   *-* table-layout: fixed (너비 고정) - https://jowook.tistory.com/entry/table%ED%85%8C%EC%9D%B4%EB%B8%94%EC%97%90-tablelayout-%EC%86%8D%EC%84%B1%EC%9C%BC%EB%A1%9C-%EB%84%88%EB%B9%84-%EA%B3%A0%EC%A0%95%ED%95%98%EA%B8%B0 <br>

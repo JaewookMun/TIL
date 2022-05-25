@@ -70,10 +70,9 @@ MariaDB의 기본 DB엔진은 InnoDB이다. (MariaDB 10.2 버전 이후로 적�
 
 ## DML (Data Manipulation Language)
 ---
-SELECT의 경우 DQL(데이터 질의어)라고도 불린다.
-
 
 데이터 조작어에는 **SELECT**, **INSERT**, **UPDATE**, **DELETE** 등이 있다.
+(* SELECT의 경우 DQL(데이터 질의어)라고도 불린다.)
 
 
 * INSERT INTO `테이블`(...) VALUES(...) **RETURNING** id[, name ...]
@@ -105,7 +104,7 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
 
 ### 중복데이터 조회 해결
 
-SELECT 조회 시 데이터의 중복문제는 DISTINCT 키워드 or GROUP BY 절을 통해 해결가능
+SELECT 조회 시 중복되는 데이터는 DISTINCT 키워드 or GROUP BY 절을 사용해서 중복을 제외하고 조회할 수 있다.
 
 
 주의
@@ -115,11 +114,9 @@ SELECT 조회 시 데이터의 중복문제는 DISTINCT 키워드 or GROUP BY �
 
 
 
-
 <br><br><br>
 <br><br><br>
 <br><br><br>
-
 
 ### DDL (Data Definition Language)
 
