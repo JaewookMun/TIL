@@ -59,12 +59,6 @@ MariaDB의 기본 DB엔진은 InnoDB이다. (MariaDB 10.2 버전 이후로 적�
 
 
 
-
-
-
-
-
-
 <br><br><br>
 <br><br><br>
 
@@ -78,28 +72,50 @@ MariaDB의 기본 DB엔진은 InnoDB이다. (MariaDB 10.2 버전 이후로 적�
 * INSERT INTO `테이블`(...) VALUES(...) **RETURNING** id[, name ...]
   > returning을 통해 insert한 컬럼값들을 가져올 수 있음.
 
-
-* Access
-  ``` sql
-  mysql -u 계정 -p [데이터베이스]
-  ```
-  
-* 데이터베이스 조회 / 선택 명령어
-  show databases;
-  use database_name;
-
-* 계정 추가(권한설정과 함께 추가?)
-``` sql
-mysql> grant all privileges on dbname.table to userid@host identified by 'password';
-```
-
-
 * 날짜 출력 : DATE() 사용.
-
 * 기존 데이터 일괄 변경 : REPLACE()
 
 
 
+
+
+<br><br><br>
+
+## SELECT
+
+* EXPLAIN (describe) : 쿼리 최적화를 탐색할 때 사용하는 키워드.
+> 참고 : http://chongmoa.com/sql/8840
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+### Sub Query
+
+쿼리안에 존재하는 다른 쿼리
+
+서브쿼리 유형
+* 스칼라 서브쿼리 (Scalar Sub Query) : 하나의 컬럼처럼 사용   ex) SELECT col1, (SELECT ...) 
+* 인라인 뷰 (Inline View) : 하나의 테이블처럼 사용.           ex) FROM (SELECT ...)
+* 일반 서브쿼리 : 하나의 변수(상수)처럼 사용                  ex) WHERE col = (SELECT ...)
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
 <br><br><br>
 
 ### 중복데이터 조회 해결
@@ -114,22 +130,95 @@ SELECT 조회 시 중복되는 데이터는 DISTINCT 키워드 or GROUP BY 절�
 
 
 
+
+
+
+
+
+
+
+
+
 <br><br><br>
 <br><br><br>
 <br><br><br>
 
-### DDL (Data Definition Language)
+## DDL (Data Definition Language)
+---
 
 데이터 정의어에는 **CREATE**, **ALTER**, **DROP**  등이 있다.
 
-<br><br>
 
-#### Database 및 사용자 관리
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+
+## ALTER
+
+
+## 제약조건 관리
+---
+
+* 컬럼명 수정 : alter table [table_name] rename column [old_column_name] to [new_column_name]
+* 컬럼 타입 수정 : alter table [table_name] modify column [column_name] [column_type] (not null)   // not null 이 없으면 null 허용, 있으면 null 허용 X
+* 컬럼명 & 타입 수정 : alter table [table_name] change [old_column_name] [new_column_name] [column_type]
+
+
+제약조건 확인 <br>
+: select * from information_schema.table_constraints;
+
+
+<br>
+
+제약조건 삭제 <br>
+: ALTER TABLE [테이블명] DROP CONSTRAINT [제약조건이름];
+
+: ALTER TABLE [테이블명] DROP FOREIGN KEY [제약조건이름];
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+
+## 도움
+
+현재 실행중인 쿼리 확인 및 특정 프로세스 종료 명령어
+sql> show processlist;
+sql> kill id
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+
+## Database 및 사용자 관리
 * Database 생성
 * 사용자 조회
 * 사용자 추가 / 생성
 * 사용자 삭제
-* 
+
+
+* Access to DBMS
+
+  ``` sql
+  mysql -u 계정 -p [데이터베이스]
+  ```
+  
+* 데이터베이스 조회 / 선택 명령어
+  show databases;
+  use database_name;
+
+* 계정 추가(권한설정과 함께 추가?)
+``` sql
+mysql> grant all privileges on dbname.table to userid@host identified by 'password';
+```
+
 
 <br>
 
@@ -202,46 +291,18 @@ SELECT 조회 시 중복되는 데이터는 DISTINCT 키워드 or GROUP BY 절�
 
 
 
-<br>
 
 
 
-
-<br><br>
-<br><br>
-<br><br>
-
-
-
-제약조건 관리
----
-
-제약조건 확인 <br>
-: select * from information_schema.table_constraints;
-
-
-<br>
-
-제약조건 삭제 <br>
-: ALTER TABLE [테이블명] DROP CONSTRAINT [제약조건이름];
-
-: ALTER TABLE [테이블명] DROP FOREIGN KEY [제약조건이름];
-
-
-
-
-
-<br><br>
-
-## 도움
-
-현재 실행중인 쿼리 확인 및 특정 프로세스 종료 명령어
-sql> show processlist;
-sql> kill id
 
 
 
 <br><br><br>
+<br><br><br>
+<br><br><br>
+
+
+
 
 <br><br><br>
 
@@ -261,17 +322,28 @@ sql> kill id
   <br>
 
 
-  * **DML**
+  * **DML** <br>
+
+  * INSERT <br>
   *-* mariaDB > Returning [Document] - https://mariadb.com/kb/en/insertreturning/ <br>
   *-* insert후 값 가져오기(블로그) - https://hochoon-dev.tistory.com/entry/SpringBoot-Mybatis-Insert-%ED%95%9C-%EA%B0%92%EC%9D%98-AUTOINCREMENT%EB%90%9C-ID-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0 <br>
 
-  *-* 데이터 일괄변경 [REPLACE] - https://yeop-blog.github.io/2017/10/02/2017-10-02-old-blog-post88/ <br>
+  <br>
   
-  *-* https://linuxism.ustd.ip.or.kr/510 <br>
+  * **SELECT** <br>
+  *-* SELECT query process steps [@@@@@] - https://towardsdatascience.com/the-6-steps-of-a-sql-select-statement-process-b3696a49a642 <br>
+  *-* 
+
+  *-* 서브 쿼리 (블로그) - https://data-make.tistory.com/25 <br>
 
   *-* 데이터 중복 제거 (Okky 질의) - https://okky.kr/article/511810 <br>
   *-* 데이터 중복 제거 group by & max() - http://b1ix.net/87 <br>
 
+
+  *-* Date format 함수 - https://linuxism.ustd.ip.or.kr/510 <br>
+  *-* 데이터 일괄변경 [REPLACE] - https://yeop-blog.github.io/2017/10/02/2017-10-02-old-blog-post88/ <br>
+
+  <br>
 
   * **DDL**
   *-* DB 생성 - https://devdhjo.github.io/mysql/2020/01/29/database-mysql-002.html <br>
@@ -281,7 +353,11 @@ sql> kill id
   *-* DB 사용자 추가방식 (create / grant) - https://technote.kr/32 <br>
   *-* DB 사용자 권한 설정 - https://damduc.tistory.com/4 <br>
 
+  <br>
+
+  * **ALTER** <br>
   *-* 테이블 제약조건 확인 쿼리 - https://dataedo.com/kb/query/mysql/check-column-nullable <br>
+  *-* 테이블 이름 변경 방법 (rename & change) - https://phoenixnap.com/kb/how-to-rename-column-mysql <br>
 
   *-* 테이블 CRUD - https://mcpaint.tistory.com/194 <br>
   *-* 테이블 컬럼 null 가능하게 변경 - https://sql-factory.tistory.com/1003 <br>
