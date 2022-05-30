@@ -99,6 +99,25 @@ $('#anonymousDiv').on('click', function() {
 ```
 
 
+
+
+<br><br><br>
+
+
+## Exception Handling
+
+callback 함수 (or listener)를 통해 빠르게 DataTables의 생성 및 재생성이 요청될 경우 아래와 같은 예외가 발생할 수 있다.
+
+> jquery.dataTables.min.js:137 Uncaught TypeError: Cannot read property 'parentNode' of null
+
+테이블의 destroy / clear / draw 작업의 속도가 메서드의 호출 속도를 못따라가기 때문인 것으로 보인다.
+
+
+
+
+
+
+
 <br><br><br>
 <br><br><br>
 <br><br><br>
@@ -148,6 +167,11 @@ table-layout 속성값을 fixed로 설정하면 데이터가 길어서 지정한
 
   * Event processing <br>
   *-* dataTable events (페이지 로드 때마다 event를 넣기 위해 참고) - https://mail.datatables.net/reference/event/#buttons <br>
+
+  <br>
+
+  * Exception handling <br>
+  *-* cannot read property 'pareentNode' of null (dataTables) - https://datatables.net/forums/discussion/48716/cannot-read-property-parentnode-of-null <br>
 
   <br>
 

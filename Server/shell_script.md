@@ -26,6 +26,9 @@ cf. 자주 사용하는 vi, vim 단축키
   - :noh = 문서에서 하이라이트 제거
 
 
+
+<br><br><br>
+
 ## vi/vim 명령어
 
 블록 주석처리 / 해제
@@ -33,6 +36,8 @@ norm !#
 norm 1x
 
 
+
+<br><br><br>
 
 ### .vimrc
 
@@ -42,7 +47,24 @@ norm 1x
 
 
 
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+Bash 기본 문법
+---
+
 <br><br>
+
+## backticks[\` `] vs braces[$( )]
+
+Using backticks is deprecated.
+
+
+
+
+<br><br><br>
+<br><br><br>
 
 ## if statement
 
@@ -110,8 +132,11 @@ declare
   <br>
 
   * bash 문법 <br>
-  *-* difference between single and double quotation - https://stackoverflow.com/questions/6697753/difference-between-single-and-double-quotes-in-bash <br>
+  *-* difference between single(') and double(") quotation - https://stackoverflow.com/questions/6697753/difference-between-single-and-double-quotes-in-bash <br>
   *-* when should I wrap quotes around a shell variable - https://stackoverflow.com/questions/10067266/when-should-i-wrap-quotes-around-a-shell-variable <br>
+
+  *-* backticks vs braces (1) - https://stackoverflow.com/questions/22709371/backticks-vs-braces-in-bash <br>
+  *-* backticks vs braces (2) - http://mywiki.wooledge.org/BashFAQ/082 <br>
 
   <br>
   
