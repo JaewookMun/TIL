@@ -258,8 +258,6 @@ xargs : 여러줄 출력을 한줄로 출력
 
 
 
-
-
 <br><br>
 
 sed (stream editor) : 텍스트(파일)을 편집하고 원하는 데이터를 출력가능 - 문자열 변경 편집기
@@ -272,6 +270,7 @@ e.g) 문자열 대체
 
 ```
 설명: 파일목록 조회한 결과에서 '숫자/' 패턴의 파일명을 필터링한 뒤 한줄로 출력한 결과에서 '/'를 ','로 변경하여 출력
+
 
 
 
@@ -496,6 +495,8 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
   *-* vi / vim 단축키 - https://iamfreeman.tistory.com/entry/vi-vim-%ED%8E%B8%EC%A7%91%EA%B8%B0-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%A8%EC%9D%8C-%EB%AA%A9%EB%A1%9D <br>
   
   *-* 다중 명령어[@@@] - https://jhnyang.tistory.com/66 <br>
+  *-* linux background 실행 명령어 (cf. nohup) - https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=lge920904&logNo=220687339025 <br>
+
 
   *-* 시스템 (c.f. 서비스 등록) - https://etloveguitar.tistory.com/57 <br>
 
@@ -508,9 +509,10 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
   *-* grep 대시(-) 문자 검색방법 : 더블대시 [stackoverflow] - https://stackoverflow.com/questions/2427913/how-can-i-grep-for-a-string-that-begins-with-a-dash-hyphen <br>
   *-* wc(word count) command - http://www.incodom.kr/Linux/%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4/wc <br>
   
-  <br><br>
+  <br>
+  
 
-  * 권한 관리
+  * 권한 관리 <br>
 
   *-* 파일 허가권 소유자 및 그룹 - https://darrengwon.tistory.com/853 <br>
   *-* 사용자 관리 - https://withcoding.com/101 <br>
