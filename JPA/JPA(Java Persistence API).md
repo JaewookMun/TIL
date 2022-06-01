@@ -6,6 +6,11 @@
 * ex) Mybatis, JdbcTemplate
 * 관계형 데이터베이스의 구조에 종속적인 코드를 작성
 
+
+
+
+<br><br><br>
+
 **ORM (Object Relational Mapping) : 객체 관계 매핑**
 * ex) JPA(<- Hibernate)
 * 객체지향적인 프로그래밍 방식을 활용하여 코드를 작성
@@ -14,6 +19,7 @@
 > 1. 객체와 관계형 데이터베이스 연결(Mapping)
 > 2. 영속성 컨텍스트
 
+* 영속성 컨텍스트는 엔티티 매니저(EntityManager)를 통해 접근할 수 있고 EntityManager는 엔티티의 영속성을 관리한다.
 
 <br><br><br>
 <br><br><br>
