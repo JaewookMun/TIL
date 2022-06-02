@@ -510,6 +510,10 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
   *-* wc(word count) command - http://www.incodom.kr/Linux/%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4/wc <br>
   
   <br>
+
+  *-* if 문 대괄호 더블괄호 차이점 - http://bahndal.egloos.com/531206 <br>
+
+  <br>
   
 
   * 권한 관리 <br>
