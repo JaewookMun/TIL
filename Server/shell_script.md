@@ -154,6 +154,8 @@ declare
   *-* for loop 사용법 정리 블로그 - https://jhnyang.tistory.com/191 <br>
   *-* if문 조건 정리 블로그 - https://jink1982.tistory.com/48 <br>
 
+  * Edit
+  *-* 콤마(,) 제거하기 (sed, awk 사용) - https://stackoverflow.com/questions/39285636/how-to-remove-last-comma-from-line-in-bash-using-sed-or-awk <br>
   
 
 
