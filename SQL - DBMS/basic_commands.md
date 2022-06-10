@@ -345,6 +345,13 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
 
   <br>
 
+  * Conditions (where)
+  *-* 연산자 순위 (Operator Precedence) [MySql-Site] - https://dev.mysql.com/doc/refman/8.0/en/operator-precedence.html <br>
+  *-* 연산자 순위 (Operator Precedence) [Microsoft] - https://docs.microsoft.com/en-us/sql/t-sql/language-elements/operator-precedence-transact-sql?redirectedfrom=MSDN&view=sql-server-ver16 <br>
+  *-* precedence based on parenthesis or not - https://stackoverflow.com/questions/5967890/sql-parentheses-use-in-an-or-clause <br>
+
+  <br>
+
   * **DDL**
   *-* DB 생성 - https://devdhjo.github.io/mysql/2020/01/29/database-mysql-002.html <br>
   *-* 데이터베이스 - https://jjeongil.tistory.com/1322 <br>
@@ -352,6 +359,9 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
   *-* 유저 권한 설정 - https://fun25.co.kr/blog/mysql-grant-user-privileges/?page=9 <br>
   *-* DB 사용자 추가방식 (create / grant) - https://technote.kr/32 <br>
   *-* DB 사용자 권한 설정 - https://damduc.tistory.com/4 <br>
+
+  *-* difference between 'delete' and 'truncate' - https://www.mssqltips.com/sqlservertip/4248/differences-between-delete-and-truncate-in-sql-server/ <br>
+
 
   <br>
 

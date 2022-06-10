@@ -140,7 +140,7 @@ declare
 
   <br>
   
-  * **bash array** <br>
+  * **Array in bash** <br>
   *-* 배열 사용방법 (**tutorial**) - https://linuxconfig.org/how-to-use-arrays-in-bash-script <br>
   
   *-* declare command in bash - https://unix.stackexchange.com/questions/510220/what-is-declare-in-bash <br>
