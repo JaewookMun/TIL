@@ -111,10 +111,16 @@ fi
 <br><br><br>
 
 
-declare
-
 
 ### Array
+
+declare 
+
+Array -> Associative Array vs Indexed Array
+
+shell에서 Associative Array는 hash table 기준으로 정렬됨.
+indexed array처럼 값을 넣은 순서대로 interator 작업을 처리할 수 없다.
+
 
 
 
