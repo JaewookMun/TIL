@@ -51,14 +51,20 @@ norm 1x
 <br><br><br>
 <br><br><br>
 
-Bash 기본 문법
+
+
+[Bash 기본 문법]
 ---
 
-<br><br>
+<br>
 
 ## backticks[\` `] vs braces[$( )]
 
 Using backticks is deprecated.
+
+
+
+
 
 
 
@@ -121,7 +127,29 @@ Array -> Associative Array vs Indexed Array
 shell에서 Associative Array는 hash table 기준으로 정렬됨.
 indexed array처럼 값을 넣은 순서대로 interator 작업을 처리할 수 없다.
 
+<br><br>
 
+배열을 사용해서 값을 저장하고 사용할 때 쌍따옴표(double quotation)를 적절히 사용하지 않으면 원하는 결과값을 얻을 수 없다.
+
+``` script
+
+declare -a arr
+
+arr+=("apple 1000")
+arr+=("banana 2000")
+
+
+for element in "${arr[@]}"
+do
+  ...
+  ...
+done
+
+```
+<br>
+
+위와 같은 스크립트를 작성할 때, 배열에 넣는 요소에 쌍따옴표를 넣는 것도 중요하지만 for 문에 위치한 배열 표현식 역시 쌍따옴표로 감싸줘야한다. <br>
+(삽입되는 요소에 space를 두기 위해 배열에 넣는 요소에 쌍따옴표를 사용)
 
 
 
@@ -143,6 +171,9 @@ indexed array처럼 값을 넣은 순서대로 interator 작업을 처리할 수
 
   *-* backticks vs braces (1) - https://stackoverflow.com/questions/22709371/backticks-vs-braces-in-bash <br>
   *-* backticks vs braces (2) - http://mywiki.wooledge.org/BashFAQ/082 <br>
+  
+  *-* boolean 값 변수에 넣고 사용하는 방법 [@@@@@] - https://stackoverflow.com/questions/9906041/bash-boolean-expression-and-its-value-assignment <br>
+
 
   <br>
   
@@ -153,6 +184,7 @@ indexed array처럼 값을 넣은 순서대로 interator 작업을 처리할 수
   *-* [declare -a vs -A] indexed Array vs associative Array - https://stackoverflow.com/questions/28179409/bash-array-assignment-fails-if-you-declare-the-array-in-advance <br>
   *-* 연관배열(associativee array)란? - https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B4%80_%EB%B0%B0%EC%97%B4 <br>
   *-* associative array order [stackoverFlow] - https://stackoverflow.com/questions/29161323/how-to-keep-associative-array-order <br>
+  *-* array and double quotation - https://stackoverflow.com/questions/9084257/bash-array-with-spaces-in-elements <br>
 
 
   <br>

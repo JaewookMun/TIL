@@ -32,7 +32,6 @@ javac Hello.java
 
 
 
-
 <br><br><br>
 <br><br><br>
 
@@ -180,6 +179,8 @@ FileNotFoudException ~ (액세스가 거부되었습니다.)
 > File 인스턴스를 사용시 해당 문구의 Exception이 발생하면 1. 관리자 권한으로 실행, 2. File 인스턴스가 실제 파일이 아니라 Directory인지 확인
 
 
+
+<br><br><br>
 <br><br><br>
 
 ## Network Programming API
@@ -198,7 +199,25 @@ URL 객체에 사용하는 url 경로에는 특수문자를 사용할 수 없다
 
 
 <br><br><br>
+<br><br><br>
 
+
+## Hash Algorithm
+
+** 주요 키워드
+* MessageDigest
+* SHA-256
+* SHA-512
+
+<br>
+
+### to hash File
+
+
+
+
+<br><br><br>
+<br><br><br>
 <br><br><br>
 
 
@@ -244,10 +263,19 @@ URL 객체에 사용하는 url 경로에는 특수문자를 사용할 수 없다
   *-* FileInputStream 예외 [FileNotFoundException] 발생 이유 (디렉토리를 읽으면 발생) - https://stackoverflow.com/questions/13046757/how-to-read-a-folder-count-the-files-and-copy-to-new-folder <br>
   *-* XML Parsing process in java (수정방법) - https://www.w3schools.blog/dom-parser-to-modify-xml-file-in-java <br>
 
+  <br>
+
   * InputStream <br>
   *-* InputStream(Reader) to String (read메서드를 사용하면 int를 반환 char로 바꾸어준다.) - https://www.baeldung.com/convert-input-stream-to-string <br>
+
+  <br>
 
   * Network Programming <br>
   *-* url encoding 개념설명 블로그 - https://dololak.tistory.com/18 <br>
   *-* Java URL Encoding / Decoding java progamming ex [Baeldung] - https://www.baeldung.com/java-url-encoding-decoding <br>
   *-* URL 클래스 사용 예시 - https://hackeen.tistory.com/18 <br>
+
+  <br>
+
+  * Hash Algorithm
+  *-* how to calculate SHA-512 of a file - https://stackoverflow.com/questions/31732207/how-to-calculate-sha512-of-a-file <br>
