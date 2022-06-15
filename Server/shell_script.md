@@ -58,11 +58,22 @@ norm 1x
 
 <br>
 
-## backticks[\` `] vs braces[$( )]
+## 특수문자 비교 (special symbols)
+
+<br>
+
+### Single quotation['] vs Double quotation ["]
+simplely :  Single quotation으로 감싼 것은 모두 String으로 인식 / Double quotation은 내부 String을 해석하여 인식
+
+
+### backticks[\` `] vs braces[$( )]
 
 Using backticks is deprecated.
 
 
+<br><br><br>
+
+## printf
 
 
 
@@ -174,9 +185,24 @@ done
   
   *-* boolean 값 변수에 넣고 사용하는 방법 [@@@@@] - https://stackoverflow.com/questions/9906041/bash-boolean-expression-and-its-value-assignment <br>
 
+  *-* multiple - https://www.log2base2.com/shell-script-examples/operator/shell-script-for-multiplication-of-two-numbers.html <br>
+  
 
   <br>
-  
+
+  * printf
+  *-* printf document [w3big.com] - http://www.w3big.com/ko/linux/linux-shell-printf.html <br>
+  *-* how to use printf for alignment 1 [column] - https://stackoverflow.com/questions/4409399/padding-characters-in-printf <br>
+  *-* how to use printf for alignment 2 - https://unix.stackexchange.com/questions/660110/how-to-align-the-output-generated-in-a-shell-for-loop-by-columns <br>
+
+  <br>
+
+  * **function** <br>
+  *-* 함수 return 값 대체하는 방법 (echo, exit status, variable) - https://stackoverflow.com/questions/8742783/returning-value-from-called-function-in-a-shell-script <br>
+
+
+  <br>
+
   * **Array in bash** <br>
   *-* 배열 사용방법 (**tutorial**) - https://linuxconfig.org/how-to-use-arrays-in-bash-script <br>
   
