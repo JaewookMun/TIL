@@ -39,7 +39,11 @@ http {
 
 
 
+https://twpower.github.io/50-make-nginx-virtual-servers
 
+https://forteleaf.tistory.com/entry/nginx-site-enabled-site-availablemd
+
+https://askubuntu.com/questions/553937/what-is-the-difference-between-the-core-full-extras-and-light-packages-for-ngi
 
 
 ```
