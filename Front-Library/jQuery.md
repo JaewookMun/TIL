@@ -123,6 +123,14 @@ attribute는 HTML 문서에서 element에 대한 추가적인 정보를 제공�
 
 
 
+<br><br><br>
+<br><br><br>
+
+## jQuery API
+
+* $.trim() : String 앞 뒤의 공백을 잘라주는 api "        'happy birthday'     " ->   "happy birthday"
+
+
 
 <br><br><br>
 <br><br><br>
