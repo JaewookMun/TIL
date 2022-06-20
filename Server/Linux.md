@@ -175,9 +175,19 @@ service 명령어는 **systemctl**의 wrapper script다.
 
 
 
-<br><br>
 
-<br><br><br><br>
+
+<br><br><br>
+
+### nohup
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 ## 명령어
 
@@ -484,6 +494,13 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
 
   * 방화벽 (firewall)
   *-* ufw 설명 및 사용방법 - https://imcr.tistory.com/11 <br>
+
+<br>
+
+  * 프로세스
+  *-* 백그라운드 실행 nohup - https://morningame.tistory.com/154 <br>
+  *-* nohup 환경변수 설정 - https://unix.stackexchange.com/questions/308370/how-can-i-set-environment-variables-for-a-program-executed-using-nohup <br>
+  
 
 
 <br>
