@@ -185,6 +185,10 @@ service 명령어는 **systemctl**의 wrapper script다.
 
 
 
+
+
+
+
 <br><br><br>
 <br><br><br>
 <br><br><br>
@@ -556,3 +560,9 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
 
   * 폴더/파일 관리 <br>
   *-* rsync 명령어 사용법 - https://twpower.github.io/153-copy-file-or-directory-using-rsync-command <br>
+
+  * 로그
+  *-* logrotate와 copytruncate 옵션 - https://brunch.co.kr/@alden/27 <br>
+  *-* logrotate 설정방법 - https://www.manualfactory.net/10547 <br>
+  *-* logrotate 설정 옵션 - https://suminstory.tistory.com/142 <br>
+  *-* logrotate 구조 - https://blog.o3g.org/server/logrotate%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%98%EC%97%AC-%EB%A1%9C%EA%B7%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/ <br>
