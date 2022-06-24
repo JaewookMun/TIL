@@ -566,3 +566,5 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
   *-* logrotate 설정방법 - https://www.manualfactory.net/10547 <br>
   *-* logrotate 설정 옵션 - https://suminstory.tistory.com/142 <br>
   *-* logrotate 구조 - https://blog.o3g.org/server/logrotate%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%98%EC%97%AC-%EB%A1%9C%EA%B7%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/ <br>
+
+  *-* ubuntu에 powershell 설치하는 방법 - https://docs.microsoft.com/ko-kr/powershell/scripting/install/install-ubuntu?view=powershell-7.2 <br>
