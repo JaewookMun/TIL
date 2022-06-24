@@ -31,7 +31,8 @@ default : 1 MB (0으로 설정하면 client request body size를 검사하지 �
 
 http {
     ~
-
+    
+    # Setting size to 0 disables checking of client request body size
     client_max_body_size 0;
 
 
