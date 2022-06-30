@@ -44,6 +44,8 @@ norm 1x
 * 줄 번호 표시 방법
   :set number / :set nonumber
 
+* .vimrc가 적용  안될 때 root 에 작성하여 설정정보를 적용한다.
+  vim --version 을 사용해서 사용자 정의를 위한 .vimrc 파일 위치를 확인할 수 있다.
 
 
 
@@ -173,7 +175,8 @@ done
   * **vi/vim editor 설정** <br>
   *-* .vimrc 설정방법 - https://github.com/johngrib/simple_vim_guide/blob/master/md/vimrc.md <br>
   *-* 줄번호 표시 방법 - https://jjeongil.tistory.com/1728?category=686032 <br>
-  
+  *-* ~/.vimrc가 적용되지 않을 때 해결방법 - https://www.cyberciti.biz/faq/how-to-reload-vimrc-file-without-restarting-vim-on-linux-unix/ <br>
+
   <br>
 
   * bash 문법 <br>
