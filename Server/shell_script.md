@@ -175,7 +175,7 @@ done
   * **vi/vim editor 설정** <br>
   *-* .vimrc 설정방법 - https://github.com/johngrib/simple_vim_guide/blob/master/md/vimrc.md <br>
   *-* 줄번호 표시 방법 - https://jjeongil.tistory.com/1728?category=686032 <br>
-  *-* ~/.vimrc가 적용되지 않을 때 해결방법 - https://www.cyberciti.biz/faq/how-to-reload-vimrc-file-without-restarting-vim-on-linux-unix/ <br>
+  *-* ~/.vimrc가 적용되지 않을 때 해결방법 (root 적용) - https://stackoverflow.com/questions/28235592/vimrc-settings-for-user-dont-work-for-root <br>
 
   <br>
 
@@ -224,5 +224,7 @@ done
   * Edit
   *-* 콤마(,) 제거하기 (sed, awk 사용) - https://stackoverflow.com/questions/39285636/how-to-remove-last-comma-from-line-in-bash-using-sed-or-awk <br>
   
+  * sed
+  *-* sed 명령어 정리 - https://jhnyang.tistory.com/287 <br>
 
-
+  *-* file download 시 저장 없이 스크립트를 시작하는 방법 - https://askubuntu.com/questions/891872/pipe-to-sudo-e-bash <br>
