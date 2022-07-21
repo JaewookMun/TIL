@@ -53,8 +53,9 @@ https://askubuntu.com/questions/553937/what-is-the-difference-between-the-core-f
 <br><br><br>
 <br><br><br>
 
-## Reverse Proxy ? 
+## Reverse Proxy
 
+리버스 프록시(reverse proxy) - '보안'과 '로드 밸런싱'
 
 
 
@@ -79,6 +80,10 @@ https://askubuntu.com/questions/553937/what-is-the-difference-between-the-core-f
 
   * Basic settings <br>
   *-* client_max_body_size - https://linuxhint.com/what-is-client-max-body-size-nginx/ <br>
+  *-* Nginx reverse proxy 개념 및 변수 설명 - https://jjeongil.tistory.com/1490 <br>
+  *-* reverse proxy request process - https://docs.oracle.com/cd/E49933_01/studio.320/studio_install/src/cidi_studio_reverse_proxy_request_process.html <br>
+  *-* 포워드 프록시 and 리버스 프록시 - https://sujinhope.github.io/2021/06/13/Network-%ED%94%84%EB%A1%9D%EC%8B%9C(Proxy)%EB%9E%80,-Forward-Proxy%EC%99%80-Reverse-Proxy.html <br>
+  *-* X-Real-IP vs X-Forwarded-For - https://umbum.dev/1221 <br>
 
   <br>
 

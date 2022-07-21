@@ -166,6 +166,20 @@ done
 
 
 
+<br><br><br>
+
+
+### awk
+
+awk는 입력데이터를 행(record)과 열(field)로 인식한다.
+
+예시) docservice_pid=$( ps -ef | grep ./docservice | grep root | awk '$3 == 1 {print $2}')
+>> 3번째 필드값이 1인 레코드의 2번째 필드를 출력하여 docservice_pid에 대입
+
+
+
+
+
 
 <br><br><br>
 <br><br><br>
@@ -219,10 +233,18 @@ done
   <br>
   
   *-* for loop 사용법 정리 블로그 - https://jhnyang.tistory.com/191 <br>
-  *-* if문 조건 정리 블로그 - https://jink1982.tistory.com/48 <br>
 
-  * Edit
+  <br>
+
+  * If statement
+  *-* if문 조건 정리 블로그(1) - https://jink1982.tistory.com/48 <br>
+  *-* if문 조건 정리 블로그(2) - https://lxstitch.tistory.com/65 <br>
+
+  <br>
+
+  * String Edit
   *-* 콤마(,) 제거하기 (sed, awk 사용) - https://stackoverflow.com/questions/39285636/how-to-remove-last-comma-from-line-in-bash-using-sed-or-awk <br>
+  *-* awk 사용방법 레코드(행), 필드(열) - https://veneas.tistory.com/entry/Linux-%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%8C%8C%EC%9D%BC%EC%9D%98-%EC%9B%90%ED%95%98%EB%8A%94-%ED%96%89%EA%B3%BC-%EC%97%B4-%EC%B6%9C%EB%A0%A5-awk <br>
   
   * sed
   *-* sed 명령어 정리 - https://jhnyang.tistory.com/287 <br>
