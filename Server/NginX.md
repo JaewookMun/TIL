@@ -84,6 +84,7 @@ https://askubuntu.com/questions/553937/what-is-the-difference-between-the-core-f
   *-* reverse proxy request process - https://docs.oracle.com/cd/E49933_01/studio.320/studio_install/src/cidi_studio_reverse_proxy_request_process.html <br>
   *-* 포워드 프록시 and 리버스 프록시 - https://sujinhope.github.io/2021/06/13/Network-%ED%94%84%EB%A1%9D%EC%8B%9C(Proxy)%EB%9E%80,-Forward-Proxy%EC%99%80-Reverse-Proxy.html <br>
   *-* X-Real-IP vs X-Forwarded-For - https://umbum.dev/1221 <br>
+  *-* nginx 에서 proxy_set_header 재정의할 때 주의사항 - https://ohgyun.com/537 <br>
 
   <br>
 
@@ -94,3 +95,8 @@ https://askubuntu.com/questions/553937/what-is-the-difference-between-the-core-f
 
   * 개념 <br>
   *-* 'listen /' matches any location - https://serverfault.com/questions/845755/nginx-proxy-pass-root-and-specific-url-only <br>
+
+  <br>
+
+  * advanced
+  *-* Nginx Map Comparisons - https://johnhpatton.medium.com/nginx-map-comparison-regular-express-229120debe46 <br>

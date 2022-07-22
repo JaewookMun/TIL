@@ -59,3 +59,10 @@ pm2, nodeman : nodejs 소스 수정 시 자동으로 재시작하는 기능 지�
   *-* pm2 개념 사용하기 2/2 - https://medium.com/harrythegreat/pm2-node-js-%EC%84%9C%EB%B2%84%EB%A5%BC-%EB%8D%94-%EC%89%BD%EA%B2%8C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0-2-d03f6396139f <br>
 
   *-* pm2 run 'npm start' script - https://stackoverflow.com/questions/31579509/can-pm2-run-an-npm-start-script <br>
+
+  * SSL 개념 및 추가 <br>
+  *-* How do I fix 'unable to verify the first certificate'? - https://quick-advisors.com/how-do-i-fix-unable-to-verify-the-first-certificate/ <br>
+
+
+  * express <br>
+  *-* [official] express API - https://expressjs.com/ko/api.html <br>
