@@ -21,6 +21,6 @@
   <br>
 
   * SSL 등록 <br>
-  *-* cerbot (letsencrypt) 1 - https://www.vultr.com/docs/how-to-install-a-lets-encrypt-ssltls-certificate-on-windows-server-2019-with-internet-information-services-iis/ <br>
-  *-* cerbot (letsencrypt) 2 - https://www.manualfactory.net/13911 <br>
-  *-* cerbot (letsencrypt) 3 - https://devtutorial.io/how-to-install-lets-encrypt-with-iis-on-windows-server-2019-p3094.html <br>
+  *-* [letsencrypt] cerbot and win-acme 2가지 설치방식 (eng) - https://www.vultr.com/docs/how-to-install-a-lets-encrypt-ssltls-certificate-on-windows-server-2019-with-internet-information-services-iis/ <br>
+  *-* [letsencrypt] win-acme 방식 (kor) - https://www.manualfactory.net/13911 <br>
+  *-* [letsencrypt] win-acme 방식 (eng) - https://devtutorial.io/how-to-install-lets-encrypt-with-iis-on-windows-server-2019-p3094.html <br>
