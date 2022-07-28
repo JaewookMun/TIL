@@ -506,12 +506,12 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
   *-* nohup 환경변수 설정 - https://unix.stackexchange.com/questions/308370/how-can-i-set-environment-variables-for-a-program-executed-using-nohup <br>
   
 
-
 <br>
 
-  *-* awk 설명 - https://reakwon.tistory.com/163
-
-
+  * 데이터 편집 (vi/m, awk, sed) <br>
+  *-* awk 설명 - https://reakwon.tistory.com/163 <br>
+  *-* sed 줄바꿔 데이터 넣는 방법 - https://unix.stackexchange.com/questions/121161/how-to-insert-text-after-a-certain-string-in-a-file <br>
+  *-* sed space 문자 표시방법 - https://stackoverflow.com/questions/18439528/sed-insert-line-with-spaces-to-a-specific-line <br>
 
   *-* vi / vim 단축키 - https://iamfreeman.tistory.com/entry/vi-vim-%ED%8E%B8%EC%A7%91%EA%B8%B0-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%A8%EC%9D%8C-%EB%AA%A9%EB%A1%9D <br>
   
