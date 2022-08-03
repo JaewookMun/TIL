@@ -528,6 +528,7 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
 
   *-* grep 명령어 메타문자 - https://zzsza.github.io/development/2017/12/16/linux-4/ <br>
   *-* grep 대시(-) 문자 검색방법 : 더블대시 [stackoverflow] - https://stackoverflow.com/questions/2427913/how-can-i-grep-for-a-string-that-begins-with-a-dash-hyphen <br>
+  *-* grep 정규표현식 (RegEx) - https://linuxize.com/post/regular-expressions-in-grep/ <br>
   *-* wc(word count) command - http://www.incodom.kr/Linux/%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4/wc <br>
   
   <br>
@@ -557,6 +558,7 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
   *-* apt와 apt-get 차이점 - https://ksbgenius.github.io/linux/2021/01/13/apt-apt-get-difference.html <br>
   *-* 파일 다운로드(wget) - https://hippogrammer.tistory.com/158 <br>
   *-* tar 커맨드 개념 - https://recipes4dev.tistory.com/146 <br>
+  *-* add-apt-repository를 사용할 수 없을 때... [StackOverflow] - https://askubuntu.com/questions/445536/unable-to-locate-package-add-apt-repository-error <br>
 
   * 폴더/파일 관리 <br>
   *-* rsync 명령어 사용법 - https://twpower.github.io/153-copy-file-or-directory-using-rsync-command <br>

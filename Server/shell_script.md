@@ -60,7 +60,16 @@ norm 1x
 
 <br>
 
-## 특수문자 비교 (special symbols)
+## 특수문자 (special symbols)
+
+<br>
+
+### $number, $?
+
+$number : bash 실행 시 함께 입력한 파라미터를 의미
+$? : 1. bash shell에서 최근 실행한 명령어의 종료 스테이터스를 가진 변수, 2. 최근 실행한 함수의 return 값을 가진 변수
+
+
 
 <br>
 
@@ -192,6 +201,11 @@ awk는 입력데이터를 행(record)과 열(field)로 인식한다.
   *-* ~/.vimrc가 적용되지 않을 때 해결방법 (root 적용) - https://stackoverflow.com/questions/28235592/vimrc-settings-for-user-dont-work-for-root <br>
 
   <br>
+
+  * special character <br>
+  *-* what is '$1' > shell script 파라미터 - https://bash.cyberciti.biz/guide/$1 <br>
+  *-* '$?' > exit status or function return - https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_$%3F <br>
+
 
   * bash 문법 <br>
   *-* difference between single(') and double(") quotation - https://stackoverflow.com/questions/6697753/difference-between-single-and-double-quotes-in-bash <br>
