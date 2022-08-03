@@ -71,6 +71,7 @@ iii. newgrp docker <br>
 
   * Installation <br>
   *-* install Docker Engine on Ubuntu - https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository <br>
+  *-* how to install Docker on **Ubuntu 16.04** - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04 <br>
   *-* don't use 'sudo' keyword - https://docs.docker.com/engine/install/linux-postinstall/ <br>
 
   <br>
