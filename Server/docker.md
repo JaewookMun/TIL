@@ -61,24 +61,52 @@ iii. newgrp docker <br>
 
 
 <br><br><br>
+
+## Using Docker
+
+Q - Docker: Having issues installing apt-utils
+https://stackoverflow.com/questions/51023312/docker-having-issues-installing-apt-utils
+
+<br>
+
+cf. postgresql - https://stackoverflow.com/questions/42653690/psql-could-not-connect-to-server-no-such-file-or-directory-5432-error
+
+
 <br><br><br>
+<br><br><br>
+<br><br><br>
+
+
 <br><br><br>
 
 ### [참고] <br>
   *-* 도커란? 기본적인 설명 - https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html <br>
   *-* 도커 설명 - https://cultivo-hy.github.io/docker/image/usage/2019/03/14/Docker%EC%A0%95%EB%A6%AC/ <br>
   *-* Docker Desktop vs Docker Engine - https://forums.docker.com/t/difference-between-docker-desktop-and-docker-engine/124612 <br>
+  *-* workdir (기본폴더) [official] - https://docs.docker.com/engine/reference/builder/#workdir <br>
+  *-* Dockerfile naming convention [official] - https://docs.docker.com/engine/reference/commandline/build/#specify-a-dockerfile--f <br>
+  *-* stackoverflow - https://stackoverflow.com/questions/26077543/how-to-name-dockerfiles <br>
+
+  <br>
 
   * Installation <br>
   *-* install Docker Engine on Ubuntu - https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository <br>
   *-* how to install Docker on **Ubuntu 16.04** - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04 <br>
-  *-* don't use 'sudo' keyword - https://docs.docker.com/engine/install/linux-postinstall/ <br>
+  *-* just use docker without 'sudo' keyword - https://docs.docker.com/engine/install/linux-postinstall/ <br>
 
   <br>
 
-  * usage <br>
+  * Settings
+  *-* Dockerfile (1) - https://blog.d0ngd0nge.xyz/docker-dockerfile-write/ <br>
+  *-* Dockerfile RUN command - https://freedeveloper.tistory.com/187 <br>
+  *-* timezone setup [stackExchange] - https://serverfault.com/questions/949991/how-to-install-tzdata-on-a-ubuntu-docker-image <br>
+  *-* Dockerfile timezone setup - https://stynxh.github.io/2020-07-26-set-timezone-when-ubuntu-docker-image-build/ <br>
+
+  <br>
+
+  * Usage <br>
   *-* 기본사용법 (search, pull, create, run) blog -  https://sleepyeyes.tistory.com/67 <br>
   *-* search 옵션 - https://stackoverflow.com/questions/53742359/docker-search-and-description-column <br>
   *-* docker 명령 내리기 - https://eyeballs.tistory.com/49 <br>
 
-  *-* @@@@ docker 내부 통신 (container에서 localhost 사용하기) - https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach <br>
+  *-* @@@@ docker 내부 통신 [host] (container에서 localhost 사용하기) - https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach <br>
