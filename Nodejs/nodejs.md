@@ -51,6 +51,7 @@ pm2, nodeman : nodejs 소스 수정 시 자동으로 재시작하는 기능 지�
   *-* npm run script [official] - https://docs.npmjs.com/cli/v6/commands/npm-run-script <br>
   *-* JS 프로젝트 package.json 에 스크립트 등록 및 활용법 - https://www.daleseo.com/js-npm-run-script/ <br>
   *-* npm start vs npm run - https://ssocoit.tistory.com/190 <br>
+  *-* npm error solution > illegal characters in path [stackoverflow] - https://stackoverflow.com/questions/38079186/npm-not-installed-illegal-characters-in-path <br>
 
 
   * PM2
