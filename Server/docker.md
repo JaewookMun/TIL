@@ -73,10 +73,17 @@ cf. postgresql - https://stackoverflow.com/questions/42653690/psql-could-not-con
 
 
 <br><br><br>
-<br><br><br>
-<br><br><br>
+
+## Dockfile
+
+ENV vs ARG
+ - ARG : build 시점에 사용
+ - ENV : 환경변수 지정
 
 
+
+<br><br><br>
+<br><br><br>
 <br><br><br>
 
 ### [참고] <br>
@@ -86,6 +93,9 @@ cf. postgresql - https://stackoverflow.com/questions/42653690/psql-could-not-con
   *-* workdir (기본폴더) [official] - https://docs.docker.com/engine/reference/builder/#workdir <br>
   *-* Dockerfile naming convention [official] - https://docs.docker.com/engine/reference/commandline/build/#specify-a-dockerfile--f <br>
   *-* stackoverflow - https://stackoverflow.com/questions/26077543/how-to-name-dockerfiles <br>
+  *-* Dockerfile Reference [official] - https://docs.docker.com/engine/reference/builder/ <br>
+  *-* ARG (dockerfile 내부) vs ENV (환경변수) : difference - https://stackoverflow.com/questions/41916386/arg-or-env-which-one-to-use-in-this-case <br>
+
 
   <br>
 
@@ -96,11 +106,14 @@ cf. postgresql - https://stackoverflow.com/questions/42653690/psql-could-not-con
 
   <br>
 
-  * Settings
+  * Settings - Dockerfile
   *-* Dockerfile (1) - https://blog.d0ngd0nge.xyz/docker-dockerfile-write/ <br>
   *-* Dockerfile RUN command - https://freedeveloper.tistory.com/187 <br>
   *-* timezone setup [stackExchange] - https://serverfault.com/questions/949991/how-to-install-tzdata-on-a-ubuntu-docker-image <br>
   *-* Dockerfile timezone setup - https://stynxh.github.io/2020-07-26-set-timezone-when-ubuntu-docker-image-build/ <br>
+  *-* Dockerfile process를 실행할 사용자 추가 - https://passwd.tistory.com/66 <br>
+  *-* 사용자/root 게정 암호 설정 - https://stackoverflow.com/questions/66190675/docker-set-user-password-non-interactively <br>
+  *-* 계정 sudo 권한 주기 - https://starseeker711.tistory.com/176 <br>
 
   <br>
 
@@ -110,3 +123,4 @@ cf. postgresql - https://stackoverflow.com/questions/42653690/psql-could-not-con
   *-* docker 명령 내리기 - https://eyeballs.tistory.com/49 <br>
 
   *-* @@@@ docker 내부 통신 [host] (container에서 localhost 사용하기) - https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach <br>
+  *-* docker cp 사용시 [getent unable to find entry "" in passwd database] - https://stackoverflow.com/questions/61204958/how-to-change-file-ownership-of-db-backup-in-sql-server-container <br>
