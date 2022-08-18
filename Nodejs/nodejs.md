@@ -38,6 +38,11 @@ pm2, nodeman : nodejs 소스 수정 시 자동으로 재시작하는 기능 지�
 
 
 
+cf. Rabbitmq-server
+ERROR - [nodeJS - [AMQP] Error: connect ECONNREFUSED 127.0.0.1:5672] 가 발생하면
+우선적으로 rabbitmq-server 가 정상적으로 실행중인지 확인
+(docker container 내부에서는 실행되지 않는 경우가 존재한다.)
+
 
 
 
