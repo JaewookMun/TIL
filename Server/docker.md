@@ -114,6 +114,7 @@ ENV vs ARG
   *-* Dockerfile process를 실행할 사용자 추가 - https://passwd.tistory.com/66 <br>
   *-* 사용자/root 게정 암호 설정 - https://stackoverflow.com/questions/66190675/docker-set-user-password-non-interactively <br>
   *-* 계정 sudo 권한 주기 - https://starseeker711.tistory.com/176 <br>
+  *-* Docker container 자동 실행 [Docker.service] - https://help.iwinv.kr/manual/read.html?idx=572 <br>
 
   <br>
 

@@ -463,6 +463,13 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
 
 
 
+apt install upgrade 꼬였을 때  : ex- invoke-rc.d: could not determine current runlevel
+
+/etc/init.d 쪽과 연관성 존재 (docker 사용시)
+
+https://github.com/microsoft/WSL/issues/1761
+
+
 
 
 
@@ -472,7 +479,9 @@ du(disk usage) : 파일 용량 확인 명령어 (디렉토리의 경우 하위 �
 <br><br><br>
 
 ### [참고] <br>
-  *-* 리눅스 파일시스템 게층 구조 (디렉토리 구조 이해) [공식표준문서] - https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html#purpose5
+  *-* ubuntu apt package dependency tree [offical] - https://packages.ubuntu.com/focal/nginx-extras <br>
+  *-* 리눅스 파일시스템 게층 구조 (디렉토리 구조 이해) [공식표준문서] - https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html#purpose5 <br>
+
 
   * 리눅스 설치
   *-* vmware 네트워크 모드 (NAT, Bridge, Host Only) - https://tristan91.tistory.com/238 <br>
