@@ -83,6 +83,14 @@ ENV vs ARG
 
 
 <br><br><br>
+
+## 공유 디렉토리(폴더) 연결
+
+로컬 호스트 시스템의 디렉토리를 도커 컨테이너 내부에 마운트하여 공유 디렉토리 처럼 사용할 수 있다.
+[참고] - https://tttsss77.tistory.com/161 <br>
+
+
+<br><br><br>
 <br><br><br>
 <br><br><br>
 
