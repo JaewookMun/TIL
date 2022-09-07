@@ -90,6 +90,7 @@ https://askubuntu.com/questions/553937/what-is-the-difference-between-the-core-f
 
   * config - 포트포워딩 <br>
   *-* nginx 포트포워딩 - https://zionh.tistory.com/20 <br>
+  *-* NginX redirect / rewrite URL address - https://www.claudiokuenzler.com/blog/436/nginx-rewrite-url-examples-with-without-redirect-address <br>
 
   <br>
 
