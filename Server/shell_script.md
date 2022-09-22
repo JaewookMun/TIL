@@ -264,3 +264,6 @@ awk는 입력데이터를 행(record)과 열(field)로 인식한다.
   *-* sed 명령어 정리 - https://jhnyang.tistory.com/287 <br>
 
   *-* file download 시 저장 없이 스크립트를 시작하는 방법 - https://askubuntu.com/questions/891872/pipe-to-sudo-e-bash <br>
+
+  *-* sudo with redirection in bash (echo ~~ > ~.file) - https://askubuntu.com/questions/230476/how-to-solve-permission-denied-when-using-sudo-with-redirection-in-bash <br>
+  (꺽은 괄호를 ubuntu에서 redirection 이라고 표현함.)
