@@ -432,6 +432,9 @@ _*_ rename 명령어 존재
 
 
 * rsync(Remote sync) : **원격** 또는 **로컬**간에 파일이나 디렉토리를 복사
+  - 속도 개선 : 동일 장비 내에서 사용 시 z 옵션을 제거하면 파일을 복사하는데 큰 속도단축을 확인할 수 있음. (z 옵션은 network traffic을 줄이기 위해 사용)
+
+
 
 * touch : 파일의 날짜와 시간을 수정하는 명령어 / 0바이트 파일을 생성하기 위해 자주 사용
 
@@ -571,6 +574,9 @@ https://github.com/microsoft/WSL/issues/1761
 
   * 폴더/파일 관리 <br>
   *-* rsync 명령어 사용법 - https://twpower.github.io/153-copy-file-or-directory-using-rsync-command <br>
+  *-* rsync 속도 개선을 위한 옵션 설정 (how to speed up rsync) - https://superuser.com/questions/109780/how-to-speed-up-rsync <br>
+
+  <br>
 
   * 로그
   *-* logrotate와 copytruncate 옵션 - https://brunch.co.kr/@alden/27 <br>
