@@ -31,7 +31,6 @@ LVM : dynamic partitions, meaning that you can create/resize/delete LVM "partiti
 
 
 
-
 <br><br><br>
 <br><br><br>
 
@@ -68,9 +67,7 @@ SSH(Secure SHell)는 컴퓨터간에 안전하게 데이터를 전달할 수 있
 OpenSSH는 SSH 프로토콜을 구현한 오픈소스이며 리눅스에서 SSH server & client로 주로 사용된다.
 (참고: 인터페이스와 구현체 관계)
 
-
 apt-get install ssh  |  **apt-get install openssh(-server)**  > 둘은 같은 명령어나 마찬가지이다. (서로 의존관계로 연관되어 있음.)
-
 
 
 
@@ -136,6 +133,30 @@ top (table of processes) : '작업 관리자 (task manager)' 프로그램, 장�
 <br><br><br>
 
 ## 디스크 용량 관리
+
+
+
+
+<br><br><br>
+<br><br><br>
+
+
+## NTP (Network Time Protocol) 설정
+
+1) systemd-timesyncd
+  (installed in 'Ubuntu 배포판') <br>
+
+  config file location : /etc/systemd/timesyncd.conf
+
+  blog link 1 - https://velog.io/@markyang92/systemd-%EC%8B%9C%EA%B0%84-%EB%8F%99%EA%B8%B0%ED%99%94 <br>
+
+
+
+<br><br><br>
+
+2) NTP package 설치 <br>
+  blog link 1 - https://inpa.tistory.com/entry/LINUX-%F0%9F%93%9A-NTP-%EC%8B%9C%EA%B0%84-%EB%8F%99%EA%B8%B0%ED%99%94-%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-Ubuntu <br>
+  blog link 2 - https://whitewing4139.tistory.com/132 <br>
 
 
 
