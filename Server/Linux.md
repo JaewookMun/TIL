@@ -140,6 +140,18 @@ top (table of processes) : '작업 관리자 (task manager)' 프로그램, 장�
 <br><br><br>
 <br><br><br>
 
+## Linux 프로세스 메모리 확인하는 방법
+
+cd ~/ps_mem/
+sudo ./ps_mem.py
+
+![process_memory](./img/process_memory.JPG)
+
+
+
+<br><br><br>
+<br><br><br>
+
 
 ## NTP (Network Time Protocol) 설정
 
