@@ -334,8 +334,10 @@ e.g) 문자열 대체
 * && [더블앤퍼센드] - 앞선 명령이 에러 없이 정상 종료되었을 때 뒷 명령이 실행 (세미콜론과의 차이)
 * || [더블버티컬바] - 첫번째 명령의 결과가 에러가 발생했을 때 뒷 명령이 실행
 
-<br><br>
 
+
+<br><br><br>
+<br><br><br>
 
 ## 권한 관리
 
@@ -363,7 +365,11 @@ drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ROOT/
 * 파일 이름
 
 
-<br><br>
+
+
+
+<br><br><br>
+<br><br><br>
 
 **권한(Permission, 퍼미션)**
 
@@ -422,13 +428,32 @@ drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ROOT/
 
 ## 사용자 관리
 
+- 원격으로 우분투 접속 시 root로 로그인하면 'Access denied' 메시지 발생 >> ssh 접속에 대한 root 접속권한 설정시 해결
+  (일반 사용자 계정으로 접속해 su로 root 권한을 얻는 것은 가능하지만 처음부터 root로 로그인 하는 것은 막혀있음.)
 
+  $ vi /etc/ssh/sshd_config
+  PermitRootLogin 값을 yes로 수정
+  ``` bash
+  #PermitRootLogin prohibit-password
+  PermitRootLogin yes
+
+  ```
+
+
+
+<br><br><br>
+<br><br><br>
 
 ## 그룹 관리
 
+- Primary Group : 1개만 존재 (사용자가 로그인할 때와 파일 및 디렉토리를 생성할 때 부여되는 기본 그룹)
+- Secondary Groups : 없거나 여러개 존재 (사용자가 파일 또는 디렉토리를 읽거나 쓰거나 실행할 때 지정된 그룹들의 권한을 부여받음)
 
 
-<br><br>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 
 <br><br><br>
@@ -582,6 +607,10 @@ https://github.com/microsoft/WSL/issues/1761
 
   <br>
   
+  * 사용자 관리 <br>
+  *-* root 계정 ssh 원격 접속 권한 설정 방법 - https://nov19.tistory.com/95 <br>
+
+  <br>
 
   * 권한 관리 <br>
 
@@ -594,6 +623,10 @@ https://github.com/microsoft/WSL/issues/1761
   *-* 권한 개념 및 변경 방법 - https://conory.com/blog/19194 <br>
   *-* 권한 및 소유권 변경방법 - https://withcoding.com/103 <br>
   *-* 소유자 및 그룹 관리방법 - https://www.manualfactory.net/13414 <br>
+
+  *-* 사용자 생성 및 그룹 지정 - https://m.blog.naver.com/wideeyed/221512008307 <br>
+  *-* [stackExchange] gpasswd vs usermod - https://askubuntu.com/questions/1366061/when-gpasswd-vs-usermod-deluser <br>
+  
 
   <br>
 

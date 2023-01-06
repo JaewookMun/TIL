@@ -100,4 +100,6 @@ https://askubuntu.com/questions/553937/what-is-the-difference-between-the-core-f
   <br>
 
   * advanced
-  *-* Nginx Map Comparisons - https://johnhpatton.medium.com/nginx-map-comparison-regular-express-229120debe46 <br>
+  *-* Nginx Map Comparisons (how to set map modules) - https://johnhpatton.medium.com/nginx-map-comparison-regular-express-229120debe46 <br>
+  *-* Nginx proxy header 설정 시 주의항목 - https://ohgyun.com/537 <br>
+  
