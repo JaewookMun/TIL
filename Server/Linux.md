@@ -574,6 +574,7 @@ https://github.com/microsoft/WSL/issues/1761
   * 프로세스
   *-* 백그라운드 실행 nohup - https://morningame.tistory.com/154 <br>
   *-* nohup 환경변수 설정 - https://unix.stackexchange.com/questions/308370/how-can-i-set-environment-variables-for-a-program-executed-using-nohup <br>
+  *-* 프로세스 종료 (kill 명령어) - https://veneas.tistory.com/entry/Linux-%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%8B%9C%EA%B7%B8%EB%84%90-%EB%AA%85%EB%A0%B9%EC%96%B4%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%A2%85%EB%A3%8C-kill <br>
   
 
 <br>
