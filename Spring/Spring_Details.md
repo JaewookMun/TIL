@@ -190,6 +190,7 @@ difference between artifactid and name - https://stackoverflow.com/questions/699
 
   * 기초 개념 <br>
   *-* Bean 메서드를 통한 의존성 주입 (inter-bean references) [important] - https://spring.training/understanding-inter-bean-method-reference-in-spring-configuration/ <br>
+  *-* **Differences Between applicationContext.xml and spring-servlet.xml in Spring** - https://www.baeldung.com/spring-applicationcontext-vs-spring-servlet-xml <br>
   
   <br>
 

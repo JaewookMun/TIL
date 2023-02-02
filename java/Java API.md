@@ -29,6 +29,12 @@ javac Hello.java
 
 ```
 
+<br><br><br>
+<br><br><br>
+
+## String vs StringBuffer
+String > 불변성
+StringBuffer > 문자열 인스턴스에 변화를 줄 수 있다.
 
 
 
@@ -228,6 +234,12 @@ URL 객체에 사용하는 url 경로에는 특수문자를 사용할 수 없다
   *-* Java CLI with multiple args - https://lightrun.com/java/java-tutorial-java-command-line-arguments/ <br>
   *-* creating and running a jar file - https://www.baeldung.com/java-create-jar <br>
   *-* what is fat jar ? (stackoverflow - java packaging) - https://stackoverflow.com/questions/19150811/what-is-a-fat-jar <br>
+
+  <br>
+
+  * java.lang
+  *-* String vs StringBuffer - https://ifuwanna.tistory.com/221 <br>
+  *-* 자바 정규표현식 - https://yunamom.tistory.com/222 <br>
 
   <br>
 
