@@ -207,6 +207,14 @@ URL 객체에 사용하는 url 경로에는 특수문자를 사용할 수 없다
 <br><br><br>
 <br><br><br>
 
+## Java Scheduling Application guid
+
+
+
+
+<br><br><br>
+<br><br><br>
+
 
 ## Hash Algorithm
 
@@ -286,6 +294,10 @@ URL 객체에 사용하는 url 경로에는 특수문자를 사용할 수 없다
   *-* url encoding 개념설명 블로그 - https://dololak.tistory.com/18 <br>
   *-* Java URL Encoding / Decoding java progamming ex [Baeldung] - https://www.baeldung.com/java-url-encoding-decoding <br>
   *-* URL 클래스 사용 예시 - https://hackeen.tistory.com/18 <br>
+
+  <br>
+
+  * Java - Scheduling Application Instruction - https://docs.oracle.com/cd/E17984_01/doc.898/e14721/scheduler_application.htm <br>
 
   <br>
 

@@ -1,7 +1,12 @@
 # Linux
 
 서버 spec (장치, cpu, memory) 확인 커맨드
-https://juni5184.tistory.com/19
+```
+$ cat /proc/meminfo
+$ cat /proc/cpuinfo
+
+```
+
 
 apt 설치시 발생 가능한 encryt 인증서 문제 (mariadb - apt update)
 https://hamonikr.org/hamoni_board/106932
@@ -439,7 +444,9 @@ drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ROOT/
 
   ```
 
-
+- root 권한을 얻기 위해 사용하는 명령어 su / su - / sudo 에는 차이점이 존재한다. root 권한을 위해 su / sudo 명령어를 사용할 때의 특징은 다음과 같다.
+  a. su (Switch User) : root 사용자로 계정을 전환
+  b. sudo (SuperUser DO) : root 계정의 권한을 빌림
 
 <br><br><br>
 <br><br><br>
@@ -540,6 +547,7 @@ https://github.com/microsoft/WSL/issues/1761
 <br><br><br>
 
 ### [참고] <br>
+
   *-* ubuntu apt package dependency tree [offical] - https://packages.ubuntu.com/focal/nginx-extras <br>
   *-* 리눅스 파일시스템 게층 구조 (디렉토리 구조 이해) [공식표준문서] - https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html#purpose5 <br>
 
@@ -554,6 +562,8 @@ https://github.com/microsoft/WSL/issues/1761
 
   *-* 파일시스템 & 디스크 파티셔닝 - https://ttps2line.tistory.com/33 <br>
   *-* 파일시스템 확인방법 - https://websetnet.net/ko/commands-to-check-filesystem-in-linux-ubuntu/ <br>
+
+  *-* 리눅스 cpu, memory spec 정보 확인하는 법(Blog) - https://juni5184.tistory.com/19 <br>
 
 <br>
 
@@ -627,6 +637,7 @@ https://github.com/microsoft/WSL/issues/1761
 
   *-* 사용자 생성 및 그룹 지정 - https://m.blog.naver.com/wideeyed/221512008307 <br>
   *-* [stackExchange] gpasswd vs usermod - https://askubuntu.com/questions/1366061/when-gpasswd-vs-usermod-deluser <br>
+  *-* 루트 사용자(root) 권한 사용 명령어 [su / sudo]의 차이점 - https://juni5184.tistory.com/19 <br>
   
 
   <br>
