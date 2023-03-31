@@ -175,6 +175,8 @@ SecurityContext 가져오기 - 2가지 방법 존재 <br>
   
 ### UserDetailsService : DB에서 회원정보를 가져와 저장
 
+UserDetails 인터페이스 구현체를 반환하는데, 커스텀으로 구현한 UserDetails 구현체를 사용할 경우 equals()와 hashCode() 메서드 또한 구현해주어야 한다.
+
 <br>
 
 ### PasswordEncoder : 비밀번호 단방향 암호화 지원
