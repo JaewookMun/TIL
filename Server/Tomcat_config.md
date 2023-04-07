@@ -56,6 +56,10 @@ Tomcat startup시 appBase(일반적으로 webapps)에 위치한 application이 �
 
 
 ### [참고] <br>
+  * Tomcat structure description <br>
+  *-*  https://www3.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html <br>
+
+
   * ~/conf/ - configuration <br>
   *-* Tomcat directory structure & Configuration files - https://tomcat.apache.org/tomcat-3.2-doc/uguide/tomcat_ug.html <br>
   *-* **server.xml** structure explain - https://examples.javacodegeeks.com/enterprise-java/tomcat/tomcat-server-xml-configuration-example/ <br>
