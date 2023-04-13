@@ -217,8 +217,7 @@ some example
 브라우저에 데이터를 저장하는 방법 - Cookie, Storage
 --
 Cookie와 Storage(localStorage, sessionStorage) 모두 데이터베이스를 사용하지 않고 데이터를 임시적인 용도로 저장할 때 사용한다.
-
-
+[참고]: 객체를 JSON 오브젝트를 활용해 스토리지에 저장할 수 있지만 객체에 설정한 함수는 저장할 수 없다. (객체의 필드속성만 저장가능하며 저장할 때 모두 문자처리)
 
 
 
