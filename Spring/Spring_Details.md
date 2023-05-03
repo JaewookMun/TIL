@@ -206,3 +206,8 @@ difference between artifactid and name - https://stackoverflow.com/questions/699
   
   * Application Deployment <br>
   *-* Springboot deployment [official] - https://docs.spring.io/spring-boot/docs/current/reference/html/deployment.html#deployment.installing.nix-services <br>
+
+  <br>
+  * multi-database reference - https://www.baeldung.com/spring-boot-configure-multiple-datasources <br>
+  * multi-tenant structure reference - https://www.baeldung.com/spring-abstract-routing-data-source <br>
+  * 블로그 참고 - https://maximsungmo.github.io/spring/abstract-routing-datasource/ <br>
