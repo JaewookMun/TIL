@@ -1,5 +1,18 @@
 # NginX
 
+## 유용한 명령어
+``` bash
+# 현재 작성되어있는 nginx 설정파일의 문법을 확인 - nginx 적용 하기 전에
+# 미리 문법 오류를 확인하고 적용할 수 있다.
+$ sudo nginx -t
+
+# 현재 작성되어있는 nginx 설정파일의 정보를 모두 가져와서 보여준다. 
+# grep 명령어와 함께 효율적으로 사용할 수 있음.
+$ sudo nginx -T
+```
+
+<br>
+
 ## 포트포워딩 (port forwarding)
 
 ``` vi
