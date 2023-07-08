@@ -332,7 +332,7 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
   
   * **SELECT** <br>
   *-* SELECT query process steps [@@@@@] - https://towardsdatascience.com/the-6-steps-of-a-sql-select-statement-process-b3696a49a642 <br>
-  *-* 
+  *-* 그룹화 및 조건 (데이터 정리) - https://extbrain.tistory.com/56 <br>
 
   *-* 서브 쿼리 (블로그) - https://data-make.tistory.com/25 <br>
 
