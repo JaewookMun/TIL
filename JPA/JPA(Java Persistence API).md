@@ -45,3 +45,5 @@
   *-* JPA, MyBatis 동시사용 - https://jforj.tistory.com/91 <br>
   *-* https://goodteacher.tistory.com/344 <br>
 
+  *-* JPA association(연관관계) CASCADE TYPE 설명(블로그) - https://data-make.tistory.com/668 <br>
+  *-* JPA association(연관관계) CASCADE TYPE original source - https://www.baeldung.com/jpa-cascade-types <br>
