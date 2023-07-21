@@ -291,7 +291,22 @@ mysql> grant all privileges on dbname.table to userid@host identified by 'passwo
 
 
 
+<br><br><br>
+<br><br><br>
 
+
+## 데이터 백업
+<br>
+
+■ mysqldump 옵션
+
+- --all-databases : `--all-databases` 옵션은 MySQL 서버(시스템)에 있는 모든 데이터베이스를 백업하는 데 사용된다.
+- --system : `--system` 옵션은 시스템 데이터베이스만을 백업하는 데 사용된다.
+  - 시스템
+
+``` sql
+  mysqldump -u [사용자이름] -p --all-databases > [백업파일경로]
+```
 
 
 
