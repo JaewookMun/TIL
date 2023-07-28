@@ -540,6 +540,15 @@ https://github.com/microsoft/WSL/issues/1761
 
 
 
+<br><br><br>
+<br><br><br>
+
+## 모니터링
+
+smartmontools 패키지
+- 드라이브 내부 시스템을 활용해서 드라이브 상태를 모니터링 할 수 있는 기능 제공
+
+
 
 
 
