@@ -460,6 +460,59 @@ drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ROOT/
 
 <br><br><br>
 <br><br><br>
+
+## Tomcat
+
+### 파일생성 실패 (Read-only file system)
+
+tomcat을 구동하여 Application을 통해 파일을 생성하고자 할 때, 파일 생성 경로에 적합한 권한*을 부여해도 'Read-only file system' 이슈가 발생하여 파일 생성에 실패하는 경우가 발생할 수 있다.
+\* 생성 대상 디렉토리의 사용권한, 소유자, 그룹을 755 & tomcat.tomcat으로 설정
+
+이를 해결하기 위해서, 실행 중인 tomcat process의 pid를 확인한 뒤 프로세스의 mountinfo로 전달된 namespace 중 
+파일의 생성위치에 해당하는 파일시스템이 rw인지 확인하고 ro면 해당 위치를 ReadWritePaths 속성으로 등록한 후 시스템 데몬을 re-load한 뒤 톰캣을 재시작한다.
+
+
+■ 파일 시스템 확인
+
+$ ps -ef | grep tomcat
+
+$ (sudo) vi /proc/${pid}/mountinfo 
+
+    ex) vi /proc/945/mountinfo
+
+
+
+■ ReadWritePaths 속성 등록
+
+$ sudo vi /etc/systemd/system/multi-user.target.wants/tomcat9.service
+
+ 
+
+- [Service] 하단에 ReadWritePaths 속성을 추가해준다.
+ReadWritePaths=${파일을 생성하고자하는 경로}
+
+ex) ReadWritePaths=/example/docuraydata
+
+ 
+
+- 시스템 데몬 리로드 후 서비스 재시작
+
+$ systemctl daemon-reload 
+
+$ service tomcat9 restart
+
+ 
+이후 추가한 경로가 /proc/${pid}/mountinfo 에서 rw로 받아지며 웹 어플리케이션에서 정상적으로 처리된다.
+
+
+[참고]
+해당 이슈는 런타임 프로세스가 시스템에 대해서 처리할 수 있는 오퍼레이션이 제한됨에 따라 발생한다.
+(Sandboxing). 일반적인 설정 (/home/docuraydata)일 경우 별도의 설정 없이 파일의 생성이 가능하나 다른 경로를 설정할 경우 위의 path 추가가 필요하다. (/home 경로가 rw로 등록됨에 따라 /home 하위 경로는 sandboxing 처리되지 않는다.)
+
+
+
+<br><br><br>
+<br><br><br>
 <br><br><br>
 
 
