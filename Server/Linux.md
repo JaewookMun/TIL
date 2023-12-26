@@ -567,6 +567,9 @@ _*_ rename 명령어 존재
 wget : 비대화식 네트워크 다운로더 (Web GET)
 > $ wget [-옵션] URL
 
+ex) wget http://mirror.navercorp.com/apache/tomcat/tomcat-9/v9.0.29/bin/apache-tomcat-9.0.29.tar.gz
+> $ tar -xzvf apache-tomcat-9.0.29.tar.gz
+
 tar : 파일의 압축 / 해제 명령어
 > $ tar [-옵션] 파일이름
 
