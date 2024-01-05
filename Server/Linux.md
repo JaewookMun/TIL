@@ -451,6 +451,28 @@ drwxr-xr-x 3 root root 4096 2022-03-11 18:14 ROOT/
 <br><br><br>
 <br><br><br>
 
+### 사용자 추가
+
+사용자 추가
+adduser 명령어를 사용하면 자동으로 홈디렉토리가 생성되고 비밀번호를 설정할 수 있다.  (useradd 명령어는 이를 별도로 설정해줘야함.)
+
+$ adduser {사용자}
+
+사용자의 그룹을 변경하는 방법
+$ usermod -aG {그룹} {사용자}
+
+*참고 - usermod 에서 a 옵션을 제거하면 사용자의 기존의 그룹 정보는 제거됨에 따라 문제가 발생할 수 있으므로 기존 그룹정보는 포함한 상태에서 추가하기 위해서는 a옵션을 추가해준다.
+
+temp 사용자에게 sudo 권한을 주고 관리자 그룹으로 포함시키는 예시
+$ sudo usermod -aG sudo temp
+$ sudo usermod -aG adm temp
+
+
+
+
+<br><br><br>
+<br><br><br>
+
 ## 그룹 관리
 
 - Primary Group : 1개만 존재 (사용자가 로그인할 때와 파일 및 디렉토리를 생성할 때 부여되는 기본 그룹)
@@ -685,6 +707,9 @@ smartmontools 패키지
   
   * 사용자 관리 <br>
   *-* root 계정 ssh 원격 접속 권한 설정 방법 - https://nov19.tistory.com/95 <br>
+  *-* 우분투에서 사용자 추가하기 - https://mungiyo.tistory.com/14 <br>
+  *-* 계정의 그룹 변경 - https://syuda.tistory.com/159 <br>
+  *-* sudo 그룹에 사용자 추가하기 - https://jjeongil.tistory.com/1680 <br>
 
   <br>
 
